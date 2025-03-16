@@ -96,6 +96,78 @@
         "documentation": {}
     },
     {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Dict",
         "importPath": "typing",
         "description": "typing",
@@ -377,14 +449,6 @@
         "documentation": {}
     },
     {
-        "label": "Platform",
-        "importPath": "app.models.models",
-        "description": "app.models.models",
-        "isExtraImport": true,
-        "detail": "app.models.models",
-        "documentation": {}
-    },
-    {
         "label": "Game",
         "importPath": "app.models.models",
         "description": "app.models.models",
@@ -394,14 +458,6 @@
     },
     {
         "label": "Store",
-        "importPath": "app.models.models",
-        "description": "app.models.models",
-        "isExtraImport": true,
-        "detail": "app.models.models",
-        "documentation": {}
-    },
-    {
-        "label": "Platform",
         "importPath": "app.models.models",
         "description": "app.models.models",
         "isExtraImport": true,
@@ -546,6 +602,14 @@
     },
     {
         "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
         "isExtraImport": true,
@@ -850,6 +914,142 @@
         "documentation": {}
     },
     {
+        "label": "webdriver",
+        "importPath": "selenium",
+        "description": "selenium",
+        "isExtraImport": true,
+        "detail": "selenium",
+        "documentation": {}
+    },
+    {
+        "label": "webdriver",
+        "importPath": "selenium",
+        "description": "selenium",
+        "isExtraImport": true,
+        "detail": "selenium",
+        "documentation": {}
+    },
+    {
+        "label": "webdriver",
+        "importPath": "selenium",
+        "description": "selenium",
+        "isExtraImport": true,
+        "detail": "selenium",
+        "documentation": {}
+    },
+    {
+        "label": "webdriver",
+        "importPath": "selenium",
+        "description": "selenium",
+        "isExtraImport": true,
+        "detail": "selenium",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "WebDriverWait",
+        "importPath": "selenium.webdriver.support.ui",
+        "description": "selenium.webdriver.support.ui",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support.ui",
+        "documentation": {}
+    },
+    {
+        "label": "WebDriverWait",
+        "importPath": "selenium.webdriver.support.ui",
+        "description": "selenium.webdriver.support.ui",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support.ui",
+        "documentation": {}
+    },
+    {
+        "label": "WebDriverWait",
+        "importPath": "selenium.webdriver.support.ui",
+        "description": "selenium.webdriver.support.ui",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support.ui",
+        "documentation": {}
+    },
+    {
+        "label": "expected_conditions",
+        "importPath": "selenium.webdriver.support",
+        "description": "selenium.webdriver.support",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support",
+        "documentation": {}
+    },
+    {
+        "label": "expected_conditions",
+        "importPath": "selenium.webdriver.support",
+        "description": "selenium.webdriver.support",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support",
+        "documentation": {}
+    },
+    {
+        "label": "expected_conditions",
+        "importPath": "selenium.webdriver.support",
+        "description": "selenium.webdriver.support",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support",
+        "documentation": {}
+    },
+    {
+        "label": "TimeoutException",
+        "importPath": "selenium.common.exceptions",
+        "description": "selenium.common.exceptions",
+        "isExtraImport": true,
+        "detail": "selenium.common.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "TimeoutException",
+        "importPath": "selenium.common.exceptions",
+        "description": "selenium.common.exceptions",
+        "isExtraImport": true,
+        "detail": "selenium.common.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "TimeoutException",
+        "importPath": "selenium.common.exceptions",
+        "description": "selenium.common.exceptions",
+        "isExtraImport": true,
+        "detail": "selenium.common.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "save_games_to_db",
+        "importPath": "app.parsers.parsers_orm.dns_parser_orm",
+        "description": "app.parsers.parsers_orm.dns_parser_orm",
+        "isExtraImport": true,
+        "detail": "app.parsers.parsers_orm.dns_parser_orm",
+        "documentation": {}
+    },
+    {
         "label": "json",
         "kind": 6,
         "isExtraImport": true,
@@ -859,131 +1059,19 @@
         "documentation": {}
     },
     {
-        "label": "webdriver",
-        "importPath": "selenium",
-        "description": "selenium",
+        "label": "save_games_to_db",
+        "importPath": "app.parsers.parsers_orm.marwin_parser_orm",
+        "description": "app.parsers.parsers_orm.marwin_parser_orm",
         "isExtraImport": true,
-        "detail": "selenium",
+        "detail": "app.parsers.parsers_orm.marwin_parser_orm",
         "documentation": {}
     },
     {
-        "label": "webdriver",
-        "importPath": "selenium",
-        "description": "selenium",
+        "label": "save_games_to_db",
+        "importPath": "app.parsers.parsers_orm.technodom_parser_orm",
+        "description": "app.parsers.parsers_orm.technodom_parser_orm",
         "isExtraImport": true,
-        "detail": "selenium",
-        "documentation": {}
-    },
-    {
-        "label": "webdriver",
-        "importPath": "selenium",
-        "description": "selenium",
-        "isExtraImport": true,
-        "detail": "selenium",
-        "documentation": {}
-    },
-    {
-        "label": "webdriver",
-        "importPath": "selenium",
-        "description": "selenium",
-        "isExtraImport": true,
-        "detail": "selenium",
-        "documentation": {}
-    },
-    {
-        "label": "By",
-        "importPath": "selenium.webdriver.common.by",
-        "description": "selenium.webdriver.common.by",
-        "isExtraImport": true,
-        "detail": "selenium.webdriver.common.by",
-        "documentation": {}
-    },
-    {
-        "label": "By",
-        "importPath": "selenium.webdriver.common.by",
-        "description": "selenium.webdriver.common.by",
-        "isExtraImport": true,
-        "detail": "selenium.webdriver.common.by",
-        "documentation": {}
-    },
-    {
-        "label": "By",
-        "importPath": "selenium.webdriver.common.by",
-        "description": "selenium.webdriver.common.by",
-        "isExtraImport": true,
-        "detail": "selenium.webdriver.common.by",
-        "documentation": {}
-    },
-    {
-        "label": "WebDriverWait",
-        "importPath": "selenium.webdriver.support.ui",
-        "description": "selenium.webdriver.support.ui",
-        "isExtraImport": true,
-        "detail": "selenium.webdriver.support.ui",
-        "documentation": {}
-    },
-    {
-        "label": "WebDriverWait",
-        "importPath": "selenium.webdriver.support.ui",
-        "description": "selenium.webdriver.support.ui",
-        "isExtraImport": true,
-        "detail": "selenium.webdriver.support.ui",
-        "documentation": {}
-    },
-    {
-        "label": "WebDriverWait",
-        "importPath": "selenium.webdriver.support.ui",
-        "description": "selenium.webdriver.support.ui",
-        "isExtraImport": true,
-        "detail": "selenium.webdriver.support.ui",
-        "documentation": {}
-    },
-    {
-        "label": "expected_conditions",
-        "importPath": "selenium.webdriver.support",
-        "description": "selenium.webdriver.support",
-        "isExtraImport": true,
-        "detail": "selenium.webdriver.support",
-        "documentation": {}
-    },
-    {
-        "label": "expected_conditions",
-        "importPath": "selenium.webdriver.support",
-        "description": "selenium.webdriver.support",
-        "isExtraImport": true,
-        "detail": "selenium.webdriver.support",
-        "documentation": {}
-    },
-    {
-        "label": "expected_conditions",
-        "importPath": "selenium.webdriver.support",
-        "description": "selenium.webdriver.support",
-        "isExtraImport": true,
-        "detail": "selenium.webdriver.support",
-        "documentation": {}
-    },
-    {
-        "label": "TimeoutException",
-        "importPath": "selenium.common.exceptions",
-        "description": "selenium.common.exceptions",
-        "isExtraImport": true,
-        "detail": "selenium.common.exceptions",
-        "documentation": {}
-    },
-    {
-        "label": "TimeoutException",
-        "importPath": "selenium.common.exceptions",
-        "description": "selenium.common.exceptions",
-        "isExtraImport": true,
-        "detail": "selenium.common.exceptions",
-        "documentation": {}
-    },
-    {
-        "label": "TimeoutException",
-        "importPath": "selenium.common.exceptions",
-        "description": "selenium.common.exceptions",
-        "isExtraImport": true,
-        "detail": "selenium.common.exceptions",
+        "detail": "app.parsers.parsers_orm.technodom_parser_orm",
         "documentation": {}
     },
     {
@@ -1280,11 +1368,38 @@
         "documentation": {}
     },
     {
+        "label": "save_games_to_db",
+        "kind": 2,
+        "importPath": "app.parsers.parsers_orm.dns_parser_orm",
+        "description": "app.parsers.parsers_orm.dns_parser_orm",
+        "peekOfCode": "def save_games_to_db(games: List[Dict[str, Any]]):\n    \"\"\"Сохраняет список игр в базу данных.\"\"\"\n    db: Session = SessionLocal()\n    store = db.query(Store).filter(Store.name == \"DNS\").first()\n    if not store:\n        store = Store(name=\"DNS\")\n        db.add(store)\n        db.commit()\n        db.refresh(store)\n    for game in games:",
+        "detail": "app.parsers.parsers_orm.dns_parser_orm",
+        "documentation": {}
+    },
+    {
+        "label": "save_games_to_db",
+        "kind": 2,
+        "importPath": "app.parsers.parsers_orm.marwin_parser_orm",
+        "description": "app.parsers.parsers_orm.marwin_parser_orm",
+        "peekOfCode": "def save_games_to_db(games: List[Dict[str, Any]]):\n    \"\"\"Сохраняет список игр в базу данных.\"\"\"\n    db: Session = SessionLocal()\n    try:\n        # Проверяем, существует ли магазин Marwin\n        store = db.query(Store).filter(Store.name == \"Marwin\").first()\n        if not store:\n            store = Store(name=\"Marwin\")\n            db.add(store)\n            db.commit()",
+        "detail": "app.parsers.parsers_orm.marwin_parser_orm",
+        "documentation": {}
+    },
+    {
+        "label": "save_games_to_db",
+        "kind": 2,
+        "importPath": "app.parsers.parsers_orm.technodom_parser_orm",
+        "description": "app.parsers.parsers_orm.technodom_parser_orm",
+        "peekOfCode": "def save_games_to_db(games: List[Dict[str, Any]]):\n    \"\"\"Сохраняет список игр в базу данных.\"\"\"\n    db: Session = SessionLocal()\n    try:\n        # Проверяем, существует ли магазин Technodom\n        store = db.query(Store).filter(Store.name == \"Technodom\").first()\n        if not store:\n            store = Store(name=\"Technodom\")\n            db.add(store)\n            db.commit()",
+        "detail": "app.parsers.parsers_orm.technodom_parser_orm",
+        "documentation": {}
+    },
+    {
         "label": "DNSScraper",
         "kind": 6,
         "importPath": "app.parsers.dns_parser",
         "description": "app.parsers.dns_parser",
-        "peekOfCode": "class DNSScraper:\n    \"\"\"Парсер игр с сайта DNS, сохраняющий данные в PostgreSQL.\"\"\"\n    BASE_URLS = {\n        \"PlayStation\": \"https://www.dns-shop.kz/catalog/17a897ed16404e77/igry-dlya-playstation/?order=6&p={page}\",\n        \"Xbox\": \"https://www.dns-shop.kz/catalog/17a9f99116404e77/igry-dlya-microsoft-xbox/?order=6&p={page}\",\n        \"Nintendo\": \"https://www.dns-shop.kz/catalog/17a8b09516404e77/igry-dlya-nintendo/?order=6&p={page}\"\n    }\n    def __init__(self, driver=None):\n        self.driver = driver if driver else webdriver.Chrome()\n        self.driver.maximize_window()",
+        "peekOfCode": "class DNSScraper:\n    \"\"\"Парсер игр с сайта DNS.\"\"\"\n    BASE_URLS = {\n        \"PlayStation\": \"https://www.dns-shop.kz/catalog/17a897ed16404e77/igry-dlya-playstation/?order=6&p={page}\",\n        \"Xbox\": \"https://www.dns-shop.kz/catalog/17a9f99116404e77/igry-dlya-microsoft-xbox/?order=6&p={page}\",\n        \"Nintendo\": \"https://www.dns-shop.kz/catalog/17a8b09516404e77/igry-dlya-nintendo/?order=6&p={page}\"\n    }\n    def __init__(self, driver=None):\n        self.driver = driver if driver else webdriver.Chrome()\n        self.driver.maximize_window()",
         "detail": "app.parsers.dns_parser",
         "documentation": {}
     },
@@ -1293,7 +1408,7 @@
         "kind": 6,
         "importPath": "app.parsers.marwin_parser",
         "description": "app.parsers.marwin_parser",
-        "peekOfCode": "class MarwinParser:\n    \"\"\"Класс для парсинга списка игр с сайта Marwin и сохранения данных в БД.\"\"\"\n    BASE_URLS = {\n        \"Playstation\": \"https://www.marwin.kz/videogames/playstation/igry-dliya-playstation-5/\",\n        \"Playstation\": \"https://www.marwin.kz/videogames/playstation/igry-dliya-playstation-4/\",\n        \"Xbox One\": \"https://www.marwin.kz/videogames/xbox/igry-dlya-microsoft-xbox-one/\",\n        \"Nintendo Switch\": \"https://www.marwin.kz/videogames/nintendo/igry-dlya-nintendo-switch/\"\n    }\n    def __init__(self):\n        self.driver = webdriver.Chrome()",
+        "peekOfCode": "class MarwinParser:\n    \"\"\"Класс для парсинга списка игр с сайта Marwin.\"\"\"\n    BASE_URLS = {\n        \"Playstation 5\": \"https://www.marwin.kz/videogames/playstation/igry-dliya-playstation-5/\",\n        \"Playstation 4\": \"https://www.marwin.kz/videogames/playstation/igry-dliya-playstation-4/\",\n        \"Xbox One\": \"https://www.marwin.kz/videogames/xbox/igry-dlya-microsoft-xbox-one/\",\n        \"Nintendo Switch\": \"https://www.marwin.kz/videogames/nintendo/igry-dlya-nintendo-switch/\"\n    }\n    def __init__(self):\n        self.driver = webdriver.Chrome()",
         "detail": "app.parsers.marwin_parser",
         "documentation": {}
     },
@@ -1302,7 +1417,7 @@
         "kind": 6,
         "importPath": "app.parsers.technodom_parser",
         "description": "app.parsers.technodom_parser",
-        "peekOfCode": "class TechnodomParser:\n    \"\"\"Парсер игр с сайта Technodom, сохраняющий данные в PostgreSQL.\"\"\"\n    BASE_URLS = {\n        \"PlayStation\": \"https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-playstation-4\",\n        \"PlayStation\": \"https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-playstation-5\",\n        \"Xbox\": \"https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-xbox\",\n        \"Nintendo\": \"https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-nintendo\"\n    }\n    def __init__(self, driver=None):\n        self.driver = driver if driver else webdriver.Chrome()",
+        "peekOfCode": "class TechnodomParser:\n    \"\"\"Парсер игр с сайта Technodom.\"\"\"\n    BASE_URLS = {\n        \"PlayStation 4\": \"https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-playstation-4\",\n        \"PlayStation 5\": \"https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-playstation-5\",\n        \"Xbox\": \"https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-xbox\",\n        \"Nintendo\": \"https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-nintendo\"\n    }\n    def __init__(self):\n        self.driver = webdriver.Chrome()",
         "detail": "app.parsers.technodom_parser",
         "documentation": {}
     },

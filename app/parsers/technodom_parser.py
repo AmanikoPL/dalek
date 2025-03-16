@@ -1,53 +1,27 @@
 import json
-from sqlalchemy.orm import Session
-from app.orm.database import SessionLocal
-from app.models.models import Game, Store, Platform
-# from app.models.store import Store
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from typing import List, Dict, Any
+from app.parsers.parsers_orm.technodom_parser_orm import save_games_to_db
 
 class TechnodomParser:
-    """Парсер игр с сайта Technodom, сохраняющий данные в PostgreSQL."""
-    
+    """Парсер игр с сайта Technodom."""
+
     BASE_URLS = {
-        "PlayStation": "https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-playstation-4",
-        "PlayStation": "https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-playstation-5",
+        "PlayStation 4": "https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-playstation-4",
+        "PlayStation 5": "https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-playstation-5",
         "Xbox": "https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-xbox",
         "Nintendo": "https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-nintendo"
     }
 
-    def __init__(self, driver=None):
-        self.driver = driver if driver else webdriver.Chrome()
-        self.db: Session = SessionLocal()
+    def __init__(self):
+        self.driver = webdriver.Chrome()
 
-    
-    def save_to_db(self, games: List[Dict[str, Any]]):
-        """Сохраняет игры в PostgreSQL."""
-        store = self.db.query(Store).filter(Store.name == "Technodom").first()
-        if not store:
-            store = Store(name="Technodom")
-            self.db.add(store)
-            self.db.commit()
-            self.db.refresh(store)
-
-        for game in games:
-            db_game = Game(
-                title=game["title"],
-                platform=game["platform"],
-                price=game["price"],
-                availability=game["availability"],
-                store_id=store.id
-            )
-            self.db.add(db_game)
-        
-        self.db.commit()
-    
     def parse(self) -> List[Dict[str, Any]]:
-        """Парсит список игр и сохраняет в БД."""
+        """Парсит список игр и возвращает их в виде списка словарей."""
         games = []
 
         for platform, base_url in self.BASE_URLS.items():
@@ -94,18 +68,18 @@ class TechnodomParser:
                     games.append(game_data)
                 except Exception:
                     break
-        
-        self.save_to_db(games)
+
         return games
-    
+
     def close(self):
-        """Закрывает браузер и БД."""
+        """Закрывает браузер."""
         self.driver.quit()
-        self.db.close()
 
 if __name__ == "__main__":
     scraper = TechnodomParser()
     try:
-        scraper.parse()
+        games = scraper.parse()
+        save_games_to_db(games)  # Сохраняем в БД
+        print("Парсинг завершён и данные сохранены в БД.")
     finally:
         scraper.close()

@@ -1,17 +1,13 @@
-import json
-from sqlalchemy.orm import Session
-from app.orm.database import SessionLocal
-from app.models.models import Game, Store, Platform
-# from app.models.store import Store
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from typing import List, Dict, Any
+from app.parsers.parsers_orm.dns_parser_orm import save_games_to_db
 
 class DNSScraper:
-    """Парсер игр с сайта DNS, сохраняющий данные в PostgreSQL."""
+    """Парсер игр с сайта DNS."""
 
     BASE_URLS = {
         "PlayStation": "https://www.dns-shop.kz/catalog/17a897ed16404e77/igry-dlya-playstation/?order=6&p={page}",
@@ -22,31 +18,9 @@ class DNSScraper:
     def __init__(self, driver=None):
         self.driver = driver if driver else webdriver.Chrome()
         self.driver.maximize_window()
-        self.db: Session = SessionLocal()
 
-    def save_to_db(self, games: List[Dict[str, Any]]):
-        """Сохраняет список игр в базу данных."""
-        store = self.db.query(Store).filter(Store.name == "DNS").first()
-        if not store:
-            store = Store(name="DNS")
-            self.db.add(store)
-            self.db.commit()
-            self.db.refresh(store)
-
-        for game in games:
-            db_game = Game(
-                title=game["title"],
-                platform=game["platform"],
-                price=game["price"],
-                availability=game["availability"],
-                store_id=store.id
-            )
-            self.db.add(db_game)
-        
-        self.db.commit()
-
-    def parse(self):
-        """Парсит список игр и сохраняет в БД."""
+    def parse(self) -> List[Dict[str, Any]]:
+        """Парсит список игр."""
         games = []
 
         for platform, base_url in self.BASE_URLS.items():
@@ -96,16 +70,16 @@ class DNSScraper:
                     break
                 page += 1
 
-        self.save_to_db(games)
+        return games
     
     def close(self):
-        """Закрывает браузер и соединение с БД."""
+        """Закрывает браузер."""
         self.driver.quit()
-        self.db.close()
 
 if __name__ == "__main__":
     scraper = DNSScraper()
     try:
-        scraper.parse()
+        games = scraper.parse()
+        save_games_to_db(games)  # Сохранение в БД через отдельный модуль
     finally:
         scraper.close()

@@ -8,10 +8,10 @@ def save_games_to_db(games: List[Dict[str, Any]]):
     db: Session = SessionLocal()
     
     try:
-        # Проверяем, существует ли магазин Marwin
-        store = db.query(Store).filter(Store.name == "Marwin").first()
+        # Проверяем, существует ли магазин Technodom
+        store = db.query(Store).filter(Store.name == "Technodom").first()
         if not store:
-            store = Store(name="Marwin")
+            store = Store(name="Technodom")
             db.add(store)
             db.commit()
             db.refresh(store)
