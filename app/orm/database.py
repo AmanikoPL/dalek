@@ -24,13 +24,13 @@ def get_db():
     finally:
         db.close()
 
-def init_db():
-    """Создание таблиц в базе данных"""
-    from app.models import game, store, user  # Импортируем модели, чтобы SQLAlchemy их увидел
-    Base.metadata.create_all(bind=engine)
+# def init_db():
+#     """Создание таблиц в базе данных"""
+#     from app.models import game, store, user, platforms  # Импортируем модели, чтобы SQLAlchemy их увидел
+#     Base.metadata.create_all(bind=engine)
 
-from app.orm.database import init_db
+# from app.orm.database import init_db
 
-if __name__ == "__main__":
-    init_db()
-    print("✅ Таблицы успешно созданы!")
+# if __name__ == "__main__":
+#     init_db()
+#     print("✅ Таблицы успешно созданы!")

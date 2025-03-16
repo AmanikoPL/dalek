@@ -1,8 +1,8 @@
 import json
 from sqlalchemy.orm import Session
 from app.orm.database import SessionLocal
-from app.models.game import Game
-from app.models.store import Store
+from app.models.game import Game, Store, Platform
+# from app.models.store import Store
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -14,8 +14,8 @@ class TechnodomParser:
     """Парсер игр с сайта Technodom, сохраняющий данные в PostgreSQL."""
     
     BASE_URLS = {
-        "PlayStation 4": "https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-playstation-4",
-        "PlayStation 5": "https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-playstation-5",
+        "PlayStation": "https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-playstation-4",
+        "PlayStation": "https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-playstation-5",
         "Xbox": "https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-xbox",
         "Nintendo": "https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-nintendo"
     }

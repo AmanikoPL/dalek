@@ -1,10 +1,9 @@
 from fastapi import FastAPI, HTTPException, Depends
 from sqlalchemy.orm import Session
-from app.api.technodom_parser import TechnodomParser
-from app.api.dns_parser import DNSScraper
-from app.api.marwin_parser import MarwinParser
-from app.orm.database import init_db, get_db
-from app.models import user
+from app.parsers.technodom_parser import TechnodomParser
+from app.parsers.dns_parser import DNSScraper
+from app.parsers.marwin_parser import MarwinParser
+from app.orm.database import get_db
 from app.schemas.user import UserCreate
 from app.service.auth import create_user
 from app.database import Base, engine
@@ -12,10 +11,9 @@ from selenium import webdriver
 from typing import Dict, List
 from fastapi.middleware.cors import CORSMiddleware
 from app.service.user import create_user
-from app.models.user import User
+from app.models.game import User
 from app.api.auth import router as auth_router
 from fastapi import APIRouter, Depends, HTTPException
-from app.models.user import User
 from app.service.jwt import create_access_token
 from app.service.hashing import verify_password
 from app.schemas.user import UserLogin
@@ -36,7 +34,7 @@ app.include_router(auth_router, prefix="/auth")
 
 Base.metadata.create_all(bind=engine)
 print("🚀 Создаём таблицы в базе данных...")
-init_db()
+# init_db()
 print("✅ Таблицы успешно созданы!")
 Base.metadata.create_all(bind=engine)
 
@@ -107,6 +105,7 @@ def register(user_data: UserCreate, db: Session = Depends(get_db)):
 @router.post("/auth/login")
 def login(user_data: UserLogin, db: Session = Depends(get_db)):
     user = db.query(User).filter(User.email == user_data.email).first()
+    print('joiadhjsfdhjewfhjsfkd', user)
     if not user or not verify_password(user_data.password, user.hashed_password):
         raise HTTPException(status_code=401, detail="Invalid credentials")
     access_token = create_access_token(data={"sub": user.email})
@@ -115,4 +114,4 @@ def login(user_data: UserLogin, db: Session = Depends(get_db)):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("app.main:app", host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run("app.main:app", host="0.0.0.0", port=8000, reload=True, log_level="info")

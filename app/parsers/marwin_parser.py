@@ -6,15 +6,15 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from typing import List, Dict, Any
 from app.orm.database import SessionLocal
-from app.models.store import Store  # Импортируем модель Store
-from app.models.game import Game  # Импортируем модель Game
+# from app.models.store import Store  # Импортируем модель Store
+from app.models.game import Game, Store, Platform
 
 class MarwinParser:
     """Класс для парсинга списка игр с сайта Marwin и сохранения данных в БД."""
     
     BASE_URLS = {
-        "PS5": "https://www.marwin.kz/videogames/playstation/igry-dliya-playstation-5/",
-        "PS4": "https://www.marwin.kz/videogames/playstation/igry-dliya-playstation-4/",
+        "Playstation": "https://www.marwin.kz/videogames/playstation/igry-dliya-playstation-5/",
+        "Playstation": "https://www.marwin.kz/videogames/playstation/igry-dliya-playstation-4/",
         "Xbox One": "https://www.marwin.kz/videogames/xbox/igry-dlya-microsoft-xbox-one/",
         "Nintendo Switch": "https://www.marwin.kz/videogames/nintendo/igry-dlya-nintendo-switch/"
     }
