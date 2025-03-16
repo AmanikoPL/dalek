@@ -1,7 +1,7 @@
 import json
 from sqlalchemy.orm import Session
 from app.orm.database import SessionLocal
-from app.models.game import Game, Store, Platform
+from app.models.models import Game, Store, Platform
 # from app.models.store import Store
 from selenium import webdriver
 from selenium.webdriver.common.by import By

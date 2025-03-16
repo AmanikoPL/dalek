@@ -11,7 +11,7 @@ from selenium import webdriver
 from typing import Dict, List
 from fastapi.middleware.cors import CORSMiddleware
 from app.service.user import create_user
-from app.models.game import User
+from app.models.models import User
 from app.api.auth import router as auth_router
 from fastapi import APIRouter, Depends, HTTPException
 from app.service.jwt import create_access_token

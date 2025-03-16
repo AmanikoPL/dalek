@@ -7,7 +7,7 @@ from selenium.common.exceptions import TimeoutException
 from typing import List, Dict, Any
 from app.orm.database import SessionLocal
 # from app.models.store import Store  # Импортируем модель Store
-from app.models.game import Game, Store, Platform
+from app.models.models import Game, Store, Platform
 
 class MarwinParser:
     """Класс для парсинга списка игр с сайта Marwin и сохранения данных в БД."""

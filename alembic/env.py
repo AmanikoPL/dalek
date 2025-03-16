@@ -3,7 +3,7 @@ from app.models.baseclass import Base
 from sqlalchemy import engine_from_config
 from sqlalchemy import pool
 from app.orm.database import Base
-from app.models.game import Game, Store, User, Platform
+from app.models.models import Game, Store, User, Platform
 # from app.models.store import Store
 # from app.models.user import User
 # 
