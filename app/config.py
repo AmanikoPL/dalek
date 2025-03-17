@@ -27,26 +27,11 @@ class ParserSettings:
 
 class TestDBSettings:
     """Class containing main settings for connecting to the test database."""
-    DB_USER: str = "postgres"
-    DB_PASSWORD: str = os.getenv("DB_PASSWORD", "admin")
-    DB_HOST: str = "localhost"
-    DB_PORT: str = "5432"
-    DB_NAME: str = "db_test_api"
-    DATABASE_URL: str = (
-        f"postgresql+asyncpg://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
-    )
+    DATABASE_URL: str = os.getenv("TEST_DATABASE_URL", "postgresql+psycopg2://postgres:admin@localhost:5432/db_test_api")
 
 class ProdDBSettings:
     """Class containing main settings for connecting to the production database."""
-    DB_USER: str = os.getenv("DB_USER")
-    DB_PASSWORD: str = os.getenv("DB_PASSWORD")
-    DB_HOST: str = os.getenv("DB_HOST")
-    DB_PORT: str = os.getenv("DB_PORT")
-    DB_NAME: str = os.getenv("DB_NAME")
-    
-    DATABASE_URL: str = (
-        f"postgresql+asyncpg://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
-    )
+    DATABASE_URL: str = os.getenv("DATABASE_URL")
 
     jwt_token_settings = JWTTokenSettings()
     parser_settings = ParserSettings()

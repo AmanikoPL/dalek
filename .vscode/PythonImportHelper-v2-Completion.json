@@ -16,6 +16,22 @@
         "documentation": {}
     },
     {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Any",
         "importPath": "typing",
         "description": "typing",
@@ -161,22 +177,6 @@
     },
     {
         "label": "Any",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Dict",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "List",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -258,14 +258,6 @@
     },
     {
         "label": "String",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
-        "label": "create_engine",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -425,30 +417,6 @@
         "documentation": {}
     },
     {
-        "label": "User",
-        "importPath": "app.models.models",
-        "description": "app.models.models",
-        "isExtraImport": true,
-        "detail": "app.models.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "app.models.models",
-        "description": "app.models.models",
-        "isExtraImport": true,
-        "detail": "app.models.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "app.models.models",
-        "description": "app.models.models",
-        "isExtraImport": true,
-        "detail": "app.models.models",
-        "documentation": {}
-    },
-    {
         "label": "APIRouter",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -466,6 +434,14 @@
     },
     {
         "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
@@ -474,46 +450,6 @@
     },
     {
         "label": "FastAPI",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "HTTPException",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "Depends",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "APIRouter",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "Depends",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "HTTPException",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
@@ -593,187 +529,11 @@
         "documentation": {}
     },
     {
-        "label": "Session",
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
         "label": "sessionmaker",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
         "isExtraImport": true,
         "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
-        "label": "declarative_base",
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
-        "label": "Session",
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
-        "label": "Session",
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
-        "label": "sessionmaker",
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
-        "label": "Session",
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
-        "label": "get_db",
-        "importPath": "app.database",
-        "description": "app.database",
-        "isExtraImport": true,
-        "detail": "app.database",
-        "documentation": {}
-    },
-    {
-        "label": "SessionLocal",
-        "importPath": "app.database",
-        "description": "app.database",
-        "isExtraImport": true,
-        "detail": "app.database",
-        "documentation": {}
-    },
-    {
-        "label": "SessionLocal",
-        "importPath": "app.database",
-        "description": "app.database",
-        "isExtraImport": true,
-        "detail": "app.database",
-        "documentation": {}
-    },
-    {
-        "label": "SessionLocal",
-        "importPath": "app.database",
-        "description": "app.database",
-        "isExtraImport": true,
-        "detail": "app.database",
-        "documentation": {}
-    },
-    {
-        "label": "SessionLocal",
-        "importPath": "app.database",
-        "description": "app.database",
-        "isExtraImport": true,
-        "detail": "app.database",
-        "documentation": {}
-    },
-    {
-        "label": "get_db",
-        "importPath": "app.database",
-        "description": "app.database",
-        "isExtraImport": true,
-        "detail": "app.database",
-        "documentation": {}
-    },
-    {
-        "label": "Base",
-        "importPath": "app.database",
-        "description": "app.database",
-        "isExtraImport": true,
-        "detail": "app.database",
-        "documentation": {}
-    },
-    {
-        "label": "engine",
-        "importPath": "app.database",
-        "description": "app.database",
-        "isExtraImport": true,
-        "detail": "app.database",
-        "documentation": {}
-    },
-    {
-        "label": "verify_password",
-        "importPath": "app.service.security",
-        "description": "app.service.security",
-        "isExtraImport": true,
-        "detail": "app.service.security",
-        "documentation": {}
-    },
-    {
-        "label": "create_access_token",
-        "importPath": "app.service.security",
-        "description": "app.service.security",
-        "isExtraImport": true,
-        "detail": "app.service.security",
-        "documentation": {}
-    },
-    {
-        "label": "create_access_token",
-        "importPath": "app.service.security",
-        "description": "app.service.security",
-        "isExtraImport": true,
-        "detail": "app.service.security",
-        "documentation": {}
-    },
-    {
-        "label": "UserLogin",
-        "importPath": "app.schemas.user",
-        "description": "app.schemas.user",
-        "isExtraImport": true,
-        "detail": "app.schemas.user",
-        "documentation": {}
-    },
-    {
-        "label": "UserCreate",
-        "importPath": "app.schemas.user",
-        "description": "app.schemas.user",
-        "isExtraImport": true,
-        "detail": "app.schemas.user",
-        "documentation": {}
-    },
-    {
-        "label": "UserCreate",
-        "importPath": "app.schemas.user",
-        "description": "app.schemas.user",
-        "isExtraImport": true,
-        "detail": "app.schemas.user",
-        "documentation": {}
-    },
-    {
-        "label": "UserCreate",
-        "importPath": "app.schemas.user",
-        "description": "app.schemas.user",
-        "isExtraImport": true,
-        "detail": "app.schemas.user",
-        "documentation": {}
-    },
-    {
-        "label": "UserLogin",
-        "importPath": "app.schemas.user",
-        "description": "app.schemas.user",
-        "isExtraImport": true,
-        "detail": "app.schemas.user",
         "documentation": {}
     },
     {
@@ -801,6 +561,134 @@
         "documentation": {}
     },
     {
+        "label": "get_db",
+        "importPath": "app.database",
+        "description": "app.database",
+        "isExtraImport": true,
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "importPath": "app.database",
+        "description": "app.database",
+        "isExtraImport": true,
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "importPath": "app.database",
+        "description": "app.database",
+        "isExtraImport": true,
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "importPath": "app.database",
+        "description": "app.database",
+        "isExtraImport": true,
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "verify_password",
+        "importPath": "app.service.security",
+        "description": "app.service.security",
+        "isExtraImport": true,
+        "detail": "app.service.security",
+        "documentation": {}
+    },
+    {
+        "label": "create_access_token",
+        "importPath": "app.service.security",
+        "description": "app.service.security",
+        "isExtraImport": true,
+        "detail": "app.service.security",
+        "documentation": {}
+    },
+    {
+        "label": "UserLogin",
+        "importPath": "app.schemas.user",
+        "description": "app.schemas.user",
+        "isExtraImport": true,
+        "detail": "app.schemas.user",
+        "documentation": {}
+    },
+    {
+        "label": "UserCreate",
+        "importPath": "app.schemas.user",
+        "description": "app.schemas.user",
+        "isExtraImport": true,
+        "detail": "app.schemas.user",
+        "documentation": {}
+    },
+    {
+        "label": "create_user",
+        "importPath": "app.orm.user",
+        "description": "app.orm.user",
+        "isExtraImport": true,
+        "detail": "app.orm.user",
+        "documentation": {}
+    },
+    {
+        "label": "webdriver",
+        "importPath": "selenium",
+        "description": "selenium",
+        "isExtraImport": true,
+        "detail": "selenium",
+        "documentation": {}
+    },
+    {
+        "label": "webdriver",
+        "importPath": "selenium",
+        "description": "selenium",
+        "isExtraImport": true,
+        "detail": "selenium",
+        "documentation": {}
+    },
+    {
+        "label": "webdriver",
+        "importPath": "selenium",
+        "description": "selenium",
+        "isExtraImport": true,
+        "detail": "selenium",
+        "documentation": {}
+    },
+    {
+        "label": "webdriver",
+        "importPath": "selenium",
+        "description": "selenium",
+        "isExtraImport": true,
+        "detail": "selenium",
+        "documentation": {}
+    },
+    {
+        "label": "TechnodomParser",
+        "importPath": "app.parsers.technodom_parser",
+        "description": "app.parsers.technodom_parser",
+        "isExtraImport": true,
+        "detail": "app.parsers.technodom_parser",
+        "documentation": {}
+    },
+    {
+        "label": "DNSScraper",
+        "importPath": "app.parsers.dns_parser",
+        "description": "app.parsers.dns_parser",
+        "isExtraImport": true,
+        "detail": "app.parsers.dns_parser",
+        "documentation": {}
+    },
+    {
+        "label": "MarwinParser",
+        "importPath": "app.parsers.marwin_parser",
+        "description": "app.parsers.marwin_parser",
+        "isExtraImport": true,
+        "detail": "app.parsers.marwin_parser",
+        "documentation": {}
+    },
+    {
         "label": "declared_attr",
         "importPath": "sqlalchemy.ext.declarative",
         "description": "sqlalchemy.ext.declarative",
@@ -822,62 +710,6 @@
         "description": "app.service.hashing",
         "isExtraImport": true,
         "detail": "app.service.hashing",
-        "documentation": {}
-    },
-    {
-        "label": "hash_password",
-        "importPath": "app.service.hashing",
-        "description": "app.service.hashing",
-        "isExtraImport": true,
-        "detail": "app.service.hashing",
-        "documentation": {}
-    },
-    {
-        "label": "hash_password",
-        "importPath": "app.service.hashing",
-        "description": "app.service.hashing",
-        "isExtraImport": true,
-        "detail": "app.service.hashing",
-        "documentation": {}
-    },
-    {
-        "label": "verify_password",
-        "importPath": "app.service.hashing",
-        "description": "app.service.hashing",
-        "isExtraImport": true,
-        "detail": "app.service.hashing",
-        "documentation": {}
-    },
-    {
-        "label": "webdriver",
-        "importPath": "selenium",
-        "description": "selenium",
-        "isExtraImport": true,
-        "detail": "selenium",
-        "documentation": {}
-    },
-    {
-        "label": "webdriver",
-        "importPath": "selenium",
-        "description": "selenium",
-        "isExtraImport": true,
-        "detail": "selenium",
-        "documentation": {}
-    },
-    {
-        "label": "webdriver",
-        "importPath": "selenium",
-        "description": "selenium",
-        "isExtraImport": true,
-        "detail": "selenium",
-        "documentation": {}
-    },
-    {
-        "label": "webdriver",
-        "importPath": "selenium",
-        "description": "selenium",
-        "isExtraImport": true,
-        "detail": "selenium",
         "documentation": {}
     },
     {
@@ -1075,35 +907,12 @@
         "documentation": {}
     },
     {
-        "label": "TechnodomParser",
-        "importPath": "app.parsers.technodom_parser",
-        "description": "app.parsers.technodom_parser",
+        "label": "uvicorn",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "app.parsers.technodom_parser",
-        "documentation": {}
-    },
-    {
-        "label": "DNSScraper",
-        "importPath": "app.parsers.dns_parser",
-        "description": "app.parsers.dns_parser",
-        "isExtraImport": true,
-        "detail": "app.parsers.dns_parser",
-        "documentation": {}
-    },
-    {
-        "label": "MarwinParser",
-        "importPath": "app.parsers.marwin_parser",
-        "description": "app.parsers.marwin_parser",
-        "isExtraImport": true,
-        "detail": "app.parsers.marwin_parser",
-        "documentation": {}
-    },
-    {
-        "label": "create_user",
-        "importPath": "app.service.auth",
-        "description": "app.service.auth",
-        "isExtraImport": true,
-        "detail": "app.service.auth",
+        "importPath": "uvicorn",
+        "description": "uvicorn",
+        "detail": "uvicorn",
         "documentation": {}
     },
     {
@@ -1115,19 +924,19 @@
         "documentation": {}
     },
     {
-        "label": "create_user",
-        "importPath": "app.service.user",
-        "description": "app.service.user",
-        "isExtraImport": true,
-        "detail": "app.service.user",
-        "documentation": {}
-    },
-    {
         "label": "router",
         "importPath": "app.api.auth",
         "description": "app.api.auth",
         "isExtraImport": true,
         "detail": "app.api.auth",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "importPath": "app.api.parsers",
+        "description": "app.api.parsers",
+        "isExtraImport": true,
+        "detail": "app.api.parsers",
         "documentation": {}
     },
     {
@@ -1198,7 +1007,16 @@
         "kind": 2,
         "importPath": "app.api.auth",
         "description": "app.api.auth",
-        "peekOfCode": "def login(user_data: UserLogin, db: Session = Depends(get_db)):\n    user = db.query(User).filter(User.email == user_data.email).first()\n    print(\"hjoiadfhj.kGhujzghulxfdi\", user)\n    if not user or not verify_password(user_data.password, user.hashed_password):\n        raise HTTPException(status_code=401, detail=\"Invalid credentials\")\n    access_token = create_access_token(\n        data={\"sub\": user.email},\n        expires_delta=timedelta(minutes=30)\n    )\n    return {\"access_token\": access_token, \"token_type\": \"bearer\"}",
+        "peekOfCode": "def login(user_data: UserLogin, db: Session = Depends(get_db)):\n    user = db.query(User).filter(User.email == user_data.email).first()\n    if not user or not verify_password(user_data.password, user.hashed_password):\n        raise HTTPException(status_code=401, detail=\"Invalid credentials\")\n    access_token = create_access_token(\n        data={\"sub\": user.email},\n        expires_delta=timedelta(minutes=30)\n    )\n    return {\"access_token\": access_token, \"token_type\": \"bearer\"}\n@router.post(\"/register/\")",
+        "detail": "app.api.auth",
+        "documentation": {}
+    },
+    {
+        "label": "register",
+        "kind": 2,
+        "importPath": "app.api.auth",
+        "description": "app.api.auth",
+        "peekOfCode": "def register(user_data: UserCreate, db: Session = Depends(get_db)):\n    new_user = create_user(db, user_data)\n    return {\"email\": new_user.email, \"is_active\": new_user.is_active}",
         "detail": "app.api.auth",
         "documentation": {}
     },
@@ -1207,8 +1025,53 @@
         "kind": 5,
         "importPath": "app.api.auth",
         "description": "app.api.auth",
-        "peekOfCode": "router = APIRouter()\n@router.post(\"/login\")\ndef login(user_data: UserLogin, db: Session = Depends(get_db)):\n    user = db.query(User).filter(User.email == user_data.email).first()\n    print(\"hjoiadfhj.kGhujzghulxfdi\", user)\n    if not user or not verify_password(user_data.password, user.hashed_password):\n        raise HTTPException(status_code=401, detail=\"Invalid credentials\")\n    access_token = create_access_token(\n        data={\"sub\": user.email},\n        expires_delta=timedelta(minutes=30)",
+        "peekOfCode": "router = APIRouter()\n@router.post(\"/login\")\ndef login(user_data: UserLogin, db: Session = Depends(get_db)):\n    user = db.query(User).filter(User.email == user_data.email).first()\n    if not user or not verify_password(user_data.password, user.hashed_password):\n        raise HTTPException(status_code=401, detail=\"Invalid credentials\")\n    access_token = create_access_token(\n        data={\"sub\": user.email},\n        expires_delta=timedelta(minutes=30)\n    )",
         "detail": "app.api.auth",
+        "documentation": {}
+    },
+    {
+        "label": "parse_technodom",
+        "kind": 2,
+        "importPath": "app.api.parsers",
+        "description": "app.api.parsers",
+        "peekOfCode": "def parse_technodom() -> Dict[str, List]:\n    driver = webdriver.Chrome()\n    try:\n        parser = TechnodomParser(driver)\n        return parser.parse()\n    finally:\n        driver.quit()\n@router.get(\"/dns\")\ndef parse_dns() -> List[str]:\n    scraper = DNSScraper()",
+        "detail": "app.api.parsers",
+        "documentation": {}
+    },
+    {
+        "label": "parse_dns",
+        "kind": 2,
+        "importPath": "app.api.parsers",
+        "description": "app.api.parsers",
+        "peekOfCode": "def parse_dns() -> List[str]:\n    scraper = DNSScraper()\n    try:\n        return scraper.parse()\n    finally:\n        scraper.close()\n@router.get(\"/marwin\")\ndef parse_marwin() -> List[str]:\n    scraper = MarwinParser()\n    try:",
+        "detail": "app.api.parsers",
+        "documentation": {}
+    },
+    {
+        "label": "parse_marwin",
+        "kind": 2,
+        "importPath": "app.api.parsers",
+        "description": "app.api.parsers",
+        "peekOfCode": "def parse_marwin() -> List[str]:\n    scraper = MarwinParser()\n    try:\n        return scraper.parse()\n    finally:\n        scraper.close()\n@router.get(\"/all\")\ndef parse_all() -> Dict[str, List]:\n    technodom_games, dns_games, marwin_games = [], [], []\n    driver = webdriver.Chrome()",
+        "detail": "app.api.parsers",
+        "documentation": {}
+    },
+    {
+        "label": "parse_all",
+        "kind": 2,
+        "importPath": "app.api.parsers",
+        "description": "app.api.parsers",
+        "peekOfCode": "def parse_all() -> Dict[str, List]:\n    technodom_games, dns_games, marwin_games = [], [], []\n    driver = webdriver.Chrome()\n    try:\n        technodom_parser = TechnodomParser(driver)\n        technodom_games = technodom_parser.parse()\n    finally:\n        driver.quit()\n    dns_scraper = DNSScraper()\n    try:",
+        "detail": "app.api.parsers",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.api.parsers",
+        "description": "app.api.parsers",
+        "peekOfCode": "router = APIRouter()\n@router.get(\"/technodom\")\ndef parse_technodom() -> Dict[str, List]:\n    driver = webdriver.Chrome()\n    try:\n        parser = TechnodomParser(driver)\n        return parser.parse()\n    finally:\n        driver.quit()\n@router.get(\"/dns\")",
+        "detail": "app.api.parsers",
         "documentation": {}
     },
     {
@@ -1383,60 +1246,6 @@
         "documentation": {}
     },
     {
-        "label": "create_user",
-        "kind": 2,
-        "importPath": "app.service.auth",
-        "description": "app.service.auth",
-        "peekOfCode": "def create_user(db: Session, user: UserCreate):\n    hashed_password = hash_password(user.password)\n    db_user = User(email=user.email, hashed_password=hashed_password)\n    db.add(db_user)\n    db.commit()\n    db.refresh(db_user)\n    return db_user",
-        "detail": "app.service.auth",
-        "documentation": {}
-    },
-    {
-        "label": "get_db",
-        "kind": 2,
-        "importPath": "app.service.database",
-        "description": "app.service.database",
-        "peekOfCode": "def get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
-        "detail": "app.service.database",
-        "documentation": {}
-    },
-    {
-        "label": "DATABASE_URL",
-        "kind": 5,
-        "importPath": "app.service.database",
-        "description": "app.service.database",
-        "peekOfCode": "DATABASE_URL = \"postgresql://postgres:admin@localhost:5432/dalek2\"\nengine = create_engine(DATABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\nfrom sqlalchemy.orm import Session\nfrom app.database import SessionLocal\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db",
-        "detail": "app.service.database",
-        "documentation": {}
-    },
-    {
-        "label": "engine",
-        "kind": 5,
-        "importPath": "app.service.database",
-        "description": "app.service.database",
-        "peekOfCode": "engine = create_engine(DATABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\nfrom sqlalchemy.orm import Session\nfrom app.database import SessionLocal\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:",
-        "detail": "app.service.database",
-        "documentation": {}
-    },
-    {
-        "label": "SessionLocal",
-        "kind": 5,
-        "importPath": "app.service.database",
-        "description": "app.service.database",
-        "peekOfCode": "SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\nfrom sqlalchemy.orm import Session\nfrom app.database import SessionLocal\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
-        "detail": "app.service.database",
-        "documentation": {}
-    },
-    {
-        "label": "Base",
-        "kind": 5,
-        "importPath": "app.service.database",
-        "description": "app.service.database",
-        "peekOfCode": "Base = declarative_base()\nfrom sqlalchemy.orm import Session\nfrom app.database import SessionLocal\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
-        "detail": "app.service.database",
-        "documentation": {}
-    },
-    {
         "label": "hash_password",
         "kind": 2,
         "importPath": "app.service.hashing",
@@ -1527,24 +1336,6 @@
         "documentation": {}
     },
     {
-        "label": "create_user",
-        "kind": 2,
-        "importPath": "app.service.user",
-        "description": "app.service.user",
-        "peekOfCode": "def create_user(db: Session, user: UserCreate):\n    hashed_password = hash_password(user.password)\n    db_user = User(email=user.email, hashed_password=hashed_password, is_active=True)\n    db.add(db_user)\n    db.commit()\n    db.refresh(db_user)\n    return db_user\ndef get_user_by_email(db: Session, email: str):\n    return db.query(User).filter(User.email == email).first()",
-        "detail": "app.service.user",
-        "documentation": {}
-    },
-    {
-        "label": "get_user_by_email",
-        "kind": 2,
-        "importPath": "app.service.user",
-        "description": "app.service.user",
-        "peekOfCode": "def get_user_by_email(db: Session, email: str):\n    return db.query(User).filter(User.email == email).first()",
-        "detail": "app.service.user",
-        "documentation": {}
-    },
-    {
         "label": "JWTTokenSettings",
         "kind": 6,
         "importPath": "app.config",
@@ -1567,7 +1358,7 @@
         "kind": 6,
         "importPath": "app.config",
         "description": "app.config",
-        "peekOfCode": "class TestDBSettings:\n    \"\"\"Class containing main settings for connecting to the test database.\"\"\"\n    DB_USER: str = \"postgres\"\n    DB_PASSWORD: str = os.getenv(\"DB_PASSWORD\", \"admin\")\n    DB_HOST: str = \"localhost\"\n    DB_PORT: str = \"5432\"\n    DB_NAME: str = \"db_test_api\"\n    DATABASE_URL: str = (\n        f\"postgresql+asyncpg://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}\"\n    )",
+        "peekOfCode": "class TestDBSettings:\n    \"\"\"Class containing main settings for connecting to the test database.\"\"\"\n    DATABASE_URL: str = os.getenv(\"TEST_DATABASE_URL\", \"postgresql+psycopg2://postgres:admin@localhost:5432/db_test_api\")\nclass ProdDBSettings:\n    \"\"\"Class containing main settings for connecting to the production database.\"\"\"\n    DATABASE_URL: str = os.getenv(\"DATABASE_URL\")\n    jwt_token_settings = JWTTokenSettings()\n    parser_settings = ParserSettings()\n    test_db_settings = TestDBSettings()\nif __name__ == \"__main__\":",
         "detail": "app.config",
         "documentation": {}
     },
@@ -1576,7 +1367,7 @@
         "kind": 6,
         "importPath": "app.config",
         "description": "app.config",
-        "peekOfCode": "class ProdDBSettings:\n    \"\"\"Class containing main settings for connecting to the production database.\"\"\"\n    DB_USER: str = os.getenv(\"DB_USER\")\n    DB_PASSWORD: str = os.getenv(\"DB_PASSWORD\")\n    DB_HOST: str = os.getenv(\"DB_HOST\")\n    DB_PORT: str = os.getenv(\"DB_PORT\")\n    DB_NAME: str = os.getenv(\"DB_NAME\")\n    DATABASE_URL: str = (\n        f\"postgresql+asyncpg://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}\"\n    )",
+        "peekOfCode": "class ProdDBSettings:\n    \"\"\"Class containing main settings for connecting to the production database.\"\"\"\n    DATABASE_URL: str = os.getenv(\"DATABASE_URL\")\n    jwt_token_settings = JWTTokenSettings()\n    parser_settings = ParserSettings()\n    test_db_settings = TestDBSettings()\nif __name__ == \"__main__\":\n    prod_db_settings = ProdDBSettings()\n    print(\"Project Title:\", project_settings[\"title\"])\n    print(\"Database Connection URL:\", prod_db_settings.DATABASE_URL)",
         "detail": "app.config",
         "documentation": {}
     },
@@ -1635,75 +1426,12 @@
         "documentation": {}
     },
     {
-        "label": "parse_technodom",
-        "kind": 2,
-        "importPath": "app.main",
-        "description": "app.main",
-        "peekOfCode": "def parse_technodom() -> Dict[str, List]:\n    driver = webdriver.Chrome()\n    try:\n        parser = TechnodomParser(driver)\n        return parser.parse()\n    finally:\n        driver.quit()\n@app.get(\"/parse/dns\")\ndef parse_dns() -> List[str]:\n    scraper = DNSScraper()",
-        "detail": "app.main",
-        "documentation": {}
-    },
-    {
-        "label": "parse_dns",
-        "kind": 2,
-        "importPath": "app.main",
-        "description": "app.main",
-        "peekOfCode": "def parse_dns() -> List[str]:\n    scraper = DNSScraper()\n    try:\n        return scraper.parse()\n    finally:\n        scraper.close()\n@app.get(\"/parse/marwin\")\ndef parse_marwin() -> List[str]:\n    scraper = MarwinParser()\n    try:",
-        "detail": "app.main",
-        "documentation": {}
-    },
-    {
-        "label": "parse_marwin",
-        "kind": 2,
-        "importPath": "app.main",
-        "description": "app.main",
-        "peekOfCode": "def parse_marwin() -> List[str]:\n    scraper = MarwinParser()\n    try:\n        return scraper.parse()\n    finally:\n        scraper.close()\n@app.get(\"/parse/all\")\ndef parse_all() -> Dict[str, List]:\n    technodom_games, dns_games, marwin_games = [], [], []\n    driver = webdriver.Chrome()",
-        "detail": "app.main",
-        "documentation": {}
-    },
-    {
-        "label": "parse_all",
-        "kind": 2,
-        "importPath": "app.main",
-        "description": "app.main",
-        "peekOfCode": "def parse_all() -> Dict[str, List]:\n    technodom_games, dns_games, marwin_games = [], [], []\n    driver = webdriver.Chrome()\n    try:\n        technodom_parser = TechnodomParser(driver)\n        technodom_games = technodom_parser.parse()\n    finally:\n        driver.quit()\n    dns_scraper = DNSScraper()\n    try:",
-        "detail": "app.main",
-        "documentation": {}
-    },
-    {
-        "label": "register",
-        "kind": 2,
-        "importPath": "app.main",
-        "description": "app.main",
-        "peekOfCode": "def register(user_data: UserCreate, db: Session = Depends(get_db)):\n    new_user = create_user(db, user_data)\n    return {\"email\": new_user.email, \"is_active\": new_user.is_active}\n@router.post(\"/auth/login\")\ndef login(user_data: UserLogin, db: Session = Depends(get_db)):\n    user = db.query(User).filter(User.email == user_data.email).first()\n    print('joiadhjsfdhjewfhjsfkd', user)\n    if not user or not verify_password(user_data.password, user.hashed_password):\n        raise HTTPException(status_code=401, detail=\"Invalid credentials\")\n    access_token = create_access_token(data={\"sub\": user.email})",
-        "detail": "app.main",
-        "documentation": {}
-    },
-    {
-        "label": "login",
-        "kind": 2,
-        "importPath": "app.main",
-        "description": "app.main",
-        "peekOfCode": "def login(user_data: UserLogin, db: Session = Depends(get_db)):\n    user = db.query(User).filter(User.email == user_data.email).first()\n    print('joiadhjsfdhjewfhjsfkd', user)\n    if not user or not verify_password(user_data.password, user.hashed_password):\n        raise HTTPException(status_code=401, detail=\"Invalid credentials\")\n    access_token = create_access_token(data={\"sub\": user.email})\n    return {\"access_token\": access_token, \"token_type\": \"bearer\"}\nif __name__ == \"__main__\":\n    import uvicorn\n    uvicorn.run(\"app.main:app\", host=\"0.0.0.0\", port=8000, reload=True, log_level=\"info\")",
-        "detail": "app.main",
-        "documentation": {}
-    },
-    {
         "label": "app",
         "kind": 5,
-        "importPath": "app.main",
-        "description": "app.main",
-        "peekOfCode": "app = FastAPI()\nrouter = APIRouter()\nBase.metadata.create_all(bind=engine)\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=[\"*\"],\n    allow_methods=[\"*\"],\n    allow_headers=[\"*\"],\n)\napp.include_router(auth_router, prefix=\"/auth\")",
-        "detail": "app.main",
-        "documentation": {}
-    },
-    {
-        "label": "router",
-        "kind": 5,
-        "importPath": "app.main",
-        "description": "app.main",
-        "peekOfCode": "router = APIRouter()\nBase.metadata.create_all(bind=engine)\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=[\"*\"],\n    allow_methods=[\"*\"],\n    allow_headers=[\"*\"],\n)\napp.include_router(auth_router, prefix=\"/auth\")\nBase.metadata.create_all(bind=engine)",
-        "detail": "app.main",
+        "importPath": "app.router",
+        "description": "app.router",
+        "peekOfCode": "app = FastAPI()\n# Настройка CORS\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=[\"*\"],\n    allow_methods=[\"*\"],\n    allow_headers=[\"*\"],\n)\n# Подключаем роутеры\napp.include_router(auth_router, prefix=\"/auth\", tags=[\"Auth\"])",
+        "detail": "app.router",
         "documentation": {}
     }
 ]
