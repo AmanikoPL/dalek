@@ -3,7 +3,7 @@ from sqlalchemy.orm import sessionmaker
 import os
 from dotenv import load_dotenv
 from sqlalchemy.ext.declarative import declarative_base
-from app.models.baseclass import Base  # Теперь модели в одном файле
+from app.models.baseclass import Base
 
 load_dotenv()
 

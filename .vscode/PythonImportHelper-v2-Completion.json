@@ -281,14 +281,6 @@
         "documentation": {}
     },
     {
-        "label": "create_engine",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
         "label": "fileConfig",
         "importPath": "logging.config",
         "description": "logging.config",
@@ -322,46 +314,6 @@
     },
     {
         "label": "Base",
-        "importPath": "app.models.baseclass",
-        "description": "app.models.baseclass",
-        "isExtraImport": true,
-        "detail": "app.models.baseclass",
-        "documentation": {}
-    },
-    {
-        "label": "Base",
-        "importPath": "app.orm.database",
-        "description": "app.orm.database",
-        "isExtraImport": true,
-        "detail": "app.orm.database",
-        "documentation": {}
-    },
-    {
-        "label": "SessionLocal",
-        "importPath": "app.orm.database",
-        "description": "app.orm.database",
-        "isExtraImport": true,
-        "detail": "app.orm.database",
-        "documentation": {}
-    },
-    {
-        "label": "SessionLocal",
-        "importPath": "app.orm.database",
-        "description": "app.orm.database",
-        "isExtraImport": true,
-        "detail": "app.orm.database",
-        "documentation": {}
-    },
-    {
-        "label": "SessionLocal",
-        "importPath": "app.orm.database",
-        "description": "app.orm.database",
-        "isExtraImport": true,
-        "detail": "app.orm.database",
-        "documentation": {}
-    },
-    {
-        "label": "get_db",
         "importPath": "app.orm.database",
         "description": "app.orm.database",
         "isExtraImport": true,
@@ -394,6 +346,14 @@
     },
     {
         "label": "Platform",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
         "importPath": "app.models.models",
         "description": "app.models.models",
         "isExtraImport": true,
@@ -601,14 +561,6 @@
         "documentation": {}
     },
     {
-        "label": "sessionmaker",
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
         "label": "Session",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
@@ -713,6 +665,38 @@
         "documentation": {}
     },
     {
+        "label": "SessionLocal",
+        "importPath": "app.database",
+        "description": "app.database",
+        "isExtraImport": true,
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "importPath": "app.database",
+        "description": "app.database",
+        "isExtraImport": true,
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "importPath": "app.database",
+        "description": "app.database",
+        "isExtraImport": true,
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.database",
+        "description": "app.database",
+        "isExtraImport": true,
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
         "label": "Base",
         "importPath": "app.database",
         "description": "app.database",
@@ -730,6 +714,14 @@
     },
     {
         "label": "verify_password",
+        "importPath": "app.service.security",
+        "description": "app.service.security",
+        "isExtraImport": true,
+        "detail": "app.service.security",
+        "documentation": {}
+    },
+    {
+        "label": "create_access_token",
         "importPath": "app.service.security",
         "description": "app.service.security",
         "isExtraImport": true,
@@ -809,22 +801,6 @@
         "documentation": {}
     },
     {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "timedelta",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
         "label": "declared_attr",
         "importPath": "sqlalchemy.ext.declarative",
         "description": "sqlalchemy.ext.declarative",
@@ -838,47 +814,6 @@
         "description": "sqlalchemy.ext.declarative",
         "isExtraImport": true,
         "detail": "sqlalchemy.ext.declarative",
-        "documentation": {}
-    },
-    {
-        "label": "os",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
-        "documentation": {}
-    },
-    {
-        "label": "load_dotenv",
-        "importPath": "dotenv",
-        "description": "dotenv",
-        "isExtraImport": true,
-        "detail": "dotenv",
-        "documentation": {}
-    },
-    {
-        "label": "load_dotenv",
-        "importPath": "dotenv",
-        "description": "dotenv",
-        "isExtraImport": true,
-        "detail": "dotenv",
-        "documentation": {}
-    },
-    {
-        "label": "load_dotenv",
-        "importPath": "dotenv",
-        "description": "dotenv",
-        "isExtraImport": true,
-        "detail": "dotenv",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "app.models.user",
-        "description": "app.models.user",
-        "isExtraImport": true,
-        "detail": "app.models.user",
         "documentation": {}
     },
     {
@@ -1099,11 +1034,12 @@
         "documentation": {}
     },
     {
-        "label": "jwt",
-        "importPath": "jose",
-        "description": "jose",
+        "label": "os",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "jose",
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
         "documentation": {}
     },
     {
@@ -1112,6 +1048,30 @@
         "description": "jose",
         "isExtraImport": true,
         "detail": "jose",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
         "documentation": {}
     },
     {
@@ -1168,14 +1128,6 @@
         "description": "app.api.auth",
         "isExtraImport": true,
         "detail": "app.api.auth",
-        "documentation": {}
-    },
-    {
-        "label": "create_access_token",
-        "importPath": "app.service.jwt",
-        "description": "app.service.jwt",
-        "isExtraImport": true,
-        "detail": "app.service.jwt",
         "documentation": {}
     },
     {
@@ -1311,42 +1263,6 @@
         "description": "app.models.models",
         "peekOfCode": "class User(Base):\n    __tablename__ = \"users\"\n    id = mapped_column(Integer, primary_key=True, index=True)\n    email = mapped_column(String, unique=True, index=True, nullable=False)\n    hashed_password = mapped_column(String, nullable=False)\n    is_active = mapped_column(Boolean, default=True)",
         "detail": "app.models.models",
-        "documentation": {}
-    },
-    {
-        "label": "get_db",
-        "kind": 2,
-        "importPath": "app.orm.database",
-        "description": "app.orm.database",
-        "peekOfCode": "def get_db():\n    \"\"\"Создаёт сессию для взаимодействия с БД и закрывает её после работы\"\"\"\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()\n# def init_db():\n#     \"\"\"Создание таблиц в базе данных\"\"\"\n#     from app.models import game, store, user, platforms  # Импортируем модели, чтобы SQLAlchemy их увидел",
-        "detail": "app.orm.database",
-        "documentation": {}
-    },
-    {
-        "label": "DATABASE_URL",
-        "kind": 5,
-        "importPath": "app.orm.database",
-        "description": "app.orm.database",
-        "peekOfCode": "DATABASE_URL = f\"postgresql://{os.getenv('DB_USER')}:{os.getenv('DB_PASSWORD')}@{os.getenv('DB_HOST')}:{os.getenv('DB_PORT')}/{os.getenv('DB_NAME')}\"\n# Создаём движок SQLAlchemy\nengine = create_engine(DATABASE_URL, echo=True)  # echo=True для отладки\n# Создаём фабрику сессий\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\ndef get_db():\n    \"\"\"Создаёт сессию для взаимодействия с БД и закрывает её после работы\"\"\"\n    db = SessionLocal()\n    try:\n        yield db",
-        "detail": "app.orm.database",
-        "documentation": {}
-    },
-    {
-        "label": "engine",
-        "kind": 5,
-        "importPath": "app.orm.database",
-        "description": "app.orm.database",
-        "peekOfCode": "engine = create_engine(DATABASE_URL, echo=True)  # echo=True для отладки\n# Создаём фабрику сессий\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\ndef get_db():\n    \"\"\"Создаёт сессию для взаимодействия с БД и закрывает её после работы\"\"\"\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
-        "detail": "app.orm.database",
-        "documentation": {}
-    },
-    {
-        "label": "SessionLocal",
-        "kind": 5,
-        "importPath": "app.orm.database",
-        "description": "app.orm.database",
-        "peekOfCode": "SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\ndef get_db():\n    \"\"\"Создаёт сессию для взаимодействия с БД и закрывает её после работы\"\"\"\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()\n# def init_db():\n#     \"\"\"Создание таблиц в базе данных\"\"\"",
-        "detail": "app.orm.database",
         "documentation": {}
     },
     {
@@ -1548,47 +1464,11 @@
         "documentation": {}
     },
     {
-        "label": "create_access_token",
-        "kind": 2,
-        "importPath": "app.service.jwt",
-        "description": "app.service.jwt",
-        "peekOfCode": "def create_access_token(data: dict):\n    to_encode = data.copy()\n    expire = datetime.utcnow() + timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)\n    to_encode.update({\"exp\": expire})\n    return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)",
-        "detail": "app.service.jwt",
-        "documentation": {}
-    },
-    {
-        "label": "SECRET_KEY",
-        "kind": 5,
-        "importPath": "app.service.jwt",
-        "description": "app.service.jwt",
-        "peekOfCode": "SECRET_KEY = \"SECRET_KEY\"\nALGORITHM = \"HS256\"\nACCESS_TOKEN_EXPIRE_MINUTES = 30\ndef create_access_token(data: dict):\n    to_encode = data.copy()\n    expire = datetime.utcnow() + timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)\n    to_encode.update({\"exp\": expire})\n    return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)",
-        "detail": "app.service.jwt",
-        "documentation": {}
-    },
-    {
-        "label": "ALGORITHM",
-        "kind": 5,
-        "importPath": "app.service.jwt",
-        "description": "app.service.jwt",
-        "peekOfCode": "ALGORITHM = \"HS256\"\nACCESS_TOKEN_EXPIRE_MINUTES = 30\ndef create_access_token(data: dict):\n    to_encode = data.copy()\n    expire = datetime.utcnow() + timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)\n    to_encode.update({\"exp\": expire})\n    return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)",
-        "detail": "app.service.jwt",
-        "documentation": {}
-    },
-    {
-        "label": "ACCESS_TOKEN_EXPIRE_MINUTES",
-        "kind": 5,
-        "importPath": "app.service.jwt",
-        "description": "app.service.jwt",
-        "peekOfCode": "ACCESS_TOKEN_EXPIRE_MINUTES = 30\ndef create_access_token(data: dict):\n    to_encode = data.copy()\n    expire = datetime.utcnow() + timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)\n    to_encode.update({\"exp\": expire})\n    return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)",
-        "detail": "app.service.jwt",
-        "documentation": {}
-    },
-    {
         "label": "verify_password",
         "kind": 2,
         "importPath": "app.service.security",
         "description": "app.service.security",
-        "peekOfCode": "def verify_password(plain_password, hashed_password):\n    return pwd_context.verify(plain_password, hashed_password)\ndef get_password_hash(password):\n    return pwd_context.hash(password)\ndef create_access_token(data: dict, expires_delta: timedelta = None):\n    to_encode = data.copy()\n    if expires_delta:\n        expire = datetime.utcnow() + expires_delta\n    else:\n        expire = datetime.utcnow() + timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)",
+        "peekOfCode": "def verify_password(plain_password, hashed_password):\n    return pwd_context.verify(plain_password, hashed_password)\ndef get_password_hash(password):\n    return pwd_context.hash(password)\ndef create_access_token(data: dict, expires_delta: timedelta = None):\n    to_encode = data.copy()\n    expire = datetime.utcnow() + (expires_delta or timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES))\n    to_encode.update({\"exp\": expire})\n    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)\n    return encoded_jwt",
         "detail": "app.service.security",
         "documentation": {}
     },
@@ -1597,7 +1477,7 @@
         "kind": 2,
         "importPath": "app.service.security",
         "description": "app.service.security",
-        "peekOfCode": "def get_password_hash(password):\n    return pwd_context.hash(password)\ndef create_access_token(data: dict, expires_delta: timedelta = None):\n    to_encode = data.copy()\n    if expires_delta:\n        expire = datetime.utcnow() + expires_delta\n    else:\n        expire = datetime.utcnow() + timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)\n    to_encode.update({\"exp\": expire})\n    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)",
+        "peekOfCode": "def get_password_hash(password):\n    return pwd_context.hash(password)\ndef create_access_token(data: dict, expires_delta: timedelta = None):\n    to_encode = data.copy()\n    expire = datetime.utcnow() + (expires_delta or timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES))\n    to_encode.update({\"exp\": expire})\n    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)\n    return encoded_jwt",
         "detail": "app.service.security",
         "documentation": {}
     },
@@ -1606,7 +1486,7 @@
         "kind": 2,
         "importPath": "app.service.security",
         "description": "app.service.security",
-        "peekOfCode": "def create_access_token(data: dict, expires_delta: timedelta = None):\n    to_encode = data.copy()\n    if expires_delta:\n        expire = datetime.utcnow() + expires_delta\n    else:\n        expire = datetime.utcnow() + timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)\n    to_encode.update({\"exp\": expire})\n    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)\n    return encoded_jwt",
+        "peekOfCode": "def create_access_token(data: dict, expires_delta: timedelta = None):\n    to_encode = data.copy()\n    expire = datetime.utcnow() + (expires_delta or timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES))\n    to_encode.update({\"exp\": expire})\n    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)\n    return encoded_jwt",
         "detail": "app.service.security",
         "documentation": {}
     },
@@ -1615,7 +1495,7 @@
         "kind": 5,
         "importPath": "app.service.security",
         "description": "app.service.security",
-        "peekOfCode": "SECRET_KEY = \"secret_key\"  # Замените на ваш секретный ключ\nALGORITHM = \"HS256\"\nACCESS_TOKEN_EXPIRE_MINUTES = 30\npwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\ndef verify_password(plain_password, hashed_password):\n    return pwd_context.verify(plain_password, hashed_password)\ndef get_password_hash(password):\n    return pwd_context.hash(password)\ndef create_access_token(data: dict, expires_delta: timedelta = None):\n    to_encode = data.copy()",
+        "peekOfCode": "SECRET_KEY = os.getenv(\"SECRET_KEY\", \"default_secret_key\")\nALGORITHM = os.getenv(\"JWT_ALGORITHM\", \"HS256\")\nACCESS_TOKEN_EXPIRE_MINUTES = 30\npwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\ndef verify_password(plain_password, hashed_password):\n    return pwd_context.verify(plain_password, hashed_password)\ndef get_password_hash(password):\n    return pwd_context.hash(password)\ndef create_access_token(data: dict, expires_delta: timedelta = None):\n    to_encode = data.copy()",
         "detail": "app.service.security",
         "documentation": {}
     },
@@ -1624,7 +1504,7 @@
         "kind": 5,
         "importPath": "app.service.security",
         "description": "app.service.security",
-        "peekOfCode": "ALGORITHM = \"HS256\"\nACCESS_TOKEN_EXPIRE_MINUTES = 30\npwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\ndef verify_password(plain_password, hashed_password):\n    return pwd_context.verify(plain_password, hashed_password)\ndef get_password_hash(password):\n    return pwd_context.hash(password)\ndef create_access_token(data: dict, expires_delta: timedelta = None):\n    to_encode = data.copy()\n    if expires_delta:",
+        "peekOfCode": "ALGORITHM = os.getenv(\"JWT_ALGORITHM\", \"HS256\")\nACCESS_TOKEN_EXPIRE_MINUTES = 30\npwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\ndef verify_password(plain_password, hashed_password):\n    return pwd_context.verify(plain_password, hashed_password)\ndef get_password_hash(password):\n    return pwd_context.hash(password)\ndef create_access_token(data: dict, expires_delta: timedelta = None):\n    to_encode = data.copy()\n    expire = datetime.utcnow() + (expires_delta or timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES))",
         "detail": "app.service.security",
         "documentation": {}
     },
@@ -1633,7 +1513,7 @@
         "kind": 5,
         "importPath": "app.service.security",
         "description": "app.service.security",
-        "peekOfCode": "ACCESS_TOKEN_EXPIRE_MINUTES = 30\npwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\ndef verify_password(plain_password, hashed_password):\n    return pwd_context.verify(plain_password, hashed_password)\ndef get_password_hash(password):\n    return pwd_context.hash(password)\ndef create_access_token(data: dict, expires_delta: timedelta = None):\n    to_encode = data.copy()\n    if expires_delta:\n        expire = datetime.utcnow() + expires_delta",
+        "peekOfCode": "ACCESS_TOKEN_EXPIRE_MINUTES = 30\npwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\ndef verify_password(plain_password, hashed_password):\n    return pwd_context.verify(plain_password, hashed_password)\ndef get_password_hash(password):\n    return pwd_context.hash(password)\ndef create_access_token(data: dict, expires_delta: timedelta = None):\n    to_encode = data.copy()\n    expire = datetime.utcnow() + (expires_delta or timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES))\n    to_encode.update({\"exp\": expire})",
         "detail": "app.service.security",
         "documentation": {}
     },
@@ -1642,7 +1522,7 @@
         "kind": 5,
         "importPath": "app.service.security",
         "description": "app.service.security",
-        "peekOfCode": "pwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\ndef verify_password(plain_password, hashed_password):\n    return pwd_context.verify(plain_password, hashed_password)\ndef get_password_hash(password):\n    return pwd_context.hash(password)\ndef create_access_token(data: dict, expires_delta: timedelta = None):\n    to_encode = data.copy()\n    if expires_delta:\n        expire = datetime.utcnow() + expires_delta\n    else:",
+        "peekOfCode": "pwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\ndef verify_password(plain_password, hashed_password):\n    return pwd_context.verify(plain_password, hashed_password)\ndef get_password_hash(password):\n    return pwd_context.hash(password)\ndef create_access_token(data: dict, expires_delta: timedelta = None):\n    to_encode = data.copy()\n    expire = datetime.utcnow() + (expires_delta or timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES))\n    to_encode.update({\"exp\": expire})\n    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)",
         "detail": "app.service.security",
         "documentation": {}
     },

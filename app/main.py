@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from app.parsers.technodom_parser import TechnodomParser
 from app.parsers.dns_parser import DNSScraper
 from app.parsers.marwin_parser import MarwinParser
-from app.orm.database import get_db
+from app.database import get_db
 from app.schemas.user import UserCreate
 from app.service.auth import create_user
 from app.database import Base, engine
@@ -14,7 +14,7 @@ from app.service.user import create_user
 from app.models.models import User
 from app.api.auth import router as auth_router
 from fastapi import APIRouter, Depends, HTTPException
-from app.service.jwt import create_access_token
+from app.service.security import create_access_token
 from app.service.hashing import verify_password
 from app.schemas.user import UserLogin
 

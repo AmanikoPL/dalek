@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from app.orm.database import SessionLocal
+from app.database import SessionLocal
 from app.models.models import Game, Store, Platform
 from typing import List, Dict, Any
 
