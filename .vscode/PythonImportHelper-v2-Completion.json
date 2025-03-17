@@ -1408,7 +1408,7 @@
         "kind": 6,
         "importPath": "app.parsers.marwin_parser",
         "description": "app.parsers.marwin_parser",
-        "peekOfCode": "class MarwinParser:\n    \"\"\"Класс для парсинга списка игр с сайта Marwin.\"\"\"\n    BASE_URLS = {\n        \"Playstation 5\": \"https://www.marwin.kz/videogames/playstation/igry-dliya-playstation-5/\",\n        \"Playstation 4\": \"https://www.marwin.kz/videogames/playstation/igry-dliya-playstation-4/\",\n        \"Xbox One\": \"https://www.marwin.kz/videogames/xbox/igry-dlya-microsoft-xbox-one/\",\n        \"Nintendo Switch\": \"https://www.marwin.kz/videogames/nintendo/igry-dlya-nintendo-switch/\"\n    }\n    def __init__(self):\n        self.driver = webdriver.Chrome()",
+        "peekOfCode": "class MarwinParser:\n    \"\"\"Класс для парсинга списка игр с сайта Marwin.\"\"\"\n    BASE_URLS = {\n        \"Playstation\": \"https://www.marwin.kz/videogames/playstation/igry-dliya-playstation-5/\",\n        \"Playstation\": \"https://www.marwin.kz/videogames/playstation/igry-dliya-playstation-4/\",\n        \"Xbox One\": \"https://www.marwin.kz/videogames/xbox/igry-dlya-microsoft-xbox-one/\",\n        \"Nintendo Switch\": \"https://www.marwin.kz/videogames/nintendo/igry-dlya-nintendo-switch/\"\n    }\n    def __init__(self):\n        self.driver = webdriver.Chrome()",
         "detail": "app.parsers.marwin_parser",
         "documentation": {}
     },
@@ -1417,7 +1417,7 @@
         "kind": 6,
         "importPath": "app.parsers.technodom_parser",
         "description": "app.parsers.technodom_parser",
-        "peekOfCode": "class TechnodomParser:\n    \"\"\"Парсер игр с сайта Technodom.\"\"\"\n    BASE_URLS = {\n        \"PlayStation 4\": \"https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-playstation-4\",\n        \"PlayStation 5\": \"https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-playstation-5\",\n        \"Xbox\": \"https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-xbox\",\n        \"Nintendo\": \"https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-nintendo\"\n    }\n    def __init__(self):\n        self.driver = webdriver.Chrome()",
+        "peekOfCode": "class TechnodomParser:\n    \"\"\"Парсер игр с сайта Technodom.\"\"\"\n    BASE_URLS = {\n        \"PlayStation 4\": \"https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-playstation-4\",\n        \"PlayStation 5\": \"https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-playstation-5\",\n        \"Xbox\": \"https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-xbox\",\n        \"Nintendo\": \"https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-nintendo\"\n    }\n    def __init__(self, driver: webdriver.Chrome = None):\n        \"\"\"Инициализация парсера с возможностью передачи драйвера.\"\"\"",
         "detail": "app.parsers.technodom_parser",
         "documentation": {}
     },

@@ -11,8 +11,8 @@ class MarwinParser:
     """Класс для парсинга списка игр с сайта Marwin."""
 
     BASE_URLS = {
-        "Playstation 5": "https://www.marwin.kz/videogames/playstation/igry-dliya-playstation-5/",
-        "Playstation 4": "https://www.marwin.kz/videogames/playstation/igry-dliya-playstation-4/",
+        "Playstation": "https://www.marwin.kz/videogames/playstation/igry-dliya-playstation-5/",
+        "Playstation": "https://www.marwin.kz/videogames/playstation/igry-dliya-playstation-4/",
         "Xbox One": "https://www.marwin.kz/videogames/xbox/igry-dlya-microsoft-xbox-one/",
         "Nintendo Switch": "https://www.marwin.kz/videogames/nintendo/igry-dlya-nintendo-switch/"
     }

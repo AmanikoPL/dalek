@@ -17,8 +17,9 @@ class TechnodomParser:
         "Nintendo": "https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-nintendo"
     }
 
-    def __init__(self):
-        self.driver = webdriver.Chrome()
+    def __init__(self, driver: webdriver.Chrome = None):
+        """Инициализация парсера с возможностью передачи драйвера."""
+        self.driver = driver or webdriver.Chrome()
 
     def parse(self) -> List[Dict[str, Any]]:
         """Парсит список игр и возвращает их в виде списка словарей."""
