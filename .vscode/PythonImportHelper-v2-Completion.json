@@ -609,6 +609,14 @@
         "documentation": {}
     },
     {
+        "label": "hash_password",
+        "importPath": "app.service.security",
+        "description": "app.service.security",
+        "isExtraImport": true,
+        "detail": "app.service.security",
+        "documentation": {}
+    },
+    {
         "label": "UserLogin",
         "importPath": "app.schemas.user",
         "description": "app.schemas.user",
@@ -702,14 +710,6 @@
         "description": "sqlalchemy.ext.declarative",
         "isExtraImport": true,
         "detail": "sqlalchemy.ext.declarative",
-        "documentation": {}
-    },
-    {
-        "label": "hash_password",
-        "importPath": "app.service.hashing",
-        "description": "app.service.hashing",
-        "isExtraImport": true,
-        "detail": "app.service.hashing",
         "documentation": {}
     },
     {
@@ -1246,30 +1246,30 @@
         "documentation": {}
     },
     {
-        "label": "hash_password",
-        "kind": 2,
+        "label": "pwd_context",
+        "kind": 5,
         "importPath": "app.service.hashing",
         "description": "app.service.hashing",
-        "peekOfCode": "def hash_password(password: str) -> str:\n    return pwd_context.hash(password)\ndef verify_password(plain_password: str, hashed_password: str) -> bool:\n    return pwd_context.verify(plain_password, hashed_password)",
+        "peekOfCode": "pwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")",
         "detail": "app.service.hashing",
+        "documentation": {}
+    },
+    {
+        "label": "hash_password",
+        "kind": 2,
+        "importPath": "app.service.security",
+        "description": "app.service.security",
+        "peekOfCode": "def hash_password(password: str) -> str:\n    return pwd_context.hash(password)\ndef verify_password(plain_password: str, hashed_password: str) -> bool:\n    return pwd_context.verify(plain_password, hashed_password)\ndef verify_password(plain_password, hashed_password):\n    return pwd_context.verify(plain_password, hashed_password)\ndef get_password_hash(password):\n    return pwd_context.hash(password)\ndef create_access_token(data: dict, expires_delta: timedelta = None):\n    to_encode = data.copy()",
+        "detail": "app.service.security",
         "documentation": {}
     },
     {
         "label": "verify_password",
         "kind": 2,
-        "importPath": "app.service.hashing",
-        "description": "app.service.hashing",
-        "peekOfCode": "def verify_password(plain_password: str, hashed_password: str) -> bool:\n    return pwd_context.verify(plain_password, hashed_password)",
-        "detail": "app.service.hashing",
-        "documentation": {}
-    },
-    {
-        "label": "pwd_context",
-        "kind": 5,
-        "importPath": "app.service.hashing",
-        "description": "app.service.hashing",
-        "peekOfCode": "pwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\ndef hash_password(password: str) -> str:\n    return pwd_context.hash(password)\ndef verify_password(plain_password: str, hashed_password: str) -> bool:\n    return pwd_context.verify(plain_password, hashed_password)",
-        "detail": "app.service.hashing",
+        "importPath": "app.service.security",
+        "description": "app.service.security",
+        "peekOfCode": "def verify_password(plain_password: str, hashed_password: str) -> bool:\n    return pwd_context.verify(plain_password, hashed_password)\ndef verify_password(plain_password, hashed_password):\n    return pwd_context.verify(plain_password, hashed_password)\ndef get_password_hash(password):\n    return pwd_context.hash(password)\ndef create_access_token(data: dict, expires_delta: timedelta = None):\n    to_encode = data.copy()\n    expire = datetime.utcnow() + (expires_delta or timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES))\n    to_encode.update({\"exp\": expire})",
+        "detail": "app.service.security",
         "documentation": {}
     },
     {
@@ -1304,7 +1304,7 @@
         "kind": 5,
         "importPath": "app.service.security",
         "description": "app.service.security",
-        "peekOfCode": "SECRET_KEY = os.getenv(\"SECRET_KEY\", \"default_secret_key\")\nALGORITHM = os.getenv(\"JWT_ALGORITHM\", \"HS256\")\nACCESS_TOKEN_EXPIRE_MINUTES = 30\npwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\ndef verify_password(plain_password, hashed_password):\n    return pwd_context.verify(plain_password, hashed_password)\ndef get_password_hash(password):\n    return pwd_context.hash(password)\ndef create_access_token(data: dict, expires_delta: timedelta = None):\n    to_encode = data.copy()",
+        "peekOfCode": "SECRET_KEY = os.getenv(\"SECRET_KEY\", \"default_secret_key\")\nALGORITHM = os.getenv(\"JWT_ALGORITHM\", \"HS256\")\nACCESS_TOKEN_EXPIRE_MINUTES = 30\npwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\ndef hash_password(password: str) -> str:\n    return pwd_context.hash(password)\ndef verify_password(plain_password: str, hashed_password: str) -> bool:\n    return pwd_context.verify(plain_password, hashed_password)\ndef verify_password(plain_password, hashed_password):\n    return pwd_context.verify(plain_password, hashed_password)",
         "detail": "app.service.security",
         "documentation": {}
     },
@@ -1313,7 +1313,7 @@
         "kind": 5,
         "importPath": "app.service.security",
         "description": "app.service.security",
-        "peekOfCode": "ALGORITHM = os.getenv(\"JWT_ALGORITHM\", \"HS256\")\nACCESS_TOKEN_EXPIRE_MINUTES = 30\npwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\ndef verify_password(plain_password, hashed_password):\n    return pwd_context.verify(plain_password, hashed_password)\ndef get_password_hash(password):\n    return pwd_context.hash(password)\ndef create_access_token(data: dict, expires_delta: timedelta = None):\n    to_encode = data.copy()\n    expire = datetime.utcnow() + (expires_delta or timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES))",
+        "peekOfCode": "ALGORITHM = os.getenv(\"JWT_ALGORITHM\", \"HS256\")\nACCESS_TOKEN_EXPIRE_MINUTES = 30\npwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\ndef hash_password(password: str) -> str:\n    return pwd_context.hash(password)\ndef verify_password(plain_password: str, hashed_password: str) -> bool:\n    return pwd_context.verify(plain_password, hashed_password)\ndef verify_password(plain_password, hashed_password):\n    return pwd_context.verify(plain_password, hashed_password)\ndef get_password_hash(password):",
         "detail": "app.service.security",
         "documentation": {}
     },
@@ -1322,7 +1322,7 @@
         "kind": 5,
         "importPath": "app.service.security",
         "description": "app.service.security",
-        "peekOfCode": "ACCESS_TOKEN_EXPIRE_MINUTES = 30\npwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\ndef verify_password(plain_password, hashed_password):\n    return pwd_context.verify(plain_password, hashed_password)\ndef get_password_hash(password):\n    return pwd_context.hash(password)\ndef create_access_token(data: dict, expires_delta: timedelta = None):\n    to_encode = data.copy()\n    expire = datetime.utcnow() + (expires_delta or timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES))\n    to_encode.update({\"exp\": expire})",
+        "peekOfCode": "ACCESS_TOKEN_EXPIRE_MINUTES = 30\npwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\ndef hash_password(password: str) -> str:\n    return pwd_context.hash(password)\ndef verify_password(plain_password: str, hashed_password: str) -> bool:\n    return pwd_context.verify(plain_password, hashed_password)\ndef verify_password(plain_password, hashed_password):\n    return pwd_context.verify(plain_password, hashed_password)\ndef get_password_hash(password):\n    return pwd_context.hash(password)",
         "detail": "app.service.security",
         "documentation": {}
     },
@@ -1331,7 +1331,7 @@
         "kind": 5,
         "importPath": "app.service.security",
         "description": "app.service.security",
-        "peekOfCode": "pwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\ndef verify_password(plain_password, hashed_password):\n    return pwd_context.verify(plain_password, hashed_password)\ndef get_password_hash(password):\n    return pwd_context.hash(password)\ndef create_access_token(data: dict, expires_delta: timedelta = None):\n    to_encode = data.copy()\n    expire = datetime.utcnow() + (expires_delta or timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES))\n    to_encode.update({\"exp\": expire})\n    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)",
+        "peekOfCode": "pwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\ndef hash_password(password: str) -> str:\n    return pwd_context.hash(password)\ndef verify_password(plain_password: str, hashed_password: str) -> bool:\n    return pwd_context.verify(plain_password, hashed_password)\ndef verify_password(plain_password, hashed_password):\n    return pwd_context.verify(plain_password, hashed_password)\ndef get_password_hash(password):\n    return pwd_context.hash(password)\ndef create_access_token(data: dict, expires_delta: timedelta = None):",
         "detail": "app.service.security",
         "documentation": {}
     },
