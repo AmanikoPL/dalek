@@ -12,7 +12,8 @@ def parse_technodom() -> Dict[str, List]:
     driver = webdriver.Chrome()
     try:
         parser = TechnodomParser(driver)
-        return parser.parse()
+        data = parser.parse()
+        return {"data": data} 
     finally:
         driver.quit()
 

@@ -184,6 +184,14 @@
         "documentation": {}
     },
     {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "op",
         "importPath": "alembic",
         "description": "alembic",
@@ -609,6 +617,14 @@
         "documentation": {}
     },
     {
+        "label": "get_password_hash",
+        "importPath": "app.service.security",
+        "description": "app.service.security",
+        "isExtraImport": true,
+        "detail": "app.service.security",
+        "documentation": {}
+    },
+    {
         "label": "hash_password",
         "importPath": "app.service.security",
         "description": "app.service.security",
@@ -618,6 +634,22 @@
     },
     {
         "label": "UserLogin",
+        "importPath": "app.schemas.user",
+        "description": "app.schemas.user",
+        "isExtraImport": true,
+        "detail": "app.schemas.user",
+        "documentation": {}
+    },
+    {
+        "label": "UserCreate",
+        "importPath": "app.schemas.user",
+        "description": "app.schemas.user",
+        "isExtraImport": true,
+        "detail": "app.schemas.user",
+        "documentation": {}
+    },
+    {
+        "label": "UserUpdate",
         "importPath": "app.schemas.user",
         "description": "app.schemas.user",
         "isExtraImport": true,
@@ -850,6 +882,14 @@
         "documentation": {}
     },
     {
+        "label": "EmailStr",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
         "label": "CryptContext",
         "importPath": "passlib.context",
         "description": "passlib.context",
@@ -1016,7 +1056,25 @@
         "kind": 2,
         "importPath": "app.api.auth",
         "description": "app.api.auth",
-        "peekOfCode": "def register(user_data: UserCreate, db: Session = Depends(get_db)):\n    new_user = create_user(db, user_data)\n    return {\"email\": new_user.email, \"is_active\": new_user.is_active}",
+        "peekOfCode": "def register(user_data: UserCreate, db: Session = Depends(get_db)):\n    new_user = create_user(db, user_data, user_data.password)  # передаём пароль\n    return {\"email\": new_user.email, \"is_active\": new_user.is_active}\n@router.delete(\"/delete/{email}\")\ndef delete_account(email: str, db: Session = Depends(get_db)):\n    user = db.query(User).filter(User.email == email).first()\n    if not user:\n        raise HTTPException(status_code=404, detail=\"User not found\")\n    db.delete(user)\n    db.commit()",
+        "detail": "app.api.auth",
+        "documentation": {}
+    },
+    {
+        "label": "delete_account",
+        "kind": 2,
+        "importPath": "app.api.auth",
+        "description": "app.api.auth",
+        "peekOfCode": "def delete_account(email: str, db: Session = Depends(get_db)):\n    user = db.query(User).filter(User.email == email).first()\n    if not user:\n        raise HTTPException(status_code=404, detail=\"User not found\")\n    db.delete(user)\n    db.commit()\n    return {\"message\": \"User deleted successfully\"}\n@router.put(\"/update/{email}\")\ndef update_account(email: str, user_update: UserUpdate, db: Session = Depends(get_db)):\n    user = db.query(User).filter(User.email == email).first()",
+        "detail": "app.api.auth",
+        "documentation": {}
+    },
+    {
+        "label": "update_account",
+        "kind": 2,
+        "importPath": "app.api.auth",
+        "description": "app.api.auth",
+        "peekOfCode": "def update_account(email: str, user_update: UserUpdate, db: Session = Depends(get_db)):\n    user = db.query(User).filter(User.email == email).first()\n    if not user:\n        raise HTTPException(status_code=404, detail=\"User not found\")\n    if user_update.new_email:\n        user.email = user_update.new_email\n    if user_update.new_password:\n        user.hashed_password = get_password_hash(user_update.new_password)\n    db.commit()\n    return {\"message\": \"User updated successfully\"}",
         "detail": "app.api.auth",
         "documentation": {}
     },
@@ -1034,7 +1092,7 @@
         "kind": 2,
         "importPath": "app.api.parsers",
         "description": "app.api.parsers",
-        "peekOfCode": "def parse_technodom() -> Dict[str, List]:\n    driver = webdriver.Chrome()\n    try:\n        parser = TechnodomParser(driver)\n        return parser.parse()\n    finally:\n        driver.quit()\n@router.get(\"/dns\")\ndef parse_dns() -> List[str]:\n    scraper = DNSScraper()",
+        "peekOfCode": "def parse_technodom() -> Dict[str, List]:\n    driver = webdriver.Chrome()\n    try:\n        parser = TechnodomParser(driver)\n        data = parser.parse()\n        return {\"data\": data} \n    finally:\n        driver.quit()\n@router.get(\"/dns\")\ndef parse_dns() -> List[str]:",
         "detail": "app.api.parsers",
         "documentation": {}
     },
@@ -1070,7 +1128,7 @@
         "kind": 5,
         "importPath": "app.api.parsers",
         "description": "app.api.parsers",
-        "peekOfCode": "router = APIRouter()\n@router.get(\"/technodom\")\ndef parse_technodom() -> Dict[str, List]:\n    driver = webdriver.Chrome()\n    try:\n        parser = TechnodomParser(driver)\n        return parser.parse()\n    finally:\n        driver.quit()\n@router.get(\"/dns\")",
+        "peekOfCode": "router = APIRouter()\n@router.get(\"/technodom\")\ndef parse_technodom() -> Dict[str, List]:\n    driver = webdriver.Chrome()\n    try:\n        parser = TechnodomParser(driver)\n        data = parser.parse()\n        return {\"data\": data} \n    finally:\n        driver.quit()",
         "detail": "app.api.parsers",
         "documentation": {}
     },
@@ -1133,7 +1191,7 @@
         "kind": 2,
         "importPath": "app.orm.user",
         "description": "app.orm.user",
-        "peekOfCode": "def create_user(db: Session, email: str, password: str):\n    hashed_password = hash_password(password)\n    user = User(email=email, hashed_password=hashed_password, is_active=True)\n    db.add(user)\n    db.commit()\n    db.refresh(user)\n    return user\ndef get_user_by_email(db: Session, email: str):\n    return db.query(User).filter(User.email == email).first()",
+        "peekOfCode": "def create_user(db: Session, user_data: UserCreate, password: str):\n    hashed_password = hash_password(password)  # предполагаемая функция хеширования\n    db_user = User(email=user_data.email, hashed_password=hashed_password, is_active=True)\n    db.add(db_user)\n    db.commit()\n    db.refresh(db_user)\n    return db_user\ndef get_user_by_email(db: Session, email: str):\n    return db.query(User).filter(User.email == email).first()",
         "detail": "app.orm.user",
         "documentation": {}
     },
@@ -1223,7 +1281,7 @@
         "kind": 6,
         "importPath": "app.schemas.user",
         "description": "app.schemas.user",
-        "peekOfCode": "class Token(BaseModel):\n    access_token: str\n    token_type: str\nclass UserLogin(BaseModel):\n    email: str\n    password: str\nclass UserCreate(BaseModel):\n    email: str\n    password: str",
+        "peekOfCode": "class Token(BaseModel):\n    access_token: str\n    token_type: str\nclass UserLogin(BaseModel):\n    email: str\n    password: str\nclass UserCreate(BaseModel):\n    email: str\n    password: str   \nclass UserUpdate(BaseModel):",
         "detail": "app.schemas.user",
         "documentation": {}
     },
@@ -1232,7 +1290,7 @@
         "kind": 6,
         "importPath": "app.schemas.user",
         "description": "app.schemas.user",
-        "peekOfCode": "class UserLogin(BaseModel):\n    email: str\n    password: str\nclass UserCreate(BaseModel):\n    email: str\n    password: str",
+        "peekOfCode": "class UserLogin(BaseModel):\n    email: str\n    password: str\nclass UserCreate(BaseModel):\n    email: str\n    password: str   \nclass UserUpdate(BaseModel):\n    new_email: Optional[EmailStr] = None\n    new_password: Optional[str] = None",
         "detail": "app.schemas.user",
         "documentation": {}
     },
@@ -1241,7 +1299,16 @@
         "kind": 6,
         "importPath": "app.schemas.user",
         "description": "app.schemas.user",
-        "peekOfCode": "class UserCreate(BaseModel):\n    email: str\n    password: str",
+        "peekOfCode": "class UserCreate(BaseModel):\n    email: str\n    password: str   \nclass UserUpdate(BaseModel):\n    new_email: Optional[EmailStr] = None\n    new_password: Optional[str] = None",
+        "detail": "app.schemas.user",
+        "documentation": {}
+    },
+    {
+        "label": "UserUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.user",
+        "description": "app.schemas.user",
+        "peekOfCode": "class UserUpdate(BaseModel):\n    new_email: Optional[EmailStr] = None\n    new_password: Optional[str] = None",
         "detail": "app.schemas.user",
         "documentation": {}
     },
