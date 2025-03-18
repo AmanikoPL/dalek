@@ -112,6 +112,14 @@
         "documentation": {}
     },
     {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "List",
         "importPath": "typing",
         "description": "typing",
@@ -234,6 +242,54 @@
     },
     {
         "label": "MetaData",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Boolean",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "MetaData",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -409,22 +465,6 @@
         "documentation": {}
     },
     {
-        "label": "Game",
-        "importPath": "app.models.models",
-        "description": "app.models.models",
-        "isExtraImport": true,
-        "detail": "app.models.models",
-        "documentation": {}
-    },
-    {
-        "label": "Store",
-        "importPath": "app.models.models",
-        "description": "app.models.models",
-        "isExtraImport": true,
-        "detail": "app.models.models",
-        "documentation": {}
-    },
-    {
         "label": "APIRouter",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -537,6 +577,46 @@
         "documentation": {}
     },
     {
+        "label": "as_declarative",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Mapped",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "mapped_column",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
         "label": "sessionmaker",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
@@ -570,14 +650,6 @@
     },
     {
         "label": "get_db",
-        "importPath": "app.database",
-        "description": "app.database",
-        "isExtraImport": true,
-        "detail": "app.database",
-        "documentation": {}
-    },
-    {
-        "label": "SessionLocal",
         "importPath": "app.database",
         "description": "app.database",
         "isExtraImport": true,
@@ -737,11 +809,116 @@
         "documentation": {}
     },
     {
+        "label": "declared_attr",
+        "importPath": "sqlalchemy.ext.declarative",
+        "description": "sqlalchemy.ext.declarative",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.declarative",
+        "documentation": {}
+    },
+    {
         "label": "declarative_base",
         "importPath": "sqlalchemy.ext.declarative",
         "description": "sqlalchemy.ext.declarative",
         "isExtraImport": true,
         "detail": "sqlalchemy.ext.declarative",
+        "documentation": {}
+    },
+    {
+        "label": "declarative_base",
+        "importPath": "sqlalchemy.ext.declarative",
+        "description": "sqlalchemy.ext.declarative",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.declarative",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "Game",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Store",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Platform",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "baseclass",
+        "description": "baseclass",
+        "isExtraImport": true,
+        "detail": "baseclass",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "baseclass",
+        "description": "baseclass",
+        "isExtraImport": true,
+        "detail": "baseclass",
         "documentation": {}
     },
     {
@@ -867,10 +1044,10 @@
     },
     {
         "label": "save_games_to_db",
-        "importPath": "app.parsers.parsers_orm.technodom_parser_orm",
-        "description": "app.parsers.parsers_orm.technodom_parser_orm",
+        "importPath": "parsers_orm.technodom_parser_orm",
+        "description": "parsers_orm.technodom_parser_orm",
         "isExtraImport": true,
-        "detail": "app.parsers.parsers_orm.technodom_parser_orm",
+        "detail": "parsers_orm.technodom_parser_orm",
         "documentation": {}
     },
     {
@@ -906,44 +1083,11 @@
         "documentation": {}
     },
     {
-        "label": "os",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
-        "documentation": {}
-    },
-    {
         "label": "jwt",
         "importPath": "jose",
         "description": "jose",
         "isExtraImport": true,
         "detail": "jose",
-        "documentation": {}
-    },
-    {
-        "label": "load_dotenv",
-        "importPath": "dotenv",
-        "description": "dotenv",
-        "isExtraImport": true,
-        "detail": "dotenv",
-        "documentation": {}
-    },
-    {
-        "label": "load_dotenv",
-        "importPath": "dotenv",
-        "description": "dotenv",
-        "isExtraImport": true,
-        "detail": "dotenv",
-        "documentation": {}
-    },
-    {
-        "label": "load_dotenv",
-        "importPath": "dotenv",
-        "description": "dotenv",
-        "isExtraImport": true,
-        "detail": "dotenv",
         "documentation": {}
     },
     {
@@ -1232,6 +1376,69 @@
         "documentation": {}
     },
     {
+        "label": "Base",
+        "kind": 6,
+        "importPath": "app.parsers.baseclass",
+        "description": "app.parsers.baseclass",
+        "peekOfCode": "class Base:\n    id: Any\n    __name__: str\n    metadata = metadata\n    @declared_attr\n    def __tablename__(self) -> str:\n        return self.__name__.lower()",
+        "detail": "app.parsers.baseclass",
+        "documentation": {}
+    },
+    {
+        "label": "metadata",
+        "kind": 5,
+        "importPath": "app.parsers.baseclass",
+        "description": "app.parsers.baseclass",
+        "peekOfCode": "metadata = MetaData()\n@as_declarative()\nclass Base:\n    id: Any\n    __name__: str\n    metadata = metadata\n    @declared_attr\n    def __tablename__(self) -> str:\n        return self.__name__.lower()",
+        "detail": "app.parsers.baseclass",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "kind": 2,
+        "importPath": "app.parsers.database",
+        "description": "app.parsers.database",
+        "peekOfCode": "def get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "app.parsers.database",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASE_URL",
+        "kind": 5,
+        "importPath": "app.parsers.database",
+        "description": "app.parsers.database",
+        "peekOfCode": "DATABASE_URL = f\"postgresql://{os.getenv('DB_USER')}:{os.getenv('DB_PASSWORD')}@{os.getenv('DB_HOST')}:{os.getenv('DB_PORT')}/{os.getenv('DB_NAME')}\"\nengine = create_engine(DATABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "app.parsers.database",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "kind": 5,
+        "importPath": "app.parsers.database",
+        "description": "app.parsers.database",
+        "peekOfCode": "engine = create_engine(DATABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "app.parsers.database",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "kind": 5,
+        "importPath": "app.parsers.database",
+        "description": "app.parsers.database",
+        "peekOfCode": "SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "app.parsers.database",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "kind": 5,
+        "importPath": "app.parsers.database",
+        "description": "app.parsers.database",
+        "peekOfCode": "Base = declarative_base()\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "app.parsers.database",
+        "documentation": {}
+    },
+    {
         "label": "DNSScraper",
         "kind": 6,
         "importPath": "app.parsers.dns_parser",
@@ -1247,6 +1454,42 @@
         "description": "app.parsers.marwin_parser",
         "peekOfCode": "class MarwinParser:\n    \"\"\"Класс для парсинга списка игр с сайта Marwin.\"\"\"\n    BASE_URLS = {\n        \"Playstation\": \"https://www.marwin.kz/videogames/playstation/igry-dliya-playstation-5/\",\n        \"Playstation\": \"https://www.marwin.kz/videogames/playstation/igry-dliya-playstation-4/\",\n        \"Xbox One\": \"https://www.marwin.kz/videogames/xbox/igry-dlya-microsoft-xbox-one/\",\n        \"Nintendo Switch\": \"https://www.marwin.kz/videogames/nintendo/igry-dlya-nintendo-switch/\"\n    }\n    def __init__(self):\n        self.driver = webdriver.Chrome()",
         "detail": "app.parsers.marwin_parser",
+        "documentation": {}
+    },
+    {
+        "label": "Platform",
+        "kind": 6,
+        "importPath": "app.parsers.models",
+        "description": "app.parsers.models",
+        "peekOfCode": "class Platform(Base):\n    __tablename__ = \"platforms\"\n    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)\n    name: Mapped[str] = mapped_column(String, unique=True, nullable=False)\n    games = relationship(\"Game\", back_populates=\"platform\")\nclass Game(Base):\n    __tablename__ = \"games\"\n    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)\n    title: Mapped[str] = mapped_column(String, index=True, nullable=False)\n    platform_id: Mapped[int] = mapped_column(ForeignKey(\"platforms.id\"), index=True, nullable=False)",
+        "detail": "app.parsers.models",
+        "documentation": {}
+    },
+    {
+        "label": "Game",
+        "kind": 6,
+        "importPath": "app.parsers.models",
+        "description": "app.parsers.models",
+        "peekOfCode": "class Game(Base):\n    __tablename__ = \"games\"\n    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)\n    title: Mapped[str] = mapped_column(String, index=True, nullable=False)\n    platform_id: Mapped[int] = mapped_column(ForeignKey(\"platforms.id\"), index=True, nullable=False)\n    price: Mapped[int] = mapped_column(Integer, nullable=True)\n    availability: Mapped[bool] = mapped_column(Boolean, default=True)\n    store_id: Mapped[int] = mapped_column(ForeignKey(\"stores.id\"))\n    platform = relationship(\"Platform\", back_populates=\"games\")  # <-- ДОБАВЛЕНО\n    store = relationship(\"Store\", back_populates=\"games\")",
+        "detail": "app.parsers.models",
+        "documentation": {}
+    },
+    {
+        "label": "Store",
+        "kind": 6,
+        "importPath": "app.parsers.models",
+        "description": "app.parsers.models",
+        "peekOfCode": "class Store(Base):\n    __tablename__ = \"stores\"\n    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)\n    name: Mapped[str] = mapped_column(String, unique=True, nullable=False)\n    games = relationship(\"Game\", back_populates=\"store\")\nclass User(Base):\n    __tablename__ = \"users\"\n    id = mapped_column(Integer, primary_key=True, index=True)\n    email = mapped_column(String, unique=True, index=True, nullable=False)\n    hashed_password = mapped_column(String, nullable=False)",
+        "detail": "app.parsers.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "app.parsers.models",
+        "description": "app.parsers.models",
+        "peekOfCode": "class User(Base):\n    __tablename__ = \"users\"\n    id = mapped_column(Integer, primary_key=True, index=True)\n    email = mapped_column(String, unique=True, index=True, nullable=False)\n    hashed_password = mapped_column(String, nullable=False)\n    is_active = mapped_column(Boolean, default=True)",
+        "detail": "app.parsers.models",
         "documentation": {}
     },
     {
