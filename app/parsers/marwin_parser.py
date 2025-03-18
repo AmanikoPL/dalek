@@ -5,7 +5,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from typing import List, Dict, Any
-from app.parsers.parsers_orm.marwin_parser_orm import save_games_to_db
+from parsers_orm.marwin_parser_orm import save_games_to_db
 
 class MarwinParser:
     """Класс для парсинга списка игр с сайта Marwin."""
