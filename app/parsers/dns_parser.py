@@ -4,7 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from typing import List, Dict, Any
-from app.parsers.parsers_orm.dns_parser_orm import save_games_to_db
+from parsers_orm.dns_parser_orm import save_games_to_db
 
 class DNSScraper:
     """Парсер игр с сайта DNS."""
@@ -51,7 +51,12 @@ class DNSScraper:
                         try:
                             price_element = self.driver.find_element(By.XPATH, price_xpath)
                             price_text = price_element.text.replace("\xa0", "").replace("₸", "").strip()
-                            price = int("".join(filter(str.isdigit, price_text)))
+                            price_digits = "".join(filter(str.isdigit, price_text))
+
+                            if len(price_digits) > 5:
+                                price_digits = price_digits[:5]  # Оставляем только первые 5 знаков
+
+                            price = int(price_digits) if price_digits else None
                         except Exception:
                             price = None
 
