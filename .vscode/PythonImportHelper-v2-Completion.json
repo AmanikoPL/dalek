@@ -425,46 +425,6 @@
         "documentation": {}
     },
     {
-        "label": "Game",
-        "importPath": "app.models.models",
-        "description": "app.models.models",
-        "isExtraImport": true,
-        "detail": "app.models.models",
-        "documentation": {}
-    },
-    {
-        "label": "Store",
-        "importPath": "app.models.models",
-        "description": "app.models.models",
-        "isExtraImport": true,
-        "detail": "app.models.models",
-        "documentation": {}
-    },
-    {
-        "label": "Platform",
-        "importPath": "app.models.models",
-        "description": "app.models.models",
-        "isExtraImport": true,
-        "detail": "app.models.models",
-        "documentation": {}
-    },
-    {
-        "label": "Game",
-        "importPath": "app.models.models",
-        "description": "app.models.models",
-        "isExtraImport": true,
-        "detail": "app.models.models",
-        "documentation": {}
-    },
-    {
-        "label": "Store",
-        "importPath": "app.models.models",
-        "description": "app.models.models",
-        "isExtraImport": true,
-        "detail": "app.models.models",
-        "documentation": {}
-    },
-    {
         "label": "APIRouter",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -657,22 +617,6 @@
         "documentation": {}
     },
     {
-        "label": "SessionLocal",
-        "importPath": "app.database",
-        "description": "app.database",
-        "isExtraImport": true,
-        "detail": "app.database",
-        "documentation": {}
-    },
-    {
-        "label": "SessionLocal",
-        "importPath": "app.database",
-        "description": "app.database",
-        "isExtraImport": true,
-        "detail": "app.database",
-        "documentation": {}
-    },
-    {
         "label": "verify_password",
         "importPath": "app.service.security",
         "description": "app.service.security",
@@ -833,11 +777,84 @@
         "documentation": {}
     },
     {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
         "label": "SessionLocal",
         "importPath": "database",
         "description": "database",
         "isExtraImport": true,
         "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "Game",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Store",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Platform",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Game",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Store",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Platform",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
         "documentation": {}
     },
     {
@@ -1019,10 +1036,10 @@
     },
     {
         "label": "save_games_to_db",
-        "importPath": "app.parsers.parsers_orm.dns_parser_orm",
-        "description": "app.parsers.parsers_orm.dns_parser_orm",
+        "importPath": "parsers_orm.dns_parser_orm",
+        "description": "parsers_orm.dns_parser_orm",
         "isExtraImport": true,
-        "detail": "app.parsers.parsers_orm.dns_parser_orm",
+        "detail": "parsers_orm.dns_parser_orm",
         "documentation": {}
     },
     {
@@ -1036,10 +1053,10 @@
     },
     {
         "label": "save_games_to_db",
-        "importPath": "app.parsers.parsers_orm.marwin_parser_orm",
-        "description": "app.parsers.parsers_orm.marwin_parser_orm",
+        "importPath": "parsers_orm.marwin_parser_orm",
+        "description": "parsers_orm.marwin_parser_orm",
         "isExtraImport": true,
-        "detail": "app.parsers.parsers_orm.marwin_parser_orm",
+        "detail": "parsers_orm.marwin_parser_orm",
         "documentation": {}
     },
     {
@@ -1088,6 +1105,14 @@
         "description": "jose",
         "isExtraImport": true,
         "detail": "jose",
+        "documentation": {}
+    },
+    {
+        "label": "Celery",
+        "importPath": "celery",
+        "description": "celery",
+        "isExtraImport": true,
+        "detail": "celery",
         "documentation": {}
     },
     {
@@ -1349,11 +1374,20 @@
         "documentation": {}
     },
     {
+        "label": "clean_game_title",
+        "kind": 2,
+        "importPath": "app.parsers.parsers_orm.dns_parser_orm",
+        "description": "app.parsers.parsers_orm.dns_parser_orm",
+        "peekOfCode": "def clean_game_title(title: str, platform: str) -> str:\n    \"\"\"Очищает название игры, оставляя только имя и платформу.\"\"\"\n    # Убираем всё в скобках (обычные и квадратные)\n    title = re.sub(r\"\\(.*?\\)|\\[.*?\\]\", \"\", title).strip()\n    # Убираем лишние пробелы\n    title = re.sub(r\"\\s+\", \" \", title)\n    # Сокращаем платформу\n    platform_map = {\n        \"PlayStation\": \"PS\",\n        \"Xbox\": \"XB\",",
+        "detail": "app.parsers.parsers_orm.dns_parser_orm",
+        "documentation": {}
+    },
+    {
         "label": "save_games_to_db",
         "kind": 2,
         "importPath": "app.parsers.parsers_orm.dns_parser_orm",
         "description": "app.parsers.parsers_orm.dns_parser_orm",
-        "peekOfCode": "def save_games_to_db(games: List[Dict[str, Any]]):\n    \"\"\"Сохраняет список игр в базу данных.\"\"\"\n    db: Session = SessionLocal()\n    store = db.query(Store).filter(Store.name == \"DNS\").first()\n    if not store:\n        store = Store(name=\"DNS\")\n        db.add(store)\n        db.commit()\n        db.refresh(store)\n    for game in games:",
+        "peekOfCode": "def save_games_to_db(games: List[Dict[str, Any]]):\n    \"\"\"Сохраняет список игр в базу данных с очищенными названиями.\"\"\"\n    db: Session = SessionLocal()\n    try:\n        # Проверяем, существует ли магазин DNS\n        store = db.query(Store).filter(Store.name == \"DNS\").first()\n        if not store:\n            store = Store(name=\"DNS\")\n            db.add(store)\n            db.commit()",
         "detail": "app.parsers.parsers_orm.dns_parser_orm",
         "documentation": {}
     },
@@ -1362,7 +1396,7 @@
         "kind": 2,
         "importPath": "app.parsers.parsers_orm.marwin_parser_orm",
         "description": "app.parsers.parsers_orm.marwin_parser_orm",
-        "peekOfCode": "def save_games_to_db(games: List[Dict[str, Any]]):\n    \"\"\"Сохраняет список игр в базу данных.\"\"\"\n    db: Session = SessionLocal()\n    try:\n        # Проверяем, существует ли магазин Marwin\n        store = db.query(Store).filter(Store.name == \"Marwin\").first()\n        if not store:\n            store = Store(name=\"Marwin\")\n            db.add(store)\n            db.commit()",
+        "peekOfCode": "def save_games_to_db(games: List[Dict[str, Any]]):\n    \"\"\"Сохраняет список игр в базу данных.\"\"\"\n    db: Session = SessionLocal()\n    try:\n        # Проверяем, существует ли магазин Technodom\n        store = db.query(Store).filter(Store.name == \"Marwin\").first()\n        if not store:\n            store = Store(name=\"Technodom\")\n            db.add(store)\n            db.commit()",
         "detail": "app.parsers.parsers_orm.marwin_parser_orm",
         "documentation": {}
     },
@@ -1643,6 +1677,24 @@
         "description": "app.service.security",
         "peekOfCode": "pwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\ndef hash_password(password: str) -> str:\n    return pwd_context.hash(password)\ndef verify_password(plain_password: str, hashed_password: str) -> bool:\n    return pwd_context.verify(plain_password, hashed_password)\ndef verify_password(plain_password, hashed_password):\n    return pwd_context.verify(plain_password, hashed_password)\ndef get_password_hash(password):\n    return pwd_context.hash(password)\ndef create_access_token(data: dict, expires_delta: timedelta = None):",
         "detail": "app.service.security",
+        "documentation": {}
+    },
+    {
+        "label": "celery_app",
+        "kind": 5,
+        "importPath": "app.tasks.celery",
+        "description": "app.tasks.celery",
+        "peekOfCode": "celery_app = Celery(\n    \"tasks\",\n    broker=\"redis://localhost:6379/0\",\n    backend=\"redis://localhost:6379/0\"\n)\ncelery_app.conf.timezone = \"UTC\"",
+        "detail": "app.tasks.celery",
+        "documentation": {}
+    },
+    {
+        "label": "celery_app.conf.timezone",
+        "kind": 5,
+        "importPath": "app.tasks.celery",
+        "description": "app.tasks.celery",
+        "peekOfCode": "celery_app.conf.timezone = \"UTC\"",
+        "detail": "app.tasks.celery",
         "documentation": {}
     },
     {
