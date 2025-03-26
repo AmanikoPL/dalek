@@ -923,6 +923,14 @@
         "documentation": {}
     },
     {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
         "label": "Base",
         "importPath": "baseclass",
         "description": "baseclass",
@@ -1113,6 +1121,78 @@
         "description": "celery",
         "isExtraImport": true,
         "detail": "celery",
+        "documentation": {}
+    },
+    {
+        "label": "Celery",
+        "importPath": "celery",
+        "description": "celery",
+        "isExtraImport": true,
+        "detail": "celery",
+        "documentation": {}
+    },
+    {
+        "label": "crontab",
+        "importPath": "celery.schedules",
+        "description": "celery.schedules",
+        "isExtraImport": true,
+        "detail": "celery.schedules",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "tasks.celery",
+        "description": "tasks.celery",
+        "isExtraImport": true,
+        "detail": "tasks.celery",
+        "documentation": {}
+    },
+    {
+        "label": "DNSScraper",
+        "importPath": "parsers.dns_parser",
+        "description": "parsers.dns_parser",
+        "isExtraImport": true,
+        "detail": "parsers.dns_parser",
+        "documentation": {}
+    },
+    {
+        "label": "MarwinParser",
+        "importPath": "parsers.marwin_parser",
+        "description": "parsers.marwin_parser",
+        "isExtraImport": true,
+        "detail": "parsers.marwin_parser",
+        "documentation": {}
+    },
+    {
+        "label": "TechnodomParser",
+        "importPath": "parsers.technodom_parser",
+        "description": "parsers.technodom_parser",
+        "isExtraImport": true,
+        "detail": "parsers.technodom_parser",
+        "documentation": {}
+    },
+    {
+        "label": "save_games_to_db",
+        "importPath": "parsers.parsers_orm.dns_parser_orm",
+        "description": "parsers.parsers_orm.dns_parser_orm",
+        "isExtraImport": true,
+        "detail": "parsers.parsers_orm.dns_parser_orm",
+        "documentation": {}
+    },
+    {
+        "label": "save_games_to_db",
+        "importPath": "parsers.parsers_orm.marwin_parser_orm",
+        "description": "parsers.parsers_orm.marwin_parser_orm",
+        "isExtraImport": true,
+        "detail": "parsers.parsers_orm.marwin_parser_orm",
+        "documentation": {}
+    },
+    {
+        "label": "save_games_to_db",
+        "importPath": "parsers.parsers_orm.technodom_parser_orm",
+        "description": "parsers.parsers_orm.technodom_parser_orm",
+        "isExtraImport": true,
+        "detail": "parsers.parsers_orm.technodom_parser_orm",
         "documentation": {}
     },
     {
@@ -1680,21 +1760,57 @@
         "documentation": {}
     },
     {
-        "label": "celery_app",
+        "label": "app",
         "kind": 5,
         "importPath": "app.tasks.celery",
         "description": "app.tasks.celery",
-        "peekOfCode": "celery_app = Celery(\n    \"tasks\",\n    broker=\"redis://localhost:6379/0\",\n    backend=\"redis://localhost:6379/0\"\n)\ncelery_app.conf.timezone = \"UTC\"",
+        "peekOfCode": "app = Celery(\"tasks\")\napp.config_from_object(\"tasks.celery_config\")\napp.autodiscover_tasks([\"tasks\"])",
         "detail": "app.tasks.celery",
         "documentation": {}
     },
     {
-        "label": "celery_app.conf.timezone",
+        "label": "CELERY_BROKER_URL",
         "kind": 5,
-        "importPath": "app.tasks.celery",
-        "description": "app.tasks.celery",
-        "peekOfCode": "celery_app.conf.timezone = \"UTC\"",
-        "detail": "app.tasks.celery",
+        "importPath": "app.tasks.celery_config",
+        "description": "app.tasks.celery_config",
+        "peekOfCode": "CELERY_BROKER_URL = os.getenv(\"CELERY_BROKER_URL\", \"redis://localhost:6379/0\")\nCELERY_RESULT_BACKEND = os.getenv(\"CELERY_RESULT_BACKEND\", \"redis://localhost:6379/0\")\nCELERY_BEAT_SCHEDULE = {\n    \"run_parser_every_hour\": {\n        \"task\": \"tasks.task.run_parser\",\n        \"schedule\": crontab(minute=0, hour=\"*/1\"),\n    },\n}",
+        "detail": "app.tasks.celery_config",
+        "documentation": {}
+    },
+    {
+        "label": "CELERY_RESULT_BACKEND",
+        "kind": 5,
+        "importPath": "app.tasks.celery_config",
+        "description": "app.tasks.celery_config",
+        "peekOfCode": "CELERY_RESULT_BACKEND = os.getenv(\"CELERY_RESULT_BACKEND\", \"redis://localhost:6379/0\")\nCELERY_BEAT_SCHEDULE = {\n    \"run_parser_every_hour\": {\n        \"task\": \"tasks.task.run_parser\",\n        \"schedule\": crontab(minute=0, hour=\"*/1\"),\n    },\n}",
+        "detail": "app.tasks.celery_config",
+        "documentation": {}
+    },
+    {
+        "label": "CELERY_BEAT_SCHEDULE",
+        "kind": 5,
+        "importPath": "app.tasks.celery_config",
+        "description": "app.tasks.celery_config",
+        "peekOfCode": "CELERY_BEAT_SCHEDULE = {\n    \"run_parser_every_hour\": {\n        \"task\": \"tasks.task.run_parser\",\n        \"schedule\": crontab(minute=0, hour=\"*/1\"),\n    },\n}",
+        "detail": "app.tasks.celery_config",
+        "documentation": {}
+    },
+    {
+        "label": "run_parser",
+        "kind": 2,
+        "importPath": "app.tasks.task",
+        "description": "app.tasks.task",
+        "peekOfCode": "def run_parser():\n    \"\"\"Запускает все парсеры и сохраняет данные в БД\"\"\"\n    print(\"Запуск парсеров...\")\n    dns_scraper = DNSScraper()\n    marwin_scraper = MarwinParser()\n    technodom_scraper = TechnodomParser()\n    try:\n        games_dns = dns_scraper.parse()\n        games_marwin = marwin_scraper.parse()\n        games_technodom = technodom_scraper.parse()",
+        "detail": "app.tasks.task",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app.tasks.task",
+        "description": "app.tasks.task",
+        "peekOfCode": "app = Celery('tasks', broker='redis://localhost:6379/0', backend='redis://localhost:6379/0')\napp.config_from_object('app.tasks.celery_config', namespace='CELERY')\napp.autodiscover_tasks(['tasks'])\n@app.task\ndef run_parser():\n    \"\"\"Запускает все парсеры и сохраняет данные в БД\"\"\"\n    print(\"Запуск парсеров...\")\n    dns_scraper = DNSScraper()\n    marwin_scraper = MarwinParser()\n    technodom_scraper = TechnodomParser()",
+        "detail": "app.tasks.task",
         "documentation": {}
     },
     {
