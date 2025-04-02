@@ -617,6 +617,14 @@
         "documentation": {}
     },
     {
+        "label": "SessionLocal",
+        "importPath": "app.database",
+        "description": "app.database",
+        "isExtraImport": true,
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
         "label": "verify_password",
         "importPath": "app.service.security",
         "description": "app.service.security",
@@ -729,11 +737,59 @@
         "documentation": {}
     },
     {
+        "label": "TechnodomParser",
+        "importPath": "app.parsers.technodom_parser",
+        "description": "app.parsers.technodom_parser",
+        "isExtraImport": true,
+        "detail": "app.parsers.technodom_parser",
+        "documentation": {}
+    },
+    {
+        "label": "TechnodomParser",
+        "importPath": "app.parsers.technodom_parser",
+        "description": "app.parsers.technodom_parser",
+        "isExtraImport": true,
+        "detail": "app.parsers.technodom_parser",
+        "documentation": {}
+    },
+    {
         "label": "DNSScraper",
         "importPath": "app.parsers.dns_parser",
         "description": "app.parsers.dns_parser",
         "isExtraImport": true,
         "detail": "app.parsers.dns_parser",
+        "documentation": {}
+    },
+    {
+        "label": "DNSScraper",
+        "importPath": "app.parsers.dns_parser",
+        "description": "app.parsers.dns_parser",
+        "isExtraImport": true,
+        "detail": "app.parsers.dns_parser",
+        "documentation": {}
+    },
+    {
+        "label": "DNSScraper",
+        "importPath": "app.parsers.dns_parser",
+        "description": "app.parsers.dns_parser",
+        "isExtraImport": true,
+        "detail": "app.parsers.dns_parser",
+        "documentation": {}
+    },
+    {
+        "label": "MarwinParser",
+        "importPath": "app.parsers.marwin_parser",
+        "description": "app.parsers.marwin_parser",
+        "isExtraImport": true,
+        "detail": "app.parsers.marwin_parser",
+        "documentation": {}
+    },
+    {
+        "label": "MarwinParser",
+        "importPath": "app.parsers.marwin_parser",
+        "description": "app.parsers.marwin_parser",
+        "isExtraImport": true,
+        "detail": "app.parsers.marwin_parser",
         "documentation": {}
     },
     {
@@ -786,99 +842,91 @@
         "documentation": {}
     },
     {
-        "label": "SessionLocal",
-        "importPath": "database",
-        "description": "database",
-        "isExtraImport": true,
-        "detail": "database",
-        "documentation": {}
-    },
-    {
-        "label": "SessionLocal",
-        "importPath": "database",
-        "description": "database",
-        "isExtraImport": true,
-        "detail": "database",
-        "documentation": {}
-    },
-    {
-        "label": "SessionLocal",
-        "importPath": "database",
-        "description": "database",
-        "isExtraImport": true,
-        "detail": "database",
-        "documentation": {}
-    },
-    {
         "label": "Game",
-        "importPath": "models",
-        "description": "models",
+        "importPath": "app.parsers.models",
+        "description": "app.parsers.models",
         "isExtraImport": true,
-        "detail": "models",
+        "detail": "app.parsers.models",
         "documentation": {}
     },
     {
         "label": "Store",
-        "importPath": "models",
-        "description": "models",
+        "importPath": "app.parsers.models",
+        "description": "app.parsers.models",
         "isExtraImport": true,
-        "detail": "models",
+        "detail": "app.parsers.models",
         "documentation": {}
     },
     {
         "label": "Platform",
-        "importPath": "models",
-        "description": "models",
+        "importPath": "app.parsers.models",
+        "description": "app.parsers.models",
         "isExtraImport": true,
-        "detail": "models",
+        "detail": "app.parsers.models",
         "documentation": {}
     },
     {
         "label": "Game",
-        "importPath": "models",
-        "description": "models",
+        "importPath": "app.parsers.models",
+        "description": "app.parsers.models",
         "isExtraImport": true,
-        "detail": "models",
+        "detail": "app.parsers.models",
         "documentation": {}
     },
     {
         "label": "Store",
-        "importPath": "models",
-        "description": "models",
+        "importPath": "app.parsers.models",
+        "description": "app.parsers.models",
         "isExtraImport": true,
-        "detail": "models",
+        "detail": "app.parsers.models",
         "documentation": {}
     },
     {
         "label": "Platform",
-        "importPath": "models",
-        "description": "models",
+        "importPath": "app.parsers.models",
+        "description": "app.parsers.models",
         "isExtraImport": true,
-        "detail": "models",
+        "detail": "app.parsers.models",
         "documentation": {}
     },
     {
         "label": "Game",
-        "importPath": "models",
-        "description": "models",
+        "importPath": "app.parsers.models",
+        "description": "app.parsers.models",
         "isExtraImport": true,
-        "detail": "models",
+        "detail": "app.parsers.models",
         "documentation": {}
     },
     {
         "label": "Store",
-        "importPath": "models",
-        "description": "models",
+        "importPath": "app.parsers.models",
+        "description": "app.parsers.models",
         "isExtraImport": true,
-        "detail": "models",
+        "detail": "app.parsers.models",
         "documentation": {}
     },
     {
         "label": "Platform",
-        "importPath": "models",
-        "description": "models",
+        "importPath": "app.parsers.models",
+        "description": "app.parsers.models",
         "isExtraImport": true,
-        "detail": "models",
+        "detail": "app.parsers.models",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "importPath": "app.parsers.database",
+        "description": "app.parsers.database",
+        "isExtraImport": true,
+        "detail": "app.parsers.database",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "importPath": "app.parsers.database",
+        "description": "app.parsers.database",
+        "isExtraImport": true,
+        "detail": "app.parsers.database",
         "documentation": {}
     },
     {
@@ -932,18 +980,18 @@
     },
     {
         "label": "Base",
-        "importPath": "baseclass",
-        "description": "baseclass",
+        "importPath": "app.parsers.baseclass",
+        "description": "app.parsers.baseclass",
         "isExtraImport": true,
-        "detail": "baseclass",
+        "detail": "app.parsers.baseclass",
         "documentation": {}
     },
     {
         "label": "Base",
-        "importPath": "baseclass",
-        "description": "baseclass",
+        "importPath": "app.parsers.baseclass",
+        "description": "app.parsers.baseclass",
         "isExtraImport": true,
-        "detail": "baseclass",
+        "detail": "app.parsers.baseclass",
         "documentation": {}
     },
     {
@@ -1044,10 +1092,26 @@
     },
     {
         "label": "save_games_to_db",
-        "importPath": "parsers_orm.dns_parser_orm",
-        "description": "parsers_orm.dns_parser_orm",
+        "importPath": "app.parsers.parsers_orm.dns_parser_orm",
+        "description": "app.parsers.parsers_orm.dns_parser_orm",
         "isExtraImport": true,
-        "detail": "parsers_orm.dns_parser_orm",
+        "detail": "app.parsers.parsers_orm.dns_parser_orm",
+        "documentation": {}
+    },
+    {
+        "label": "save_games_to_db",
+        "importPath": "app.parsers.parsers_orm.dns_parser_orm",
+        "description": "app.parsers.parsers_orm.dns_parser_orm",
+        "isExtraImport": true,
+        "detail": "app.parsers.parsers_orm.dns_parser_orm",
+        "documentation": {}
+    },
+    {
+        "label": "save_games_to_db",
+        "importPath": "app.parsers.parsers_orm.dns_parser_orm",
+        "description": "app.parsers.parsers_orm.dns_parser_orm",
+        "isExtraImport": true,
+        "detail": "app.parsers.parsers_orm.dns_parser_orm",
         "documentation": {}
     },
     {
@@ -1061,18 +1125,50 @@
     },
     {
         "label": "save_games_to_db",
-        "importPath": "parsers_orm.marwin_parser_orm",
-        "description": "parsers_orm.marwin_parser_orm",
+        "importPath": "app.parsers.parsers_orm.marwin_parser_orm",
+        "description": "app.parsers.parsers_orm.marwin_parser_orm",
         "isExtraImport": true,
-        "detail": "parsers_orm.marwin_parser_orm",
+        "detail": "app.parsers.parsers_orm.marwin_parser_orm",
         "documentation": {}
     },
     {
         "label": "save_games_to_db",
-        "importPath": "parsers_orm.technodom_parser_orm",
-        "description": "parsers_orm.technodom_parser_orm",
+        "importPath": "app.parsers.parsers_orm.marwin_parser_orm",
+        "description": "app.parsers.parsers_orm.marwin_parser_orm",
         "isExtraImport": true,
-        "detail": "parsers_orm.technodom_parser_orm",
+        "detail": "app.parsers.parsers_orm.marwin_parser_orm",
+        "documentation": {}
+    },
+    {
+        "label": "save_games_to_db",
+        "importPath": "app.parsers.parsers_orm.marwin_parser_orm",
+        "description": "app.parsers.parsers_orm.marwin_parser_orm",
+        "isExtraImport": true,
+        "detail": "app.parsers.parsers_orm.marwin_parser_orm",
+        "documentation": {}
+    },
+    {
+        "label": "save_games_to_db",
+        "importPath": "app.parsers.parsers_orm.technodom_parser_orm",
+        "description": "app.parsers.parsers_orm.technodom_parser_orm",
+        "isExtraImport": true,
+        "detail": "app.parsers.parsers_orm.technodom_parser_orm",
+        "documentation": {}
+    },
+    {
+        "label": "save_games_to_db",
+        "importPath": "app.parsers.parsers_orm.technodom_parser_orm",
+        "description": "app.parsers.parsers_orm.technodom_parser_orm",
+        "isExtraImport": true,
+        "detail": "app.parsers.parsers_orm.technodom_parser_orm",
+        "documentation": {}
+    },
+    {
+        "label": "save_games_to_db",
+        "importPath": "app.parsers.parsers_orm.technodom_parser_orm",
+        "description": "app.parsers.parsers_orm.technodom_parser_orm",
+        "isExtraImport": true,
+        "detail": "app.parsers.parsers_orm.technodom_parser_orm",
         "documentation": {}
     },
     {
@@ -1132,6 +1228,15 @@
         "documentation": {}
     },
     {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
         "label": "crontab",
         "importPath": "celery.schedules",
         "description": "celery.schedules",
@@ -1141,58 +1246,10 @@
     },
     {
         "label": "app",
-        "importPath": "tasks.celery",
-        "description": "tasks.celery",
+        "importPath": "app.tasks.celery",
+        "description": "app.tasks.celery",
         "isExtraImport": true,
-        "detail": "tasks.celery",
-        "documentation": {}
-    },
-    {
-        "label": "DNSScraper",
-        "importPath": "parsers.dns_parser",
-        "description": "parsers.dns_parser",
-        "isExtraImport": true,
-        "detail": "parsers.dns_parser",
-        "documentation": {}
-    },
-    {
-        "label": "MarwinParser",
-        "importPath": "parsers.marwin_parser",
-        "description": "parsers.marwin_parser",
-        "isExtraImport": true,
-        "detail": "parsers.marwin_parser",
-        "documentation": {}
-    },
-    {
-        "label": "TechnodomParser",
-        "importPath": "parsers.technodom_parser",
-        "description": "parsers.technodom_parser",
-        "isExtraImport": true,
-        "detail": "parsers.technodom_parser",
-        "documentation": {}
-    },
-    {
-        "label": "save_games_to_db",
-        "importPath": "parsers.parsers_orm.dns_parser_orm",
-        "description": "parsers.parsers_orm.dns_parser_orm",
-        "isExtraImport": true,
-        "detail": "parsers.parsers_orm.dns_parser_orm",
-        "documentation": {}
-    },
-    {
-        "label": "save_games_to_db",
-        "importPath": "parsers.parsers_orm.marwin_parser_orm",
-        "description": "parsers.parsers_orm.marwin_parser_orm",
-        "isExtraImport": true,
-        "detail": "parsers.parsers_orm.marwin_parser_orm",
-        "documentation": {}
-    },
-    {
-        "label": "save_games_to_db",
-        "importPath": "parsers.parsers_orm.technodom_parser_orm",
-        "description": "parsers.parsers_orm.technodom_parser_orm",
-        "isExtraImport": true,
-        "detail": "parsers.parsers_orm.technodom_parser_orm",
+        "detail": "app.tasks.celery",
         "documentation": {}
     },
     {
@@ -1760,30 +1817,30 @@
         "documentation": {}
     },
     {
-        "label": "app",
-        "kind": 5,
+        "label": "run_parser",
+        "kind": 2,
         "importPath": "app.tasks.celery",
         "description": "app.tasks.celery",
-        "peekOfCode": "app = Celery(\"tasks\")\napp.config_from_object(\"tasks.celery_config\")\napp.autodiscover_tasks([\"tasks\"])",
+        "peekOfCode": "def run_parser():\n    \"\"\"Запускает все парсеры и сохраняет данные в БД\"\"\"\n    logger.info(\"Запуск парсеров...\")\n    dns_scraper = DNSScraper()\n    marwin_scraper = MarwinParser()\n    technodom_scraper = TechnodomParser()\n    try:\n        games_dns = dns_scraper.parse()\n        games_marwin = marwin_scraper.parse()\n        games_technodom = technodom_scraper.parse()",
         "detail": "app.tasks.celery",
         "documentation": {}
     },
     {
-        "label": "CELERY_BROKER_URL",
+        "label": "app",
         "kind": 5,
-        "importPath": "app.tasks.celery_config",
-        "description": "app.tasks.celery_config",
-        "peekOfCode": "CELERY_BROKER_URL = os.getenv(\"CELERY_BROKER_URL\", \"redis://localhost:6379/0\")\nCELERY_RESULT_BACKEND = os.getenv(\"CELERY_RESULT_BACKEND\", \"redis://localhost:6379/0\")\nCELERY_BEAT_SCHEDULE = {\n    \"run_parser_every_hour\": {\n        \"task\": \"tasks.task.run_parser\",\n        \"schedule\": crontab(minute=0, hour=\"*/1\"),\n    },\n}",
-        "detail": "app.tasks.celery_config",
+        "importPath": "app.tasks.celery",
+        "description": "app.tasks.celery",
+        "peekOfCode": "app = Celery(\"tasks\")\napp.config_from_object(\"app.tasks.celery_config\")\nlogging.basicConfig(level=logging.INFO, format=\"%(asctime)s - %(levelname)s - %(message)s\")\nlogger = logging.getLogger(__name__)\n@app.task\ndef run_parser():\n    \"\"\"Запускает все парсеры и сохраняет данные в БД\"\"\"\n    logger.info(\"Запуск парсеров...\")\n    dns_scraper = DNSScraper()\n    marwin_scraper = MarwinParser()",
+        "detail": "app.tasks.celery",
         "documentation": {}
     },
     {
-        "label": "CELERY_RESULT_BACKEND",
+        "label": "logger",
         "kind": 5,
-        "importPath": "app.tasks.celery_config",
-        "description": "app.tasks.celery_config",
-        "peekOfCode": "CELERY_RESULT_BACKEND = os.getenv(\"CELERY_RESULT_BACKEND\", \"redis://localhost:6379/0\")\nCELERY_BEAT_SCHEDULE = {\n    \"run_parser_every_hour\": {\n        \"task\": \"tasks.task.run_parser\",\n        \"schedule\": crontab(minute=0, hour=\"*/1\"),\n    },\n}",
-        "detail": "app.tasks.celery_config",
+        "importPath": "app.tasks.celery",
+        "description": "app.tasks.celery",
+        "peekOfCode": "logger = logging.getLogger(__name__)\n@app.task\ndef run_parser():\n    \"\"\"Запускает все парсеры и сохраняет данные в БД\"\"\"\n    logger.info(\"Запуск парсеров...\")\n    dns_scraper = DNSScraper()\n    marwin_scraper = MarwinParser()\n    technodom_scraper = TechnodomParser()\n    try:\n        games_dns = dns_scraper.parse()",
+        "detail": "app.tasks.celery",
         "documentation": {}
     },
     {
@@ -1791,7 +1848,16 @@
         "kind": 5,
         "importPath": "app.tasks.celery_config",
         "description": "app.tasks.celery_config",
-        "peekOfCode": "CELERY_BEAT_SCHEDULE = {\n    \"run_parser_every_hour\": {\n        \"task\": \"tasks.task.run_parser\",\n        \"schedule\": crontab(minute=0, hour=\"*/1\"),\n    },\n}",
+        "peekOfCode": "CELERY_BEAT_SCHEDULE = {\n    \"run_parser_every_hour\": {\n        \"task\": \"tasks.task.run_parser\",\n        \"schedule\": crontab(minute=0, hour=\"*/1\"),\n    },\n}\nCELERY_BROKER_URL = \"redis://localhost:6379/0\"",
+        "detail": "app.tasks.celery_config",
+        "documentation": {}
+    },
+    {
+        "label": "CELERY_BROKER_URL",
+        "kind": 5,
+        "importPath": "app.tasks.celery_config",
+        "description": "app.tasks.celery_config",
+        "peekOfCode": "CELERY_BROKER_URL = \"redis://localhost:6379/0\"",
         "detail": "app.tasks.celery_config",
         "documentation": {}
     },
@@ -1800,16 +1866,16 @@
         "kind": 2,
         "importPath": "app.tasks.task",
         "description": "app.tasks.task",
-        "peekOfCode": "def run_parser():\n    \"\"\"Запускает все парсеры и сохраняет данные в БД\"\"\"\n    print(\"Запуск парсеров...\")\n    dns_scraper = DNSScraper()\n    marwin_scraper = MarwinParser()\n    technodom_scraper = TechnodomParser()\n    try:\n        games_dns = dns_scraper.parse()\n        games_marwin = marwin_scraper.parse()\n        games_technodom = technodom_scraper.parse()",
+        "peekOfCode": "def run_parser():\n    \"\"\"Запускает все парсеры и сохраняет данные в БД\"\"\"\n    logger.info(\"Запуск парсеров...\")\n    dns_scraper = DNSScraper()\n    marwin_scraper = MarwinParser()\n    technodom_scraper = TechnodomParser()\n    try:\n        games_dns = dns_scraper.parse()\n        games_marwin = marwin_scraper.parse()\n        games_technodom = technodom_scraper.parse()",
         "detail": "app.tasks.task",
         "documentation": {}
     },
     {
-        "label": "app",
+        "label": "logger",
         "kind": 5,
         "importPath": "app.tasks.task",
         "description": "app.tasks.task",
-        "peekOfCode": "app = Celery('tasks', broker='redis://localhost:6379/0', backend='redis://localhost:6379/0')\napp.config_from_object('app.tasks.celery_config', namespace='CELERY')\napp.autodiscover_tasks(['tasks'])\n@app.task\ndef run_parser():\n    \"\"\"Запускает все парсеры и сохраняет данные в БД\"\"\"\n    print(\"Запуск парсеров...\")\n    dns_scraper = DNSScraper()\n    marwin_scraper = MarwinParser()\n    technodom_scraper = TechnodomParser()",
+        "peekOfCode": "logger = logging.getLogger(__name__)\n@app.task\ndef run_parser():\n    \"\"\"Запускает все парсеры и сохраняет данные в БД\"\"\"\n    logger.info(\"Запуск парсеров...\")\n    dns_scraper = DNSScraper()\n    marwin_scraper = MarwinParser()\n    technodom_scraper = TechnodomParser()\n    try:\n        games_dns = dns_scraper.parse()",
         "detail": "app.tasks.task",
         "documentation": {}
     },

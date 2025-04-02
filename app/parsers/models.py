@@ -1,6 +1,6 @@
 from sqlalchemy import Boolean, ForeignKey, Integer, String
 from sqlalchemy.orm import Mapped, mapped_column, relationship
-from baseclass import Base
+from app.parsers.baseclass import Base
 
 class Platform(Base):
     __tablename__ = "platforms"

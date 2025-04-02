@@ -4,7 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from typing import List, Dict, Any
-from parsers_orm.dns_parser_orm import save_games_to_db
+from app.parsers.parsers_orm.dns_parser_orm import save_games_to_db
 
 class DNSScraper:
     """Парсер игр с сайта DNS."""

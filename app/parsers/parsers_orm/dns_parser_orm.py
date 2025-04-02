@@ -1,7 +1,7 @@
 import re
 from sqlalchemy.orm import Session
-from database import SessionLocal
-from models import Game, Store, Platform
+from app.database import SessionLocal
+from app.parsers.models import Game, Store, Platform
 from typing import List, Dict, Any
 
 def clean_game_title(title: str, platform: str) -> str:

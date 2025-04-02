@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
-from database import SessionLocal
-from models import Game, Store, Platform
+from app.parsers.database import SessionLocal
+from app.parsers.models import Game, Store, Platform
 from typing import List, Dict, Any
 
 def save_games_to_db(games: List[Dict[str, Any]]):
