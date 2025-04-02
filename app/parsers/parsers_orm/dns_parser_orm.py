@@ -6,13 +6,11 @@ from typing import List, Dict, Any
 
 def clean_game_title(title: str, platform: str) -> str:
     """Очищает название игры, оставляя только имя и платформу."""
-    # Убираем всё в скобках (обычные и квадратные)
+
     title = re.sub(r"\(.*?\)|\[.*?\]", "", title).strip()
 
-    # Убираем лишние пробелы
     title = re.sub(r"\s+", " ", title)
 
-    # Сокращаем платформу
     platform_map = {
         "PlayStation": "PS",
         "Xbox": "XB",
@@ -27,7 +25,6 @@ def save_games_to_db(games: List[Dict[str, Any]]):
     db: Session = SessionLocal()
     
     try:
-        # Проверяем, существует ли магазин DNS
         store = db.query(Store).filter(Store.name == "DNS").first()
         if not store:
             store = Store(name="DNS")
@@ -36,7 +33,6 @@ def save_games_to_db(games: List[Dict[str, Any]]):
             db.refresh(store)
 
         for game in games:
-            # Проверяем, существует ли платформа
             platform = db.query(Platform).filter(Platform.name == game["platform"]).first()
             if not platform:
                 platform = Platform(name=game["platform"])
@@ -44,7 +40,6 @@ def save_games_to_db(games: List[Dict[str, Any]]):
                 db.commit()
                 db.refresh(platform)
 
-            # Очищаем название игры
             clean_title = clean_game_title(game["title"], game["platform"])
 
             db_game = Game(

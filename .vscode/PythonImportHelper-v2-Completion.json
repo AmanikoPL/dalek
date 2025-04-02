@@ -1362,7 +1362,7 @@
         "kind": 2,
         "importPath": "app.api.auth",
         "description": "app.api.auth",
-        "peekOfCode": "def register(user_data: UserCreate, db: Session = Depends(get_db)):\n    new_user = create_user(db, user_data, user_data.password)  # передаём пароль\n    return {\"email\": new_user.email, \"is_active\": new_user.is_active}\n@router.delete(\"/delete/{email}\")\ndef delete_account(email: str, db: Session = Depends(get_db)):\n    user = db.query(User).filter(User.email == email).first()\n    if not user:\n        raise HTTPException(status_code=404, detail=\"User not found\")\n    db.delete(user)\n    db.commit()",
+        "peekOfCode": "def register(user_data: UserCreate, db: Session = Depends(get_db)):\n    new_user = create_user(db, user_data, user_data.password) \n    return {\"email\": new_user.email, \"is_active\": new_user.is_active}\n@router.delete(\"/delete/{email}\")\ndef delete_account(email: str, db: Session = Depends(get_db)):\n    user = db.query(User).filter(User.email == email).first()\n    if not user:\n        raise HTTPException(status_code=404, detail=\"User not found\")\n    db.delete(user)\n    db.commit()",
         "detail": "app.api.auth",
         "documentation": {}
     },
@@ -1515,7 +1515,7 @@
         "kind": 2,
         "importPath": "app.parsers.parsers_orm.dns_parser_orm",
         "description": "app.parsers.parsers_orm.dns_parser_orm",
-        "peekOfCode": "def clean_game_title(title: str, platform: str) -> str:\n    \"\"\"Очищает название игры, оставляя только имя и платформу.\"\"\"\n    # Убираем всё в скобках (обычные и квадратные)\n    title = re.sub(r\"\\(.*?\\)|\\[.*?\\]\", \"\", title).strip()\n    # Убираем лишние пробелы\n    title = re.sub(r\"\\s+\", \" \", title)\n    # Сокращаем платформу\n    platform_map = {\n        \"PlayStation\": \"PS\",\n        \"Xbox\": \"XB\",",
+        "peekOfCode": "def clean_game_title(title: str, platform: str) -> str:\n    \"\"\"Очищает название игры, оставляя только имя и платформу.\"\"\"\n    title = re.sub(r\"\\(.*?\\)|\\[.*?\\]\", \"\", title).strip()\n    title = re.sub(r\"\\s+\", \" \", title)\n    platform_map = {\n        \"PlayStation\": \"PS\",\n        \"Xbox\": \"XB\",\n        \"Nintendo\": \"NS\"\n    }\n    short_platform = platform_map.get(platform, platform)",
         "detail": "app.parsers.parsers_orm.dns_parser_orm",
         "documentation": {}
     },
@@ -1524,7 +1524,7 @@
         "kind": 2,
         "importPath": "app.parsers.parsers_orm.dns_parser_orm",
         "description": "app.parsers.parsers_orm.dns_parser_orm",
-        "peekOfCode": "def save_games_to_db(games: List[Dict[str, Any]]):\n    \"\"\"Сохраняет список игр в базу данных с очищенными названиями.\"\"\"\n    db: Session = SessionLocal()\n    try:\n        # Проверяем, существует ли магазин DNS\n        store = db.query(Store).filter(Store.name == \"DNS\").first()\n        if not store:\n            store = Store(name=\"DNS\")\n            db.add(store)\n            db.commit()",
+        "peekOfCode": "def save_games_to_db(games: List[Dict[str, Any]]):\n    \"\"\"Сохраняет список игр в базу данных с очищенными названиями.\"\"\"\n    db: Session = SessionLocal()\n    try:\n        store = db.query(Store).filter(Store.name == \"DNS\").first()\n        if not store:\n            store = Store(name=\"DNS\")\n            db.add(store)\n            db.commit()\n            db.refresh(store)",
         "detail": "app.parsers.parsers_orm.dns_parser_orm",
         "documentation": {}
     },
@@ -1533,7 +1533,7 @@
         "kind": 2,
         "importPath": "app.parsers.parsers_orm.marwin_parser_orm",
         "description": "app.parsers.parsers_orm.marwin_parser_orm",
-        "peekOfCode": "def save_games_to_db(games: List[Dict[str, Any]]):\n    \"\"\"Сохраняет список игр в базу данных.\"\"\"\n    db: Session = SessionLocal()\n    try:\n        # Проверяем, существует ли магазин Technodom\n        store = db.query(Store).filter(Store.name == \"Marwin\").first()\n        if not store:\n            store = Store(name=\"Technodom\")\n            db.add(store)\n            db.commit()",
+        "peekOfCode": "def save_games_to_db(games: List[Dict[str, Any]]):\n    \"\"\"Сохраняет список игр в базу данных.\"\"\"\n    db: Session = SessionLocal()\n    try:\n        store = db.query(Store).filter(Store.name == \"Marwin\").first()\n        if not store:\n            store = Store(name=\"Technodom\")\n            db.add(store)\n            db.commit()\n            db.refresh(store)",
         "detail": "app.parsers.parsers_orm.marwin_parser_orm",
         "documentation": {}
     },
@@ -1542,7 +1542,7 @@
         "kind": 2,
         "importPath": "app.parsers.parsers_orm.technodom_parser_orm",
         "description": "app.parsers.parsers_orm.technodom_parser_orm",
-        "peekOfCode": "def save_games_to_db(games: List[Dict[str, Any]]):\n    \"\"\"Сохраняет список игр в базу данных.\"\"\"\n    db: Session = SessionLocal()\n    try:\n        # Проверяем, существует ли магазин Technodom\n        store = db.query(Store).filter(Store.name == \"Technodom\").first()\n        if not store:\n            store = Store(name=\"Technodom\")\n            db.add(store)\n            db.commit()",
+        "peekOfCode": "def save_games_to_db(games: List[Dict[str, Any]]):\n    \"\"\"Сохраняет список игр в базу данных.\"\"\"\n    db: Session = SessionLocal()\n    try:\n        store = db.query(Store).filter(Store.name == \"Technodom\").first()\n        if not store:\n            store = Store(name=\"Technodom\")\n            db.add(store)\n            db.commit()\n            db.refresh(store)",
         "detail": "app.parsers.parsers_orm.technodom_parser_orm",
         "documentation": {}
     },

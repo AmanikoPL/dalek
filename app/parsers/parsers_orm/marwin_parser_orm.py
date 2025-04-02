@@ -8,7 +8,6 @@ def save_games_to_db(games: List[Dict[str, Any]]):
     db: Session = SessionLocal()
     
     try:
-        # Проверяем, существует ли магазин Technodom
         store = db.query(Store).filter(Store.name == "Marwin").first()
         if not store:
             store = Store(name="Technodom")
@@ -17,7 +16,6 @@ def save_games_to_db(games: List[Dict[str, Any]]):
             db.refresh(store)
 
         for game in games:
-            # Проверяем, существует ли платформа
             platform = db.query(Platform).filter(Platform.name == game["platform"]).first()
             if not platform:
                 platform = Platform(name=game["platform"])
@@ -27,7 +25,7 @@ def save_games_to_db(games: List[Dict[str, Any]]):
 
             db_game = Game(
                 title=game["title"],
-                platform_id=platform.id,  # Используем ID платформы
+                platform_id=platform.id,
                 price=game["price"],
                 availability=game["availability"],
                 store_id=store.id
