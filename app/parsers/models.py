@@ -1,9 +1,11 @@
-from sqlalchemy import Boolean, ForeignKey, Integer, String
+from sqlalchemy import Boolean, ForeignKey, Integer, String, Text
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from app.parsers.baseclass import Base
+from typing import Optional
 
 class Platform(Base):
     __tablename__ = "platforms"
+    __table_args__ = {'extend_existing': True}
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
     name: Mapped[str] = mapped_column(String, unique=True, nullable=False)
@@ -12,19 +14,22 @@ class Platform(Base):
 
 class Game(Base):
     __tablename__ = "games"
+    __table_args__ = {'extend_existing': True}
 
-    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
-    title: Mapped[str] = mapped_column(String, index=True, nullable=False)
-    platform_id: Mapped[int] = mapped_column(ForeignKey("platforms.id"), index=True, nullable=False)
-    price: Mapped[int] = mapped_column(Integer, nullable=True)
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
+    title: Mapped[str] = mapped_column(String(255), index=True, nullable=False)
+    platform_id: Mapped[int] = mapped_column(ForeignKey("platforms.id", ondelete="CASCADE"), index=True, nullable=False)
+    price: Mapped[Optional[int]] = mapped_column(Integer)
     availability: Mapped[bool] = mapped_column(Boolean, default=True)
-    store_id: Mapped[int] = mapped_column(ForeignKey("stores.id"))
+    store_id: Mapped[int] = mapped_column(ForeignKey("stores.id", ondelete="SET NULL"), nullable=True)
+    image_url: Mapped[Optional[str]] = mapped_column(Text)
 
-    platform = relationship("Platform", back_populates="games")  # <-- ДОБАВЛЕНО
-    store = relationship("Store", back_populates="games")
+    platform: Mapped["Platform"] = relationship("Platform", back_populates="games")
+    store: Mapped["Store"] = relationship("Store", back_populates="games")
 
 class Store(Base):
     __tablename__ = "stores"
+    __table_args__ = {'extend_existing': True}
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
     name: Mapped[str] = mapped_column(String, unique=True, nullable=False)
@@ -33,6 +38,7 @@ class Store(Base):
 
 class User(Base):
     __tablename__ = "users"
+    __table_args__ = {'extend_existing': True}
 
     id = mapped_column(Integer, primary_key=True, index=True)
     email = mapped_column(String, unique=True, index=True, nullable=False)

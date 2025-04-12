@@ -1,8 +1,8 @@
-"""Initial
+"""Try to fix
 
-Revision ID: 29b68a469eb5
+Revision ID: accc10800deb
 Revises: 
-Create Date: 2025-03-11 14:28:16.025204
+Create Date: 2025-04-08 15:04:39.671959
 
 """
 from typing import Sequence, Union
@@ -12,7 +12,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision: str = '29b68a469eb5'
+revision: str = 'accc10800deb'
 down_revision: Union[str, None] = None
 branch_labels: Union[str, Sequence[str], None] = None
 depends_on: Union[str, Sequence[str], None] = None
@@ -43,13 +43,14 @@ def upgrade() -> None:
     op.create_index(op.f('ix_users_id'), 'users', ['id'], unique=False)
     op.create_table('games',
     sa.Column('id', sa.Integer(), autoincrement=True, nullable=False),
-    sa.Column('title', sa.String(), nullable=False),
+    sa.Column('title', sa.String(length=255), nullable=False),
     sa.Column('platform_id', sa.Integer(), nullable=False),
     sa.Column('price', sa.Integer(), nullable=True),
     sa.Column('availability', sa.Boolean(), nullable=False),
-    sa.Column('store_id', sa.Integer(), nullable=False),
-    sa.ForeignKeyConstraint(['platform_id'], ['platforms.id'], ),
-    sa.ForeignKeyConstraint(['store_id'], ['stores.id'], ),
+    sa.Column('store_id', sa.Integer(), nullable=True),
+    sa.Column('image_url', sa.Text(), nullable=True),
+    sa.ForeignKeyConstraint(['platform_id'], ['platforms.id'], ondelete='CASCADE'),
+    sa.ForeignKeyConstraint(['store_id'], ['stores.id'], ondelete='SET NULL'),
     sa.PrimaryKeyConstraint('id')
     )
     op.create_index(op.f('ix_games_platform_id'), 'games', ['platform_id'], unique=False)

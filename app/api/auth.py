@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException, Depends
 from sqlalchemy.orm import Session
 from datetime import timedelta
 from app.database import get_db
-from app.models.models import User
+from app.parsers.models import User
 from app.service.security import verify_password, create_access_token, get_password_hash
 from app.schemas.user import UserLogin, UserCreate, UserUpdate
 from app.orm.user import create_user

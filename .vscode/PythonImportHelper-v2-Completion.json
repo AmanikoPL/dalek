@@ -168,6 +168,14 @@
         "documentation": {}
     },
     {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "List",
         "importPath": "typing",
         "description": "typing",
@@ -249,38 +257,6 @@
         "documentation": {}
     },
     {
-        "label": "Boolean",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
-        "label": "ForeignKey",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
-        "label": "Integer",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
-        "label": "String",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
         "label": "MetaData",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -329,6 +305,14 @@
         "documentation": {}
     },
     {
+        "label": "Text",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "create_engine",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -362,66 +346,154 @@
     },
     {
         "label": "Base",
-        "importPath": "app.models.baseclass",
-        "description": "app.models.baseclass",
+        "importPath": "app.database",
+        "description": "app.database",
         "isExtraImport": true,
-        "detail": "app.models.baseclass",
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.database",
+        "description": "app.database",
+        "isExtraImport": true,
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "importPath": "app.database",
+        "description": "app.database",
+        "isExtraImport": true,
+        "detail": "app.database",
         "documentation": {}
     },
     {
         "label": "Base",
-        "importPath": "app.orm.database",
-        "description": "app.orm.database",
+        "importPath": "app.parsers.models",
+        "description": "app.parsers.models",
         "isExtraImport": true,
-        "detail": "app.orm.database",
+        "detail": "app.parsers.models",
         "documentation": {}
     },
     {
         "label": "Game",
-        "importPath": "app.models.models",
-        "description": "app.models.models",
+        "importPath": "app.parsers.models",
+        "description": "app.parsers.models",
         "isExtraImport": true,
-        "detail": "app.models.models",
+        "detail": "app.parsers.models",
         "documentation": {}
     },
     {
         "label": "Store",
-        "importPath": "app.models.models",
-        "description": "app.models.models",
+        "importPath": "app.parsers.models",
+        "description": "app.parsers.models",
         "isExtraImport": true,
-        "detail": "app.models.models",
+        "detail": "app.parsers.models",
         "documentation": {}
     },
     {
         "label": "User",
-        "importPath": "app.models.models",
-        "description": "app.models.models",
+        "importPath": "app.parsers.models",
+        "description": "app.parsers.models",
         "isExtraImport": true,
-        "detail": "app.models.models",
+        "detail": "app.parsers.models",
         "documentation": {}
     },
     {
         "label": "Platform",
-        "importPath": "app.models.models",
-        "description": "app.models.models",
+        "importPath": "app.parsers.models",
+        "description": "app.parsers.models",
         "isExtraImport": true,
-        "detail": "app.models.models",
+        "detail": "app.parsers.models",
         "documentation": {}
     },
     {
         "label": "User",
-        "importPath": "app.models.models",
-        "description": "app.models.models",
+        "importPath": "app.parsers.models",
+        "description": "app.parsers.models",
         "isExtraImport": true,
-        "detail": "app.models.models",
+        "detail": "app.parsers.models",
         "documentation": {}
     },
     {
         "label": "User",
-        "importPath": "app.models.models",
-        "description": "app.models.models",
+        "importPath": "app.parsers.models",
+        "description": "app.parsers.models",
         "isExtraImport": true,
-        "detail": "app.models.models",
+        "detail": "app.parsers.models",
+        "documentation": {}
+    },
+    {
+        "label": "Game",
+        "importPath": "app.parsers.models",
+        "description": "app.parsers.models",
+        "isExtraImport": true,
+        "detail": "app.parsers.models",
+        "documentation": {}
+    },
+    {
+        "label": "Store",
+        "importPath": "app.parsers.models",
+        "description": "app.parsers.models",
+        "isExtraImport": true,
+        "detail": "app.parsers.models",
+        "documentation": {}
+    },
+    {
+        "label": "Platform",
+        "importPath": "app.parsers.models",
+        "description": "app.parsers.models",
+        "isExtraImport": true,
+        "detail": "app.parsers.models",
+        "documentation": {}
+    },
+    {
+        "label": "Game",
+        "importPath": "app.parsers.models",
+        "description": "app.parsers.models",
+        "isExtraImport": true,
+        "detail": "app.parsers.models",
+        "documentation": {}
+    },
+    {
+        "label": "Store",
+        "importPath": "app.parsers.models",
+        "description": "app.parsers.models",
+        "isExtraImport": true,
+        "detail": "app.parsers.models",
+        "documentation": {}
+    },
+    {
+        "label": "Platform",
+        "importPath": "app.parsers.models",
+        "description": "app.parsers.models",
+        "isExtraImport": true,
+        "detail": "app.parsers.models",
+        "documentation": {}
+    },
+    {
+        "label": "Game",
+        "importPath": "app.parsers.models",
+        "description": "app.parsers.models",
+        "isExtraImport": true,
+        "detail": "app.parsers.models",
+        "documentation": {}
+    },
+    {
+        "label": "Store",
+        "importPath": "app.parsers.models",
+        "description": "app.parsers.models",
+        "isExtraImport": true,
+        "detail": "app.parsers.models",
+        "documentation": {}
+    },
+    {
+        "label": "Platform",
+        "importPath": "app.parsers.models",
+        "description": "app.parsers.models",
+        "isExtraImport": true,
+        "detail": "app.parsers.models",
         "documentation": {}
     },
     {
@@ -474,30 +546,6 @@
     },
     {
         "label": "as_declarative",
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
-        "label": "Mapped",
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
-        "label": "mapped_column",
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
-        "label": "relationship",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
         "isExtraImport": true,
@@ -606,22 +654,6 @@
         "description": "datetime",
         "isExtraImport": true,
         "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "get_db",
-        "importPath": "app.database",
-        "description": "app.database",
-        "isExtraImport": true,
-        "detail": "app.database",
-        "documentation": {}
-    },
-    {
-        "label": "SessionLocal",
-        "importPath": "app.database",
-        "description": "app.database",
-        "isExtraImport": true,
-        "detail": "app.database",
         "documentation": {}
     },
     {
@@ -839,78 +871,6 @@
         "importPath": "re",
         "description": "re",
         "detail": "re",
-        "documentation": {}
-    },
-    {
-        "label": "Game",
-        "importPath": "app.parsers.models",
-        "description": "app.parsers.models",
-        "isExtraImport": true,
-        "detail": "app.parsers.models",
-        "documentation": {}
-    },
-    {
-        "label": "Store",
-        "importPath": "app.parsers.models",
-        "description": "app.parsers.models",
-        "isExtraImport": true,
-        "detail": "app.parsers.models",
-        "documentation": {}
-    },
-    {
-        "label": "Platform",
-        "importPath": "app.parsers.models",
-        "description": "app.parsers.models",
-        "isExtraImport": true,
-        "detail": "app.parsers.models",
-        "documentation": {}
-    },
-    {
-        "label": "Game",
-        "importPath": "app.parsers.models",
-        "description": "app.parsers.models",
-        "isExtraImport": true,
-        "detail": "app.parsers.models",
-        "documentation": {}
-    },
-    {
-        "label": "Store",
-        "importPath": "app.parsers.models",
-        "description": "app.parsers.models",
-        "isExtraImport": true,
-        "detail": "app.parsers.models",
-        "documentation": {}
-    },
-    {
-        "label": "Platform",
-        "importPath": "app.parsers.models",
-        "description": "app.parsers.models",
-        "isExtraImport": true,
-        "detail": "app.parsers.models",
-        "documentation": {}
-    },
-    {
-        "label": "Game",
-        "importPath": "app.parsers.models",
-        "description": "app.parsers.models",
-        "isExtraImport": true,
-        "detail": "app.parsers.models",
-        "documentation": {}
-    },
-    {
-        "label": "Store",
-        "importPath": "app.parsers.models",
-        "description": "app.parsers.models",
-        "isExtraImport": true,
-        "detail": "app.parsers.models",
-        "documentation": {}
-    },
-    {
-        "label": "Platform",
-        "importPath": "app.parsers.models",
-        "description": "app.parsers.models",
-        "isExtraImport": true,
-        "detail": "app.parsers.models",
         "documentation": {}
     },
     {
@@ -1288,19 +1248,19 @@
     {
         "label": "upgrade",
         "kind": 2,
-        "importPath": "alembic.versions.29b68a469eb5_initial",
-        "description": "alembic.versions.29b68a469eb5_initial",
+        "importPath": "alembic.versions.accc10800deb_try_to_fix",
+        "description": "alembic.versions.accc10800deb_try_to_fix",
         "peekOfCode": "def upgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('platforms',\n    sa.Column('id', sa.Integer(), autoincrement=True, nullable=False),\n    sa.Column('name', sa.String(), nullable=False),\n    sa.PrimaryKeyConstraint('id'),\n    sa.UniqueConstraint('name')\n    )\n    op.create_table('stores',\n    sa.Column('id', sa.Integer(), autoincrement=True, nullable=False),",
-        "detail": "alembic.versions.29b68a469eb5_initial",
+        "detail": "alembic.versions.accc10800deb_try_to_fix",
         "documentation": {}
     },
     {
         "label": "downgrade",
         "kind": 2,
-        "importPath": "alembic.versions.29b68a469eb5_initial",
-        "description": "alembic.versions.29b68a469eb5_initial",
+        "importPath": "alembic.versions.accc10800deb_try_to_fix",
+        "description": "alembic.versions.accc10800deb_try_to_fix",
         "peekOfCode": "def downgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_index(op.f('ix_games_title'), table_name='games')\n    op.drop_index(op.f('ix_games_platform_id'), table_name='games')\n    op.drop_table('games')\n    op.drop_index(op.f('ix_users_id'), table_name='users')\n    op.drop_index(op.f('ix_users_email'), table_name='users')\n    op.drop_table('users')\n    op.drop_table('stores')\n    op.drop_table('platforms')",
-        "detail": "alembic.versions.29b68a469eb5_initial",
+        "detail": "alembic.versions.accc10800deb_try_to_fix",
         "documentation": {}
     },
     {
@@ -1326,7 +1286,7 @@
         "kind": 5,
         "importPath": "alembic.env",
         "description": "alembic.env",
-        "peekOfCode": "target_metadata = Base.metadata\nfrom alembic import context\n# this is the Alembic Config object, which provides\n# access to the values within the .ini file in use.\nconfig = context.config\n# Interpret the config file for Python logging.\n# This line sets up loggers basically.\nif config.config_file_name is not None:\n    fileConfig(config.config_file_name)\n# add your model's MetaData object here",
+        "peekOfCode": "target_metadata = Base.metadata\nfrom alembic import context\n# this is the Alembic Config object, which provides\n# access to the values within the .ini file in use.\nconfig = context.config\n# Interpret the config file for Python logging.\n# This line sets up loggers basically.  \nif config.config_file_name is not None:\n    fileConfig(config.config_file_name)\n# add your model's MetaData object here",
         "detail": "alembic.env",
         "documentation": {}
     },
@@ -1335,7 +1295,7 @@
         "kind": 5,
         "importPath": "alembic.env",
         "description": "alembic.env",
-        "peekOfCode": "config = context.config\n# Interpret the config file for Python logging.\n# This line sets up loggers basically.\nif config.config_file_name is not None:\n    fileConfig(config.config_file_name)\n# add your model's MetaData object here\n# for 'autogenerate' support\n# from myapp import mymodel\n# target_metadata = mymodel.Base.metadata\ntarget_metadata = Base.metadata",
+        "peekOfCode": "config = context.config\n# Interpret the config file for Python logging.\n# This line sets up loggers basically.  \nif config.config_file_name is not None:\n    fileConfig(config.config_file_name)\n# add your model's MetaData object here\n# for 'autogenerate' support\n# from myapp import mymodel\n# target_metadata = mymodel.Base.metadata\ntarget_metadata = Base.metadata",
         "detail": "alembic.env",
         "documentation": {}
     },
@@ -1457,42 +1417,6 @@
         "documentation": {}
     },
     {
-        "label": "Platform",
-        "kind": 6,
-        "importPath": "app.models.models",
-        "description": "app.models.models",
-        "peekOfCode": "class Platform(Base):\n    __tablename__ = \"platforms\"\n    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)\n    name: Mapped[str] = mapped_column(String, unique=True, nullable=False)\n    games = relationship(\"Game\", back_populates=\"platform\")\nclass Game(Base):\n    __tablename__ = \"games\"\n    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)\n    title: Mapped[str] = mapped_column(String, index=True, nullable=False)\n    platform_id: Mapped[int] = mapped_column(ForeignKey(\"platforms.id\"), index=True, nullable=False)",
-        "detail": "app.models.models",
-        "documentation": {}
-    },
-    {
-        "label": "Game",
-        "kind": 6,
-        "importPath": "app.models.models",
-        "description": "app.models.models",
-        "peekOfCode": "class Game(Base):\n    __tablename__ = \"games\"\n    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)\n    title: Mapped[str] = mapped_column(String, index=True, nullable=False)\n    platform_id: Mapped[int] = mapped_column(ForeignKey(\"platforms.id\"), index=True, nullable=False)\n    price: Mapped[int] = mapped_column(Integer, nullable=True)\n    availability: Mapped[bool] = mapped_column(Boolean, default=True)\n    store_id: Mapped[int] = mapped_column(ForeignKey(\"stores.id\"))\n    platform = relationship(\"Platform\", back_populates=\"games\")  # <-- ДОБАВЛЕНО\n    store = relationship(\"Store\", back_populates=\"games\")",
-        "detail": "app.models.models",
-        "documentation": {}
-    },
-    {
-        "label": "Store",
-        "kind": 6,
-        "importPath": "app.models.models",
-        "description": "app.models.models",
-        "peekOfCode": "class Store(Base):\n    __tablename__ = \"stores\"\n    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)\n    name: Mapped[str] = mapped_column(String, unique=True, nullable=False)\n    games = relationship(\"Game\", back_populates=\"store\")\nclass User(Base):\n    __tablename__ = \"users\"\n    id = mapped_column(Integer, primary_key=True, index=True)\n    email = mapped_column(String, unique=True, index=True, nullable=False)\n    hashed_password = mapped_column(String, nullable=False)",
-        "detail": "app.models.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "kind": 6,
-        "importPath": "app.models.models",
-        "description": "app.models.models",
-        "peekOfCode": "class User(Base):\n    __tablename__ = \"users\"\n    id = mapped_column(Integer, primary_key=True, index=True)\n    email = mapped_column(String, unique=True, index=True, nullable=False)\n    hashed_password = mapped_column(String, nullable=False)\n    is_active = mapped_column(Boolean, default=True)",
-        "detail": "app.models.models",
-        "documentation": {}
-    },
-    {
         "label": "create_user",
         "kind": 2,
         "importPath": "app.orm.user",
@@ -1515,7 +1439,7 @@
         "kind": 2,
         "importPath": "app.parsers.parsers_orm.dns_parser_orm",
         "description": "app.parsers.parsers_orm.dns_parser_orm",
-        "peekOfCode": "def clean_game_title(title: str, platform: str) -> str:\n    \"\"\"Очищает название игры, оставляя только имя и платформу.\"\"\"\n    title = re.sub(r\"\\(.*?\\)|\\[.*?\\]\", \"\", title).strip()\n    title = re.sub(r\"\\s+\", \" \", title)\n    platform_map = {\n        \"PlayStation\": \"PS\",\n        \"Xbox\": \"XB\",\n        \"Nintendo\": \"NS\"\n    }\n    short_platform = platform_map.get(platform, platform)",
+        "peekOfCode": "def clean_game_title(title: str, platform: str) -> str:\n    title = re.sub(r\"\\(.*?\\)|\\[.*?\\]\", \"\", title).strip()\n    title = re.sub(r\"\\s+\", \" \", title)\n    print('3333333333333333333333333')\n    platform_map = {\n        \"PlayStation\": \"PS\",\n        \"Xbox\": \"XB\",\n        \"Nintendo\": \"NS\"\n    }\n    short_platform = platform_map.get(platform, platform)",
         "detail": "app.parsers.parsers_orm.dns_parser_orm",
         "documentation": {}
     },
@@ -1524,7 +1448,7 @@
         "kind": 2,
         "importPath": "app.parsers.parsers_orm.dns_parser_orm",
         "description": "app.parsers.parsers_orm.dns_parser_orm",
-        "peekOfCode": "def save_games_to_db(games: List[Dict[str, Any]]):\n    \"\"\"Сохраняет список игр в базу данных с очищенными названиями.\"\"\"\n    db: Session = SessionLocal()\n    try:\n        store = db.query(Store).filter(Store.name == \"DNS\").first()\n        if not store:\n            store = Store(name=\"DNS\")\n            db.add(store)\n            db.commit()\n            db.refresh(store)",
+        "peekOfCode": "def save_games_to_db(games: List[Dict[str, Any]]) -> None:\n    db: Session = SessionLocal()\n    print('2222222222222222222222222222222')\n    store = db.query(Store).filter_by(name=\"DNS\").first()\n    if not store:\n        store = Store(name=\"DNS\")\n        db.add(store)\n        db.commit()\n        db.refresh(store)\n    for game in games:",
         "detail": "app.parsers.parsers_orm.dns_parser_orm",
         "documentation": {}
     },
@@ -1614,7 +1538,7 @@
         "kind": 6,
         "importPath": "app.parsers.dns_parser",
         "description": "app.parsers.dns_parser",
-        "peekOfCode": "class DNSScraper:\n    \"\"\"Парсер игр с сайта DNS.\"\"\"\n    BASE_URLS = {\n        \"PlayStation\": \"https://www.dns-shop.kz/catalog/17a897ed16404e77/igry-dlya-playstation/?order=6&p={page}\",\n        \"Xbox\": \"https://www.dns-shop.kz/catalog/17a9f99116404e77/igry-dlya-microsoft-xbox/?order=6&p={page}\",\n        \"Nintendo\": \"https://www.dns-shop.kz/catalog/17a8b09516404e77/igry-dlya-nintendo/?order=6&p={page}\"\n    }\n    def __init__(self, driver=None):\n        self.driver = driver if driver else webdriver.Chrome()\n        self.driver.maximize_window()",
+        "peekOfCode": "class DNSScraper:\n    BASE_URLS = {\n        \"PlayStation\": \"https://www.dns-shop.kz/catalog/17a897ed16404e77/igry-dlya-playstation/?order=6&p={page}\",\n        \"Xbox\": \"https://www.dns-shop.kz/catalog/17a9f99116404e77/igry-dlya-microsoft-xbox/?order=6&p={page}\",\n        \"Nintendo\": \"https://www.dns-shop.kz/catalog/17a8b09516404e77/igry-dlya-nintendo/?order=6&p={page}\"\n    }\n    def __init__(self, driver=None):\n        self.driver = driver if driver else webdriver.Chrome()\n        self.driver.maximize_window()\n    def parse(self) -> List[Dict[str, Any]]:",
         "detail": "app.parsers.dns_parser",
         "documentation": {}
     },
@@ -1632,7 +1556,7 @@
         "kind": 6,
         "importPath": "app.parsers.models",
         "description": "app.parsers.models",
-        "peekOfCode": "class Platform(Base):\n    __tablename__ = \"platforms\"\n    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)\n    name: Mapped[str] = mapped_column(String, unique=True, nullable=False)\n    games = relationship(\"Game\", back_populates=\"platform\")\nclass Game(Base):\n    __tablename__ = \"games\"\n    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)\n    title: Mapped[str] = mapped_column(String, index=True, nullable=False)\n    platform_id: Mapped[int] = mapped_column(ForeignKey(\"platforms.id\"), index=True, nullable=False)",
+        "peekOfCode": "class Platform(Base):\n    __tablename__ = \"platforms\"\n    __table_args__ = {'extend_existing': True}\n    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)\n    name: Mapped[str] = mapped_column(String, unique=True, nullable=False)\n    games = relationship(\"Game\", back_populates=\"platform\")\nclass Game(Base):\n    __tablename__ = \"games\"\n    __table_args__ = {'extend_existing': True}\n    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)",
         "detail": "app.parsers.models",
         "documentation": {}
     },
@@ -1641,7 +1565,7 @@
         "kind": 6,
         "importPath": "app.parsers.models",
         "description": "app.parsers.models",
-        "peekOfCode": "class Game(Base):\n    __tablename__ = \"games\"\n    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)\n    title: Mapped[str] = mapped_column(String, index=True, nullable=False)\n    platform_id: Mapped[int] = mapped_column(ForeignKey(\"platforms.id\"), index=True, nullable=False)\n    price: Mapped[int] = mapped_column(Integer, nullable=True)\n    availability: Mapped[bool] = mapped_column(Boolean, default=True)\n    store_id: Mapped[int] = mapped_column(ForeignKey(\"stores.id\"))\n    platform = relationship(\"Platform\", back_populates=\"games\")  # <-- ДОБАВЛЕНО\n    store = relationship(\"Store\", back_populates=\"games\")",
+        "peekOfCode": "class Game(Base):\n    __tablename__ = \"games\"\n    __table_args__ = {'extend_existing': True}\n    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)\n    title: Mapped[str] = mapped_column(String(255), index=True, nullable=False)\n    platform_id: Mapped[int] = mapped_column(ForeignKey(\"platforms.id\", ondelete=\"CASCADE\"), index=True, nullable=False)\n    price: Mapped[Optional[int]] = mapped_column(Integer)\n    availability: Mapped[bool] = mapped_column(Boolean, default=True)\n    store_id: Mapped[int] = mapped_column(ForeignKey(\"stores.id\", ondelete=\"SET NULL\"), nullable=True)\n    image_url: Mapped[Optional[str]] = mapped_column(Text)",
         "detail": "app.parsers.models",
         "documentation": {}
     },
@@ -1650,7 +1574,7 @@
         "kind": 6,
         "importPath": "app.parsers.models",
         "description": "app.parsers.models",
-        "peekOfCode": "class Store(Base):\n    __tablename__ = \"stores\"\n    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)\n    name: Mapped[str] = mapped_column(String, unique=True, nullable=False)\n    games = relationship(\"Game\", back_populates=\"store\")\nclass User(Base):\n    __tablename__ = \"users\"\n    id = mapped_column(Integer, primary_key=True, index=True)\n    email = mapped_column(String, unique=True, index=True, nullable=False)\n    hashed_password = mapped_column(String, nullable=False)",
+        "peekOfCode": "class Store(Base):\n    __tablename__ = \"stores\"\n    __table_args__ = {'extend_existing': True}\n    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)\n    name: Mapped[str] = mapped_column(String, unique=True, nullable=False)\n    games = relationship(\"Game\", back_populates=\"store\")\nclass User(Base):\n    __tablename__ = \"users\"\n    __table_args__ = {'extend_existing': True}\n    id = mapped_column(Integer, primary_key=True, index=True)",
         "detail": "app.parsers.models",
         "documentation": {}
     },
@@ -1659,7 +1583,7 @@
         "kind": 6,
         "importPath": "app.parsers.models",
         "description": "app.parsers.models",
-        "peekOfCode": "class User(Base):\n    __tablename__ = \"users\"\n    id = mapped_column(Integer, primary_key=True, index=True)\n    email = mapped_column(String, unique=True, index=True, nullable=False)\n    hashed_password = mapped_column(String, nullable=False)\n    is_active = mapped_column(Boolean, default=True)",
+        "peekOfCode": "class User(Base):\n    __tablename__ = \"users\"\n    __table_args__ = {'extend_existing': True}\n    id = mapped_column(Integer, primary_key=True, index=True)\n    email = mapped_column(String, unique=True, index=True, nullable=False)\n    hashed_password = mapped_column(String, nullable=False)\n    is_active = mapped_column(Boolean, default=True)",
         "detail": "app.parsers.models",
         "documentation": {}
     },
@@ -1673,38 +1597,11 @@
         "documentation": {}
     },
     {
-        "label": "UserCreate",
-        "kind": 6,
-        "importPath": "app.schemas.user",
-        "description": "app.schemas.user",
-        "peekOfCode": "class UserCreate(BaseModel):\n    email: str\n    password: str\nclass UserResponse(BaseModel):\n    id: int\n    email: str\n    username: str\n    class Config:\n        orm_mode = True\nclass Token(BaseModel):",
-        "detail": "app.schemas.user",
-        "documentation": {}
-    },
-    {
-        "label": "UserResponse",
-        "kind": 6,
-        "importPath": "app.schemas.user",
-        "description": "app.schemas.user",
-        "peekOfCode": "class UserResponse(BaseModel):\n    id: int\n    email: str\n    username: str\n    class Config:\n        orm_mode = True\nclass Token(BaseModel):\n    access_token: str\n    token_type: str\nclass UserLogin(BaseModel):",
-        "detail": "app.schemas.user",
-        "documentation": {}
-    },
-    {
-        "label": "Token",
-        "kind": 6,
-        "importPath": "app.schemas.user",
-        "description": "app.schemas.user",
-        "peekOfCode": "class Token(BaseModel):\n    access_token: str\n    token_type: str\nclass UserLogin(BaseModel):\n    email: str\n    password: str\nclass UserCreate(BaseModel):\n    email: str\n    password: str   \nclass UserUpdate(BaseModel):",
-        "detail": "app.schemas.user",
-        "documentation": {}
-    },
-    {
         "label": "UserLogin",
         "kind": 6,
         "importPath": "app.schemas.user",
         "description": "app.schemas.user",
-        "peekOfCode": "class UserLogin(BaseModel):\n    email: str\n    password: str\nclass UserCreate(BaseModel):\n    email: str\n    password: str   \nclass UserUpdate(BaseModel):\n    new_email: Optional[EmailStr] = None\n    new_password: Optional[str] = None",
+        "peekOfCode": "class UserLogin(BaseModel):\n    email: str\n    password: str\nclass UserCreate(BaseModel):\n    username: str\n    email: str\n    password: str   \nclass UserUpdate(BaseModel):\n    new_email: Optional[EmailStr] = None\n    new_password: Optional[str] = None",
         "detail": "app.schemas.user",
         "documentation": {}
     },
@@ -1713,7 +1610,7 @@
         "kind": 6,
         "importPath": "app.schemas.user",
         "description": "app.schemas.user",
-        "peekOfCode": "class UserCreate(BaseModel):\n    email: str\n    password: str   \nclass UserUpdate(BaseModel):\n    new_email: Optional[EmailStr] = None\n    new_password: Optional[str] = None",
+        "peekOfCode": "class UserCreate(BaseModel):\n    username: str\n    email: str\n    password: str   \nclass UserUpdate(BaseModel):\n    new_email: Optional[EmailStr] = None\n    new_password: Optional[str] = None",
         "detail": "app.schemas.user",
         "documentation": {}
     },

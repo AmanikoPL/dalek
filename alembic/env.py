@@ -2,8 +2,9 @@ from logging.config import fileConfig
 from app.models.baseclass import Base
 from sqlalchemy import engine_from_config
 from sqlalchemy import pool
-from app.orm.database import Base
-from app.models.models import Game, Store, User, Platform
+from app.database import Base
+# from app.models.models import Base, Game, Store, User, Platform
+from app.parsers.models import Base, Game, Store, User, Platform
 # from app.models.store import Store
 # from app.models.user import User
 # 
@@ -17,7 +18,7 @@ from alembic import context
 config = context.config
 
 # Interpret the config file for Python logging.
-# This line sets up loggers basically.
+# This line sets up loggers basically.  
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
 

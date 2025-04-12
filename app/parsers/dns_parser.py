@@ -7,8 +7,6 @@ from typing import List, Dict, Any
 from app.parsers.parsers_orm.dns_parser_orm import save_games_to_db
 
 class DNSScraper:
-    """Парсер игр с сайта DNS."""
-
     BASE_URLS = {
         "PlayStation": "https://www.dns-shop.kz/catalog/17a897ed16404e77/igry-dlya-playstation/?order=6&p={page}",
         "Xbox": "https://www.dns-shop.kz/catalog/17a9f99116404e77/igry-dlya-microsoft-xbox/?order=6&p={page}",
@@ -20,7 +18,6 @@ class DNSScraper:
         self.driver.maximize_window()
 
     def parse(self) -> List[Dict[str, Any]]:
-        """Парсит список игр."""
         games = []
 
         for platform, base_url in self.BASE_URLS.items():
@@ -28,63 +25,61 @@ class DNSScraper:
 
             while True:
                 self.driver.get(base_url.format(page=page))
-                found = False
 
-                for i in range(1, 19):
+                try:
+                    WebDriverWait(self.driver, 10).until(
+                        EC.presence_of_element_located((By.CLASS_NAME, "catalog-product"))
+                    )
+                except TimeoutException:
+                    break
+
+                product_elements = self.driver.find_elements(By.CLASS_NAME, "catalog-product")
+                if not product_elements:
+                    break
+
+                for product in product_elements:
                     try:
-                        title_xpath = f'/html/body/div[2]/div/div[2]/div[2]/div[3]/div/div[1]/div[{i}]/div[2]/a/span'
-                        price_xpath = f'/html/body/div[2]/div/div[2]/div[2]/div[3]/div/div[1]/div[{i}]/div[5]/div/div[1]'
-                        availability_xpath = f'/html/body/div[2]/div/div[2]/div[2]/div[3]/div/div[1]/div[{i}]/div[5]/div/div/button'
-
-                        title_element = WebDriverWait(self.driver, 10).until(
-                            EC.presence_of_element_located((By.XPATH, title_xpath))
-                        )
-                        title = title_element.text.strip()
-
+                        title = product.find_element(By.CLASS_NAME, "catalog-product__name").text.strip()
                         try:
-                            availability_element = self.driver.find_element(By.XPATH, availability_xpath)
-                            availability_text = availability_element.text.strip()
+                            price_text = product.find_element(By.CLASS_NAME, "product-buy__price").text
+                            price = int("".join(filter(str.isdigit, price_text)))
+                        except Exception:
+                            price = None
+                        try:
+                            availability_text = product.find_element(By.CLASS_NAME, "button-ui").text.strip()
                             is_available = "В корзину" in availability_text
                         except Exception:
                             is_available = False
-
                         try:
-                            price_element = self.driver.find_element(By.XPATH, price_xpath)
-                            price_text = price_element.text.replace("\xa0", "").replace("₸", "").strip()
-                            price_digits = "".join(filter(str.isdigit, price_text))
-
-                            if len(price_digits) > 5:
-                                price_digits = price_digits[:5]  # Оставляем только первые 5 знаков
-
-                            price = int(price_digits) if price_digits else None
+                            img_element = product.find_element(By.CSS_SELECTOR, "img")
+                            img_url = img_element.get_attribute("src") or img_element.get_attribute("data-src")
                         except Exception:
-                            price = None
+                            img_url = None
 
                         game_data = {
                             "title": title,
                             "platform": platform,
                             "price": price,
                             "availability": is_available,
+                            "image_url": img_url
                         }
+                        
                         games.append(game_data)
-                        found = True
-                    except TimeoutException:
-                        break
+                    except Exception:
+                        continue
 
-                if not found:
-                    break
                 page += 1
-
+        save_games_to_db(games)
         return games
-    
+
     def close(self):
-        """Закрывает браузер."""
         self.driver.quit()
 
 if __name__ == "__main__":
     scraper = DNSScraper()
+    print('Name vizvalsya')
     try:
         games = scraper.parse()
-        save_games_to_db(games)  # Сохранение в БД через отдельный модуль
+        save_games_to_db(games)
     finally:
         scraper.close()
