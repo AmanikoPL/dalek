@@ -208,6 +208,22 @@
         "documentation": {}
     },
     {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "op",
         "importPath": "alembic",
         "description": "alembic",
@@ -761,6 +777,14 @@
         "documentation": {}
     },
     {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
         "label": "TechnodomParser",
         "importPath": "app.parsers.technodom_parser",
         "description": "app.parsers.technodom_parser",
@@ -830,6 +854,54 @@
         "description": "app.parsers.marwin_parser",
         "isExtraImport": true,
         "detail": "app.parsers.marwin_parser",
+        "documentation": {}
+    },
+    {
+        "label": "save_games_to_db",
+        "importPath": "app.parsers.parsers_orm.marwin_parser_orm",
+        "description": "app.parsers.parsers_orm.marwin_parser_orm",
+        "isExtraImport": true,
+        "detail": "app.parsers.parsers_orm.marwin_parser_orm",
+        "documentation": {}
+    },
+    {
+        "label": "save_games_to_db",
+        "importPath": "app.parsers.parsers_orm.marwin_parser_orm",
+        "description": "app.parsers.parsers_orm.marwin_parser_orm",
+        "isExtraImport": true,
+        "detail": "app.parsers.parsers_orm.marwin_parser_orm",
+        "documentation": {}
+    },
+    {
+        "label": "save_games_to_db",
+        "importPath": "app.parsers.parsers_orm.marwin_parser_orm",
+        "description": "app.parsers.parsers_orm.marwin_parser_orm",
+        "isExtraImport": true,
+        "detail": "app.parsers.parsers_orm.marwin_parser_orm",
+        "documentation": {}
+    },
+    {
+        "label": "save_games_to_db",
+        "importPath": "app.parsers.parsers_orm.marwin_parser_orm",
+        "description": "app.parsers.parsers_orm.marwin_parser_orm",
+        "isExtraImport": true,
+        "detail": "app.parsers.parsers_orm.marwin_parser_orm",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "app.tasks.celery",
+        "description": "app.tasks.celery",
+        "isExtraImport": true,
+        "detail": "app.tasks.celery",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "app.tasks.celery",
+        "description": "app.tasks.celery",
+        "isExtraImport": true,
+        "detail": "app.tasks.celery",
         "documentation": {}
     },
     {
@@ -1085,30 +1157,6 @@
     },
     {
         "label": "save_games_to_db",
-        "importPath": "app.parsers.parsers_orm.marwin_parser_orm",
-        "description": "app.parsers.parsers_orm.marwin_parser_orm",
-        "isExtraImport": true,
-        "detail": "app.parsers.parsers_orm.marwin_parser_orm",
-        "documentation": {}
-    },
-    {
-        "label": "save_games_to_db",
-        "importPath": "app.parsers.parsers_orm.marwin_parser_orm",
-        "description": "app.parsers.parsers_orm.marwin_parser_orm",
-        "isExtraImport": true,
-        "detail": "app.parsers.parsers_orm.marwin_parser_orm",
-        "documentation": {}
-    },
-    {
-        "label": "save_games_to_db",
-        "importPath": "app.parsers.parsers_orm.marwin_parser_orm",
-        "description": "app.parsers.parsers_orm.marwin_parser_orm",
-        "isExtraImport": true,
-        "detail": "app.parsers.parsers_orm.marwin_parser_orm",
-        "documentation": {}
-    },
-    {
-        "label": "save_games_to_db",
         "importPath": "app.parsers.parsers_orm.technodom_parser_orm",
         "description": "app.parsers.parsers_orm.technodom_parser_orm",
         "isExtraImport": true,
@@ -1129,6 +1177,14 @@
         "description": "app.parsers.parsers_orm.technodom_parser_orm",
         "isExtraImport": true,
         "detail": "app.parsers.parsers_orm.technodom_parser_orm",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
         "documentation": {}
     },
     {
@@ -1202,14 +1258,6 @@
         "description": "celery.schedules",
         "isExtraImport": true,
         "detail": "celery.schedules",
-        "documentation": {}
-    },
-    {
-        "label": "app",
-        "importPath": "app.tasks.celery",
-        "description": "app.tasks.celery",
-        "isExtraImport": true,
-        "detail": "app.tasks.celery",
         "documentation": {}
     },
     {
@@ -1367,7 +1415,7 @@
         "kind": 2,
         "importPath": "app.api.parsers",
         "description": "app.api.parsers",
-        "peekOfCode": "def parse_dns() -> List[str]:\n    scraper = DNSScraper()\n    try:\n        return scraper.parse()\n    finally:\n        scraper.close()\n@router.get(\"/marwin\")\ndef parse_marwin() -> List[str]:\n    scraper = MarwinParser()\n    try:",
+        "peekOfCode": "def parse_dns() -> List[str]:\n    scraper = DNSScraper()\n    try:\n        return scraper.parse()\n    finally:\n        scraper.close()\n@router.get(\"/marwin\")\ndef parse_marwin():\n    parser = MarwinParser()\n    try:",
         "detail": "app.api.parsers",
         "documentation": {}
     },
@@ -1376,7 +1424,7 @@
         "kind": 2,
         "importPath": "app.api.parsers",
         "description": "app.api.parsers",
-        "peekOfCode": "def parse_marwin() -> List[str]:\n    scraper = MarwinParser()\n    try:\n        return scraper.parse()\n    finally:\n        scraper.close()\n@router.get(\"/all\")\ndef parse_all() -> Dict[str, List]:\n    technodom_games, dns_games, marwin_games = [], [], []\n    driver = webdriver.Chrome()",
+        "peekOfCode": "def parse_marwin():\n    parser = MarwinParser()\n    try:\n        games = parser.parse()\n        save_games_to_db(games)\n        return JSONResponse(content=games)\n    finally:\n        parser.close()\n@router.get(\"/all\")\ndef parse_all() -> Dict[str, List]:",
         "detail": "app.api.parsers",
         "documentation": {}
     },
@@ -1457,7 +1505,7 @@
         "kind": 2,
         "importPath": "app.parsers.parsers_orm.marwin_parser_orm",
         "description": "app.parsers.parsers_orm.marwin_parser_orm",
-        "peekOfCode": "def save_games_to_db(games: List[Dict[str, Any]]):\n    \"\"\"Сохраняет список игр в базу данных.\"\"\"\n    db: Session = SessionLocal()\n    try:\n        store = db.query(Store).filter(Store.name == \"Marwin\").first()\n        if not store:\n            store = Store(name=\"Technodom\")\n            db.add(store)\n            db.commit()\n            db.refresh(store)",
+        "peekOfCode": "def save_games_to_db(games: List[Dict[str, Any]]):\n    db: Session = SessionLocal()\n    try:\n        store = db.query(Store).filter(Store.name == \"Marwin\").first()\n        if not store:\n            store = Store(name=\"Marwin\")\n            db.add(store)\n            db.commit()\n            db.refresh(store)\n        for game in games:",
         "detail": "app.parsers.parsers_orm.marwin_parser_orm",
         "documentation": {}
     },
@@ -1547,7 +1595,7 @@
         "kind": 6,
         "importPath": "app.parsers.marwin_parser",
         "description": "app.parsers.marwin_parser",
-        "peekOfCode": "class MarwinParser:\n    \"\"\"Класс для парсинга списка игр с сайта Marwin.\"\"\"\n    BASE_URLS = {\n        \"Playstation\": \"https://www.marwin.kz/videogames/playstation/igry-dliya-playstation-5/\",\n        \"Playstation\": \"https://www.marwin.kz/videogames/playstation/igry-dliya-playstation-4/\",\n        \"Xbox One\": \"https://www.marwin.kz/videogames/xbox/igry-dlya-microsoft-xbox-one/\",\n        \"Nintendo Switch\": \"https://www.marwin.kz/videogames/nintendo/igry-dlya-nintendo-switch/\"\n    }\n    def __init__(self):\n        self.driver = webdriver.Chrome()",
+        "peekOfCode": "class MarwinParser:\n    \"\"\"Класс для парсинга списка игр с сайта Marwin.\"\"\"\n    BASE_URLS = {\n        \"PlayStation 5\": \"https://www.marwin.kz/videogames/playstation/igry-dliya-playstation-5/\",\n        \"PlayStation 4\": \"https://www.marwin.kz/videogames/playstation/igry-dliya-playstation-4/\",\n        \"Xbox One\": \"https://www.marwin.kz/videogames/xbox/igry-dlya-microsoft-xbox-one/\",\n        \"Nintendo Switch\": \"https://www.marwin.kz/videogames/nintendo/igry-dlya-nintendo-switch/\"\n    }\n    def __init__(self):\n        self.driver = webdriver.Chrome()",
         "detail": "app.parsers.marwin_parser",
         "documentation": {}
     },
@@ -1594,6 +1642,15 @@
         "description": "app.parsers.technodom_parser",
         "peekOfCode": "class TechnodomParser:\n    \"\"\"Парсер игр с сайта Technodom.\"\"\"\n    BASE_URLS = {\n        \"PlayStation 4\": \"https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-playstation-4\",\n        \"PlayStation 5\": \"https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-playstation-5\",\n        \"Xbox\": \"https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-xbox\",\n        \"Nintendo\": \"https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-nintendo\"\n    }\n    def __init__(self, driver: webdriver.Chrome = None):\n        \"\"\"Инициализация парсера с возможностью передачи драйвера.\"\"\"",
         "detail": "app.parsers.technodom_parser",
+        "documentation": {}
+    },
+    {
+        "label": "GameSchema",
+        "kind": 6,
+        "importPath": "app.schemas.game",
+        "description": "app.schemas.game",
+        "peekOfCode": "class GameSchema(BaseModel):\n    title: str\n    platform: str\n    price: Optional[int]\n    availability: bool\n    image_url: Optional[str]",
+        "detail": "app.schemas.game",
         "documentation": {}
     },
     {

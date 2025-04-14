@@ -11,8 +11,8 @@ class MarwinParser:
     """Класс для парсинга списка игр с сайта Marwin."""
 
     BASE_URLS = {
-        "Playstation": "https://www.marwin.kz/videogames/playstation/igry-dliya-playstation-5/",
-        "Playstation": "https://www.marwin.kz/videogames/playstation/igry-dliya-playstation-4/",
+        "PlayStation 5": "https://www.marwin.kz/videogames/playstation/igry-dliya-playstation-5/",
+        "PlayStation 4": "https://www.marwin.kz/videogames/playstation/igry-dliya-playstation-4/",
         "Xbox One": "https://www.marwin.kz/videogames/xbox/igry-dlya-microsoft-xbox-one/",
         "Nintendo Switch": "https://www.marwin.kz/videogames/nintendo/igry-dlya-nintendo-switch/"
     }
@@ -38,14 +38,10 @@ class MarwinParser:
 
                     for index in range(1, len(product_elements) + 1):
                         try:
-                            title_xpath = (
-                                f'//*[@id="amasty-shopby-product-list"]/div[3]/ol/li[{index}]'
-                                '/div/div/strong/h3/a'
-                            )
-                            price_xpath = (
-                                f'//*[@id="amasty-shopby-product-list"]/div[3]/ol/li[{index}]'
-                                '//span[@class="price"]'
-                            )
+                            base_xpath = f'//*[@id="amasty-shopby-product-list"]/div[3]/ol/li[{index}]'
+                            title_xpath = f'{base_xpath}/div/div/strong/h3/a'
+                            price_xpath = f'{base_xpath}//span[@class="price"]'
+                            image_xpath = f'{base_xpath}/div/a/span/span/img'
 
                             title_element = self.driver.find_element(By.XPATH, title_xpath)
                             title = title_element.text.strip()
@@ -57,11 +53,18 @@ class MarwinParser:
                             except Exception:
                                 price = None
 
+                            try:
+                                image_element = self.driver.find_element(By.XPATH, image_xpath)
+                                image_url = image_element.get_attribute("src")
+                            except Exception:
+                                image_url = None
+
                             game_data = {
                                 "title": title,
                                 "platform": platform,
                                 "price": price,
-                                "availability": True,  # Все товары считаем доступными
+                                "availability": True,
+                                "image_url": image_url
                             }
                             games.append(game_data)
 
@@ -81,7 +84,7 @@ if __name__ == "__main__":
     scraper = MarwinParser()
     try:
         games = scraper.parse()
-        save_games_to_db(games)  # Сохраняем в БД
+        save_games_to_db(games)
         print("Парсинг завершён и данные сохранены в БД.")
     finally:
         scraper.close()

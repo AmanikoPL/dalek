@@ -1,9 +1,12 @@
 from fastapi import APIRouter
 from selenium import webdriver
 from typing import Dict, List
+from fastapi.responses import JSONResponse
 from app.parsers.technodom_parser import TechnodomParser
 from app.parsers.dns_parser import DNSScraper
 from app.parsers.marwin_parser import MarwinParser
+from app.parsers.parsers_orm.marwin_parser_orm import save_games_to_db
+from app.tasks.celery import app
 
 router = APIRouter()
 
@@ -26,12 +29,14 @@ def parse_dns() -> List[str]:
         scraper.close()
 
 @router.get("/marwin")
-def parse_marwin() -> List[str]:
-    scraper = MarwinParser()
+def parse_marwin():
+    parser = MarwinParser()
     try:
-        return scraper.parse()
+        games = parser.parse()
+        save_games_to_db(games)
+        return JSONResponse(content=games)
     finally:
-        scraper.close()
+        parser.close()
 
 @router.get("/all")
 def parse_all() -> Dict[str, List]:

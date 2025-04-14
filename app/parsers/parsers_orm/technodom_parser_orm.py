@@ -6,7 +6,7 @@ from typing import List, Dict, Any
 def save_games_to_db(games: List[Dict[str, Any]]):
     """Сохраняет список игр в базу данных."""
     db: Session = SessionLocal()
-    
+
     try:
         store = db.query(Store).filter(Store.name == "Technodom").first()
         if not store:
@@ -28,11 +28,12 @@ def save_games_to_db(games: List[Dict[str, Any]]):
                 platform_id=platform.id,
                 price=game["price"],
                 availability=game["availability"],
-                store_id=store.id
+                store_id=store.id,
+                image_url=game.get("image_url")  # добавлено
             )
             print(db_game)
             db.add(db_game)
-        
+
         db.commit()
     finally:
         db.close()

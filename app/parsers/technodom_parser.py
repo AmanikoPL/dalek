@@ -40,6 +40,12 @@ class TechnodomParser:
                         f'//*[@id="__next"]/section/main/section/div/div[2]/article/ul/li[{i}]/a/div/div[2]/div[3]/p'
                     )
 
+                    # Новый XPATH для картинки
+                    image_xpath_variants = [
+                        f'//*[@id="__next"]/section/main/section/div/div[2]/article/ul/li[{i}]/a/div/div[1]/div[2]/div/picture/img',
+                        f'//*[@id="__next"]/section/main/section/div/div[2]/article/ul/li[{i}]/a/div/div[1]/div[2]/div/div[1]/div/div[1]/div/div/picture/img'
+                    ]
+
                     title_element = WebDriverWait(self.driver, 10).until(
                         EC.presence_of_element_located((By.XPATH, title_xpath))
                     )
@@ -60,11 +66,23 @@ class TechnodomParser:
                     except Exception:
                         price = None
 
+                    # Пытаемся найти картинку
+                    image_url = None
+                    for img_xpath in image_xpath_variants:
+                        try:
+                            img_element = self.driver.find_element(By.XPATH, img_xpath)
+                            image_url = img_element.get_attribute("src")
+                            if image_url:
+                                break
+                        except Exception:
+                            continue
+
                     game_data = {
                         "title": title,
                         "platform": platform,
                         "price": price,
                         "availability": is_available,
+                        "image_url": image_url
                     }
                     games.append(game_data)
                 except Exception:
