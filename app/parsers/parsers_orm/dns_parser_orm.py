@@ -7,7 +7,6 @@ from typing import List, Dict, Any
 def clean_game_title(title: str, platform: str) -> str:
     title = re.sub(r"\(.*?\)|\[.*?\]", "", title).strip()
     title = re.sub(r"\s+", " ", title)
-    print('3333333333333333333333333')
     platform_map = {
         "PlayStation": "PS",
         "Xbox": "XB",
@@ -19,7 +18,6 @@ def clean_game_title(title: str, platform: str) -> str:
 
 def save_games_to_db(games: List[Dict[str, Any]]) -> None:
     db: Session = SessionLocal()
-    print('2222222222222222222222222222222')
     store = db.query(Store).filter_by(name="DNS").first()
     if not store:
         store = Store(name="DNS")
@@ -28,7 +26,6 @@ def save_games_to_db(games: List[Dict[str, Any]]) -> None:
         db.refresh(store)
 
     for game in games:
-        print('111111111111111111111111')
         platform = db.query(Platform).filter_by(name=game["platform"]).first()
         if not platform:
             platform = Platform(name=game["platform"])

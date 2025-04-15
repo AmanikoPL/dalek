@@ -21,7 +21,7 @@ def login(user_data: UserLogin, db: Session = Depends(get_db)):
     )
     return {"access_token": access_token, "token_type": "bearer"}
 
-@router.post("/register/")
+@router.post("/register")
 def register(user_data: UserCreate, db: Session = Depends(get_db)):
     new_user = create_user(db, user_data, user_data.password) 
     return {"email": new_user.email, "is_active": new_user.is_active}

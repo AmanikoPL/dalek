@@ -265,6 +265,14 @@
         "documentation": {}
     },
     {
+        "label": "func",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "MetaData",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -377,6 +385,14 @@
         "documentation": {}
     },
     {
+        "label": "get_db",
+        "importPath": "app.database",
+        "description": "app.database",
+        "isExtraImport": true,
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
         "label": "SessionLocal",
         "importPath": "app.database",
         "description": "app.database",
@@ -426,6 +442,22 @@
     },
     {
         "label": "User",
+        "importPath": "app.parsers.models",
+        "description": "app.parsers.models",
+        "isExtraImport": true,
+        "detail": "app.parsers.models",
+        "documentation": {}
+    },
+    {
+        "label": "Game",
+        "importPath": "app.parsers.models",
+        "description": "app.parsers.models",
+        "isExtraImport": true,
+        "detail": "app.parsers.models",
+        "documentation": {}
+    },
+    {
+        "label": "Platform",
         "importPath": "app.parsers.models",
         "description": "app.parsers.models",
         "isExtraImport": true,
@@ -545,11 +577,35 @@
         "documentation": {}
     },
     {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "FastAPI",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
         "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
         "documentation": {}
     },
     {
@@ -1361,7 +1417,7 @@
         "kind": 2,
         "importPath": "app.api.auth",
         "description": "app.api.auth",
-        "peekOfCode": "def login(user_data: UserLogin, db: Session = Depends(get_db)):\n    user = db.query(User).filter(User.email == user_data.email).first()\n    if not user or not verify_password(user_data.password, user.hashed_password):\n        raise HTTPException(status_code=401, detail=\"Invalid credentials\")\n    access_token = create_access_token(\n        data={\"sub\": user.email},\n        expires_delta=timedelta(minutes=30)\n    )\n    return {\"access_token\": access_token, \"token_type\": \"bearer\"}\n@router.post(\"/register/\")",
+        "peekOfCode": "def login(user_data: UserLogin, db: Session = Depends(get_db)):\n    user = db.query(User).filter(User.email == user_data.email).first()\n    if not user or not verify_password(user_data.password, user.hashed_password):\n        raise HTTPException(status_code=401, detail=\"Invalid credentials\")\n    access_token = create_access_token(\n        data={\"sub\": user.email},\n        expires_delta=timedelta(minutes=30)\n    )\n    return {\"access_token\": access_token, \"token_type\": \"bearer\"}\n@router.post(\"/register\")",
         "detail": "app.api.auth",
         "documentation": {}
     },
@@ -1438,6 +1494,15 @@
         "documentation": {}
     },
     {
+        "label": "get_games_by_platform",
+        "kind": 2,
+        "importPath": "app.api.parsers",
+        "description": "app.api.parsers",
+        "peekOfCode": "def get_games_by_platform(platform_name: str, db: Session = Depends(get_db)):\n    platform = db.query(Platform).filter(func.lower(Platform.name) == platform_name.lower()).first()\n    if not platform:\n        raise HTTPException(status_code=404, detail=\"Platform not found\")\n    games = db.query(Game).filter(Game.platform_id == platform.id).all()\n    return [\n        {\n            \"id\": game.id,\n            \"title\": game.title,\n            \"price\": game.price,",
+        "detail": "app.api.parsers",
+        "documentation": {}
+    },
+    {
         "label": "router",
         "kind": 5,
         "importPath": "app.api.parsers",
@@ -1487,7 +1552,7 @@
         "kind": 2,
         "importPath": "app.parsers.parsers_orm.dns_parser_orm",
         "description": "app.parsers.parsers_orm.dns_parser_orm",
-        "peekOfCode": "def clean_game_title(title: str, platform: str) -> str:\n    title = re.sub(r\"\\(.*?\\)|\\[.*?\\]\", \"\", title).strip()\n    title = re.sub(r\"\\s+\", \" \", title)\n    print('3333333333333333333333333')\n    platform_map = {\n        \"PlayStation\": \"PS\",\n        \"Xbox\": \"XB\",\n        \"Nintendo\": \"NS\"\n    }\n    short_platform = platform_map.get(platform, platform)",
+        "peekOfCode": "def clean_game_title(title: str, platform: str) -> str:\n    title = re.sub(r\"\\(.*?\\)|\\[.*?\\]\", \"\", title).strip()\n    title = re.sub(r\"\\s+\", \" \", title)\n    platform_map = {\n        \"PlayStation\": \"PS\",\n        \"Xbox\": \"XB\",\n        \"Nintendo\": \"NS\"\n    }\n    short_platform = platform_map.get(platform, platform)\n    return f\"{title} {short_platform}\"",
         "detail": "app.parsers.parsers_orm.dns_parser_orm",
         "documentation": {}
     },
@@ -1496,7 +1561,7 @@
         "kind": 2,
         "importPath": "app.parsers.parsers_orm.dns_parser_orm",
         "description": "app.parsers.parsers_orm.dns_parser_orm",
-        "peekOfCode": "def save_games_to_db(games: List[Dict[str, Any]]) -> None:\n    db: Session = SessionLocal()\n    print('2222222222222222222222222222222')\n    store = db.query(Store).filter_by(name=\"DNS\").first()\n    if not store:\n        store = Store(name=\"DNS\")\n        db.add(store)\n        db.commit()\n        db.refresh(store)\n    for game in games:",
+        "peekOfCode": "def save_games_to_db(games: List[Dict[str, Any]]) -> None:\n    db: Session = SessionLocal()\n    store = db.query(Store).filter_by(name=\"DNS\").first()\n    if not store:\n        store = Store(name=\"DNS\")\n        db.add(store)\n        db.commit()\n        db.refresh(store)\n    for game in games:\n        platform = db.query(Platform).filter_by(name=game[\"platform\"]).first()",
         "detail": "app.parsers.parsers_orm.dns_parser_orm",
         "documentation": {}
     },
@@ -1595,7 +1660,7 @@
         "kind": 6,
         "importPath": "app.parsers.marwin_parser",
         "description": "app.parsers.marwin_parser",
-        "peekOfCode": "class MarwinParser:\n    \"\"\"Класс для парсинга списка игр с сайта Marwin.\"\"\"\n    BASE_URLS = {\n        \"PlayStation 5\": \"https://www.marwin.kz/videogames/playstation/igry-dliya-playstation-5/\",\n        \"PlayStation 4\": \"https://www.marwin.kz/videogames/playstation/igry-dliya-playstation-4/\",\n        \"Xbox One\": \"https://www.marwin.kz/videogames/xbox/igry-dlya-microsoft-xbox-one/\",\n        \"Nintendo Switch\": \"https://www.marwin.kz/videogames/nintendo/igry-dlya-nintendo-switch/\"\n    }\n    def __init__(self):\n        self.driver = webdriver.Chrome()",
+        "peekOfCode": "class MarwinParser:\n    \"\"\"Класс для парсинга списка игр с сайта Marwin.\"\"\"\n    BASE_URLS = {\n        \"PlayStation\": \"https://www.marwin.kz/videogames/playstation/igry-dliya-playstation-5/\",\n        \"PlayStation\": \"https://www.marwin.kz/videogames/playstation/igry-dliya-playstation-4/\",\n        \"Xbox One\": \"https://www.marwin.kz/videogames/xbox/igry-dlya-microsoft-xbox-one/\",\n        \"Nintendo\": \"https://www.marwin.kz/videogames/nintendo/igry-dlya-nintendo-switch/\"\n    }\n    def __init__(self):\n        self.driver = webdriver.Chrome()",
         "detail": "app.parsers.marwin_parser",
         "documentation": {}
     },
@@ -1640,7 +1705,7 @@
         "kind": 6,
         "importPath": "app.parsers.technodom_parser",
         "description": "app.parsers.technodom_parser",
-        "peekOfCode": "class TechnodomParser:\n    \"\"\"Парсер игр с сайта Technodom.\"\"\"\n    BASE_URLS = {\n        \"PlayStation 4\": \"https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-playstation-4\",\n        \"PlayStation 5\": \"https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-playstation-5\",\n        \"Xbox\": \"https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-xbox\",\n        \"Nintendo\": \"https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-nintendo\"\n    }\n    def __init__(self, driver: webdriver.Chrome = None):\n        \"\"\"Инициализация парсера с возможностью передачи драйвера.\"\"\"",
+        "peekOfCode": "class TechnodomParser:\n    \"\"\"Парсер игр с сайта Technodom.\"\"\"\n    BASE_URLS = {\n        \"PlayStation\": \"https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-playstation-4\",\n        \"PlayStation\": \"https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-playstation-5\",\n        \"Xbox\": \"https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-xbox\",\n        \"Nintendo\": \"https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-nintendo\"\n    }\n    def __init__(self, driver: webdriver.Chrome = None):\n        \"\"\"Инициализация парсера с возможностью передачи драйвера.\"\"\"",
         "detail": "app.parsers.technodom_parser",
         "documentation": {}
     },

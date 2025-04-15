@@ -1,4 +1,7 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, Depends, HTTPException
+from sqlalchemy.orm import Session
+from app.database import get_db
+from app.parsers.models import Game, Platform
 from selenium import webdriver
 from typing import Dict, List
 from fastapi.responses import JSONResponse
@@ -7,6 +10,7 @@ from app.parsers.dns_parser import DNSScraper
 from app.parsers.marwin_parser import MarwinParser
 from app.parsers.parsers_orm.marwin_parser_orm import save_games_to_db
 from app.tasks.celery import app
+from sqlalchemy import func
 
 router = APIRouter()
 
@@ -66,3 +70,22 @@ def parse_all() -> Dict[str, List]:
         "dns": dns_games,
         "marwin": marwin_games
     }
+
+@router.get("/games/{platform_name}")
+def get_games_by_platform(platform_name: str, db: Session = Depends(get_db)):
+    platform = db.query(Platform).filter(func.lower(Platform.name) == platform_name.lower()).first()
+    if not platform:
+        raise HTTPException(status_code=404, detail="Platform not found")
+
+    games = db.query(Game).filter(Game.platform_id == platform.id).all()
+    return [
+        {
+            "id": game.id,
+            "title": game.title,
+            "price": game.price,
+            "availability": game.availability,
+            "store": game.store.name if game.store else None,
+            "image_url": game.image_url,
+        }
+        for game in games
+    ]

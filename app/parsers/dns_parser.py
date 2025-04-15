@@ -49,7 +49,7 @@ class DNSScraper:
                             availability_text = product.find_element(By.CLASS_NAME, "button-ui").text.strip()
                             is_available = "В корзину" in availability_text
                         except Exception:
-                            is_available = False
+                            is_available = True
                         try:
                             img_element = product.find_element(By.CSS_SELECTOR, "img")
                             img_url = img_element.get_attribute("src") or img_element.get_attribute("data-src")

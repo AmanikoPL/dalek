@@ -11,10 +11,10 @@ class MarwinParser:
     """Класс для парсинга списка игр с сайта Marwin."""
 
     BASE_URLS = {
-        "PlayStation 5": "https://www.marwin.kz/videogames/playstation/igry-dliya-playstation-5/",
-        "PlayStation 4": "https://www.marwin.kz/videogames/playstation/igry-dliya-playstation-4/",
+        "PlayStation": "https://www.marwin.kz/videogames/playstation/igry-dliya-playstation-5/",
+        "PlayStation": "https://www.marwin.kz/videogames/playstation/igry-dliya-playstation-4/",
         "Xbox One": "https://www.marwin.kz/videogames/xbox/igry-dlya-microsoft-xbox-one/",
-        "Nintendo Switch": "https://www.marwin.kz/videogames/nintendo/igry-dlya-nintendo-switch/"
+        "Nintendo": "https://www.marwin.kz/videogames/nintendo/igry-dlya-nintendo-switch/"
     }
 
     def __init__(self):
