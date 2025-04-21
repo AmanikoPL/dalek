@@ -45,6 +45,7 @@ def save_games_to_db(games: List[Dict[str, Any]]) -> None:
             existing_game.price = game["price"]
             existing_game.availability = game["availability"]
             existing_game.image_url = game["image_url"]
+            existing_game.url = game.get("url")  # 🆕 добавлено обновление URL
         else:
             new_game = Game(
                 title=clean_title,
@@ -52,7 +53,8 @@ def save_games_to_db(games: List[Dict[str, Any]]) -> None:
                 store_id=store.id,
                 price=game["price"],
                 availability=game["availability"],
-                image_url=game["image_url"]
+                image_url=game["image_url"],
+                url=game.get("url")  # 🆕 добавлено при создании
             )
             db.add(new_game)
 

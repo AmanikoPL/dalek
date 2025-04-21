@@ -23,6 +23,9 @@ class Game(Base):
     availability: Mapped[bool] = mapped_column(Boolean, default=True)
     store_id: Mapped[int] = mapped_column(ForeignKey("stores.id", ondelete="SET NULL"), nullable=True)
     image_url: Mapped[Optional[str]] = mapped_column(Text)
+    url: Mapped[Optional[str]] = mapped_column(Text)  # <-- новое поле
+    reserved_by_id: Mapped[Optional[int]] = mapped_column(ForeignKey("users.id", ondelete="SET NULL"))
+    reserved_by = relationship("User")
 
     platform: Mapped["Platform"] = relationship("Platform", back_populates="games")
     store: Mapped["Store"] = relationship("Store", back_populates="games")

@@ -16,6 +16,54 @@
         "documentation": {}
     },
     {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Dict",
         "importPath": "typing",
         "description": "typing",
@@ -25,6 +73,22 @@
     },
     {
         "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -232,6 +296,30 @@
         "documentation": {}
     },
     {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
         "label": "context",
         "importPath": "alembic",
         "description": "alembic",
@@ -393,7 +481,31 @@
         "documentation": {}
     },
     {
+        "label": "get_db",
+        "importPath": "app.database",
+        "description": "app.database",
+        "isExtraImport": true,
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
         "label": "SessionLocal",
+        "importPath": "app.database",
+        "description": "app.database",
+        "isExtraImport": true,
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "importPath": "app.database",
+        "description": "app.database",
+        "isExtraImport": true,
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
         "importPath": "app.database",
         "description": "app.database",
         "isExtraImport": true,
@@ -457,7 +569,39 @@
         "documentation": {}
     },
     {
+        "label": "Game",
+        "importPath": "app.parsers.models",
+        "description": "app.parsers.models",
+        "isExtraImport": true,
+        "detail": "app.parsers.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.parsers.models",
+        "description": "app.parsers.models",
+        "isExtraImport": true,
+        "detail": "app.parsers.models",
+        "documentation": {}
+    },
+    {
+        "label": "Game",
+        "importPath": "app.parsers.models",
+        "description": "app.parsers.models",
+        "isExtraImport": true,
+        "detail": "app.parsers.models",
+        "documentation": {}
+    },
+    {
         "label": "Platform",
+        "importPath": "app.parsers.models",
+        "description": "app.parsers.models",
+        "isExtraImport": true,
+        "detail": "app.parsers.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
         "importPath": "app.parsers.models",
         "description": "app.parsers.models",
         "isExtraImport": true,
@@ -545,6 +689,14 @@
         "documentation": {}
     },
     {
+        "label": "User",
+        "importPath": "app.parsers.models",
+        "description": "app.parsers.models",
+        "isExtraImport": true,
+        "detail": "app.parsers.models",
+        "documentation": {}
+    },
+    {
         "label": "APIRouter",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -586,6 +738,62 @@
     },
     {
         "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
@@ -598,6 +806,14 @@
         "description": "fastapi",
         "isExtraImport": true,
         "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
         "documentation": {}
     },
     {
@@ -697,6 +913,14 @@
         "documentation": {}
     },
     {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
         "label": "sessionmaker",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
@@ -753,6 +977,22 @@
         "documentation": {}
     },
     {
+        "label": "get_current_user",
+        "importPath": "app.service.security",
+        "description": "app.service.security",
+        "isExtraImport": true,
+        "detail": "app.service.security",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
+        "importPath": "app.service.security",
+        "description": "app.service.security",
+        "isExtraImport": true,
+        "detail": "app.service.security",
+        "documentation": {}
+    },
+    {
         "label": "hash_password",
         "importPath": "app.service.security",
         "description": "app.service.security",
@@ -801,35 +1041,11 @@
         "documentation": {}
     },
     {
-        "label": "webdriver",
-        "importPath": "selenium",
-        "description": "selenium",
+        "label": "RedirectResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
         "isExtraImport": true,
-        "detail": "selenium",
-        "documentation": {}
-    },
-    {
-        "label": "webdriver",
-        "importPath": "selenium",
-        "description": "selenium",
-        "isExtraImport": true,
-        "detail": "selenium",
-        "documentation": {}
-    },
-    {
-        "label": "webdriver",
-        "importPath": "selenium",
-        "description": "selenium",
-        "isExtraImport": true,
-        "detail": "selenium",
-        "documentation": {}
-    },
-    {
-        "label": "webdriver",
-        "importPath": "selenium",
-        "description": "selenium",
-        "isExtraImport": true,
-        "detail": "selenium",
+        "detail": "fastapi.responses",
         "documentation": {}
     },
     {
@@ -838,6 +1054,38 @@
         "description": "fastapi.responses",
         "isExtraImport": true,
         "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "webdriver",
+        "importPath": "selenium",
+        "description": "selenium",
+        "isExtraImport": true,
+        "detail": "selenium",
+        "documentation": {}
+    },
+    {
+        "label": "webdriver",
+        "importPath": "selenium",
+        "description": "selenium",
+        "isExtraImport": true,
+        "detail": "selenium",
+        "documentation": {}
+    },
+    {
+        "label": "webdriver",
+        "importPath": "selenium",
+        "description": "selenium",
+        "isExtraImport": true,
+        "detail": "selenium",
+        "documentation": {}
+    },
+    {
+        "label": "webdriver",
+        "importPath": "selenium",
+        "description": "selenium",
+        "isExtraImport": true,
+        "detail": "selenium",
         "documentation": {}
     },
     {
@@ -999,14 +1247,6 @@
         "importPath": "re",
         "description": "re",
         "detail": "re",
-        "documentation": {}
-    },
-    {
-        "label": "SessionLocal",
-        "importPath": "app.parsers.database",
-        "description": "app.parsers.database",
-        "isExtraImport": true,
-        "detail": "app.parsers.database",
         "documentation": {}
     },
     {
@@ -1276,11 +1516,27 @@
         "documentation": {}
     },
     {
+        "label": "JWTError",
+        "importPath": "jose",
+        "description": "jose",
+        "isExtraImport": true,
+        "detail": "jose",
+        "documentation": {}
+    },
+    {
         "label": "jwt",
         "importPath": "jose",
         "description": "jose",
         "isExtraImport": true,
         "detail": "jose",
+        "documentation": {}
+    },
+    {
+        "label": "OAuth2PasswordBearer",
+        "importPath": "fastapi.security",
+        "description": "fastapi.security",
+        "isExtraImport": true,
+        "detail": "fastapi.security",
         "documentation": {}
     },
     {
@@ -1350,6 +1606,50 @@
         "documentation": {}
     },
     {
+        "label": "router",
+        "importPath": "app.api.game_status",
+        "description": "app.api.game_status",
+        "isExtraImport": true,
+        "detail": "app.api.game_status",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "alembic.versions.12c1f14e8096_add_reserved_by_id_to_game",
+        "description": "alembic.versions.12c1f14e8096_add_reserved_by_id_to_game",
+        "peekOfCode": "def upgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.add_column('games', sa.Column('reserved_by_id', sa.Integer(), nullable=True))\n    op.create_foreign_key(None, 'games', 'users', ['reserved_by_id'], ['id'], ondelete='SET NULL')\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_constraint(None, 'games', type_='foreignkey')\n    op.drop_column('games', 'reserved_by_id')\n    # ### end Alembic commands ###",
+        "detail": "alembic.versions.12c1f14e8096_add_reserved_by_id_to_game",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "alembic.versions.12c1f14e8096_add_reserved_by_id_to_game",
+        "description": "alembic.versions.12c1f14e8096_add_reserved_by_id_to_game",
+        "peekOfCode": "def downgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_constraint(None, 'games', type_='foreignkey')\n    op.drop_column('games', 'reserved_by_id')\n    # ### end Alembic commands ###",
+        "detail": "alembic.versions.12c1f14e8096_add_reserved_by_id_to_game",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "alembic.versions.9edda18676ed_add_reserved_by_id_to_game",
+        "description": "alembic.versions.9edda18676ed_add_reserved_by_id_to_game",
+        "peekOfCode": "def upgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###",
+        "detail": "alembic.versions.9edda18676ed_add_reserved_by_id_to_game",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "alembic.versions.9edda18676ed_add_reserved_by_id_to_game",
+        "description": "alembic.versions.9edda18676ed_add_reserved_by_id_to_game",
+        "peekOfCode": "def downgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###",
+        "detail": "alembic.versions.9edda18676ed_add_reserved_by_id_to_game",
+        "documentation": {}
+    },
+    {
         "label": "upgrade",
         "kind": 2,
         "importPath": "alembic.versions.accc10800deb_try_to_fix",
@@ -1365,6 +1665,24 @@
         "description": "alembic.versions.accc10800deb_try_to_fix",
         "peekOfCode": "def downgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_index(op.f('ix_games_title'), table_name='games')\n    op.drop_index(op.f('ix_games_platform_id'), table_name='games')\n    op.drop_table('games')\n    op.drop_index(op.f('ix_users_id'), table_name='users')\n    op.drop_index(op.f('ix_users_email'), table_name='users')\n    op.drop_table('users')\n    op.drop_table('stores')\n    op.drop_table('platforms')",
         "detail": "alembic.versions.accc10800deb_try_to_fix",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "alembic.versions.c216c673da98_add_url_column_to_games",
+        "description": "alembic.versions.c216c673da98_add_url_column_to_games",
+        "peekOfCode": "def upgrade() -> None:\n    op.add_column('games', sa.Column('url', sa.Text(), nullable=True))\ndef downgrade() -> None:\n    op.drop_column('games', 'url')",
+        "detail": "alembic.versions.c216c673da98_add_url_column_to_games",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "alembic.versions.c216c673da98_add_url_column_to_games",
+        "description": "alembic.versions.c216c673da98_add_url_column_to_games",
+        "peekOfCode": "def downgrade() -> None:\n    op.drop_column('games', 'url')",
+        "detail": "alembic.versions.c216c673da98_add_url_column_to_games",
         "documentation": {}
     },
     {
@@ -1458,11 +1776,38 @@
         "documentation": {}
     },
     {
+        "label": "reserve_game",
+        "kind": 2,
+        "importPath": "app.api.game_status",
+        "description": "app.api.game_status",
+        "peekOfCode": "def reserve_game(game_id: int, db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):\n    game = db.query(Game).filter(Game.id == game_id).first()\n    if not game:\n        raise HTTPException(status_code=404, detail=\"Game not found\")\n    if game.reserved_by_id and game.reserved_by_id != current_user.id:\n        raise HTTPException(status_code=403, detail=\"Game already reserved\")\n    game.availability = False\n    game.reserved_by_id = current_user.id\n    db.commit()\n    return {\"redirect_url\": game.url}",
+        "detail": "app.api.game_status",
+        "documentation": {}
+    },
+    {
+        "label": "get_reserved_games",
+        "kind": 2,
+        "importPath": "app.api.game_status",
+        "description": "app.api.game_status",
+        "peekOfCode": "def get_reserved_games(\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user)\n):\n    games = db.query(Game).filter(Game.reserved_by_id == current_user.id).all()\n    return [\n        {\n            \"id\": g.id,\n            \"title\": g.title,\n            \"price\": g.price,",
+        "detail": "app.api.game_status",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.api.game_status",
+        "description": "app.api.game_status",
+        "peekOfCode": "router = APIRouter()\n@router.post(\"/games/{game_id}/click\")\ndef reserve_game(game_id: int, db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):\n    game = db.query(Game).filter(Game.id == game_id).first()\n    if not game:\n        raise HTTPException(status_code=404, detail=\"Game not found\")\n    if game.reserved_by_id and game.reserved_by_id != current_user.id:\n        raise HTTPException(status_code=403, detail=\"Game already reserved\")\n    game.availability = False\n    game.reserved_by_id = current_user.id",
+        "detail": "app.api.game_status",
+        "documentation": {}
+    },
+    {
         "label": "parse_technodom",
         "kind": 2,
         "importPath": "app.api.parsers",
         "description": "app.api.parsers",
-        "peekOfCode": "def parse_technodom() -> Dict[str, List]:\n    driver = webdriver.Chrome()\n    try:\n        parser = TechnodomParser(driver)\n        data = parser.parse()\n        return {\"data\": data} \n    finally:\n        driver.quit()\n@router.get(\"/dns\")\ndef parse_dns() -> List[str]:",
+        "peekOfCode": "def parse_technodom():\n    scraper = TechnodomParser()\n    try:\n        return scraper.parse()\n    finally:\n        scraper.close()\n@router.get(\"/dns\")\ndef parse_dns() -> List[str]:\n    scraper = DNSScraper()\n    try:",
         "detail": "app.api.parsers",
         "documentation": {}
     },
@@ -1503,11 +1848,20 @@
         "documentation": {}
     },
     {
+        "label": "search_games",
+        "kind": 2,
+        "importPath": "app.api.parsers",
+        "description": "app.api.parsers",
+        "peekOfCode": "def search_games(\n    q: str = Query(..., min_length=1),\n    db: Session = Depends(get_db),\n    current_user: Optional[User] = Depends(get_current_user)\n):\n    games = db.query(Game).filter(Game.title.ilike(f\"%{q}%\")).all()\n    return [\n        {\n            \"id\": game.id,\n            \"title\": game.title,",
+        "detail": "app.api.parsers",
+        "documentation": {}
+    },
+    {
         "label": "router",
         "kind": 5,
         "importPath": "app.api.parsers",
         "description": "app.api.parsers",
-        "peekOfCode": "router = APIRouter()\n@router.get(\"/technodom\")\ndef parse_technodom() -> Dict[str, List]:\n    driver = webdriver.Chrome()\n    try:\n        parser = TechnodomParser(driver)\n        data = parser.parse()\n        return {\"data\": data} \n    finally:\n        driver.quit()",
+        "peekOfCode": "router = APIRouter()\n@router.get(\"/technodom\", response_model=List[Dict[str, Any]])\ndef parse_technodom():\n    scraper = TechnodomParser()\n    try:\n        return scraper.parse()\n    finally:\n        scraper.close()\n@router.get(\"/dns\")\ndef parse_dns() -> List[str]:",
         "detail": "app.api.parsers",
         "documentation": {}
     },
@@ -1579,7 +1933,7 @@
         "kind": 2,
         "importPath": "app.parsers.parsers_orm.technodom_parser_orm",
         "description": "app.parsers.parsers_orm.technodom_parser_orm",
-        "peekOfCode": "def save_games_to_db(games: List[Dict[str, Any]]):\n    \"\"\"Сохраняет список игр в базу данных.\"\"\"\n    db: Session = SessionLocal()\n    try:\n        store = db.query(Store).filter(Store.name == \"Technodom\").first()\n        if not store:\n            store = Store(name=\"Technodom\")\n            db.add(store)\n            db.commit()\n            db.refresh(store)",
+        "peekOfCode": "def save_games_to_db(games: List[Dict[str, Any]]):\n    db: Session = SessionLocal()\n    try:\n        # 1) Store\n        store = db.query(Store).filter_by(name=\"Technodom\").first()\n        if not store:\n            store = Store(name=\"Technodom\")\n            db.add(store); db.commit(); db.refresh(store)\n        for g in games:\n            # 2) Platform",
         "detail": "app.parsers.parsers_orm.technodom_parser_orm",
         "documentation": {}
     },
@@ -1651,7 +2005,7 @@
         "kind": 6,
         "importPath": "app.parsers.dns_parser",
         "description": "app.parsers.dns_parser",
-        "peekOfCode": "class DNSScraper:\n    BASE_URLS = {\n        \"PlayStation\": \"https://www.dns-shop.kz/catalog/17a897ed16404e77/igry-dlya-playstation/?order=6&p={page}\",\n        \"Xbox\": \"https://www.dns-shop.kz/catalog/17a9f99116404e77/igry-dlya-microsoft-xbox/?order=6&p={page}\",\n        \"Nintendo\": \"https://www.dns-shop.kz/catalog/17a8b09516404e77/igry-dlya-nintendo/?order=6&p={page}\"\n    }\n    def __init__(self, driver=None):\n        self.driver = driver if driver else webdriver.Chrome()\n        self.driver.maximize_window()\n    def parse(self) -> List[Dict[str, Any]]:",
+        "peekOfCode": "class DNSScraper:\n    BASE_URLS = {\n        \"PlayStation\": \"https://www.dns-shop.kz/catalog/17a897ed16404e77/igry-dlya-playstation/?order=6&p={page}\",\n        \"Xbox\": \"https://www.dns-shop.kz/catalog/17a9f99116404e77/igry-dlya-microsoft-xbox/?order=6&p={page}\",\n        \"Nintendo\": \"https://www.dns-shop.kz/catalog/17a8b09516404e77/igry-dlya-nintendo/?order=6&p={page}\"\n    }\n    def __init__(self, driver=None):\n        self.driver = driver or webdriver.Chrome()\n        self.driver.maximize_window()\n    def parse(self) -> List[Dict[str, Any]]:",
         "detail": "app.parsers.dns_parser",
         "documentation": {}
     },
@@ -1705,7 +2059,7 @@
         "kind": 6,
         "importPath": "app.parsers.technodom_parser",
         "description": "app.parsers.technodom_parser",
-        "peekOfCode": "class TechnodomParser:\n    \"\"\"Парсер игр с сайта Technodom.\"\"\"\n    BASE_URLS = {\n        \"PlayStation\": \"https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-playstation-4\",\n        \"PlayStation\": \"https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-playstation-5\",\n        \"Xbox\": \"https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-xbox\",\n        \"Nintendo\": \"https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-nintendo\"\n    }\n    def __init__(self, driver: webdriver.Chrome = None):\n        \"\"\"Инициализация парсера с возможностью передачи драйвера.\"\"\"",
+        "peekOfCode": "class TechnodomParser:\n    \"\"\"Парсер игр с сайта Technodom без перехода по страницам.\"\"\"\n    BASE_URLS = {\n        \"PlayStation\": \"https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejmerov/igry-dlja-pristavok/igry-playstation-5\",  # единая страница PlayStation\n        \"Xbox\": \"https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejмеров/игры-xbox\",\n        \"Nintendo\": \"https://www.technodom.kz/karaganda/catalog/vsjo-dlja-gejмеров/игры-nintendo\",\n    }\n    def __init__(self, driver: webdriver.Chrome = None):\n        self.driver = driver or webdriver.Chrome()\n        self.driver.maximize_window()",
         "detail": "app.parsers.technodom_parser",
         "documentation": {}
     },
@@ -1759,7 +2113,7 @@
         "kind": 2,
         "importPath": "app.service.security",
         "description": "app.service.security",
-        "peekOfCode": "def hash_password(password: str) -> str:\n    return pwd_context.hash(password)\ndef verify_password(plain_password: str, hashed_password: str) -> bool:\n    return pwd_context.verify(plain_password, hashed_password)\ndef verify_password(plain_password, hashed_password):\n    return pwd_context.verify(plain_password, hashed_password)\ndef get_password_hash(password):\n    return pwd_context.hash(password)\ndef create_access_token(data: dict, expires_delta: timedelta = None):\n    to_encode = data.copy()",
+        "peekOfCode": "def hash_password(password: str) -> str:\n    return pwd_context.hash(password)\ndef verify_password(plain_password: str, hashed_password: str) -> bool:\n    return pwd_context.verify(plain_password, hashed_password)\ndef get_password_hash(password: str) -> str:\n    return pwd_context.hash(password)\ndef create_access_token(data: dict, expires_delta: timedelta = None) -> str:\n    to_encode = data.copy()\n    expire = datetime.utcnow() + (expires_delta or timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES))\n    to_encode.update({\"exp\": expire})",
         "detail": "app.service.security",
         "documentation": {}
     },
@@ -1768,16 +2122,7 @@
         "kind": 2,
         "importPath": "app.service.security",
         "description": "app.service.security",
-        "peekOfCode": "def verify_password(plain_password: str, hashed_password: str) -> bool:\n    return pwd_context.verify(plain_password, hashed_password)\ndef verify_password(plain_password, hashed_password):\n    return pwd_context.verify(plain_password, hashed_password)\ndef get_password_hash(password):\n    return pwd_context.hash(password)\ndef create_access_token(data: dict, expires_delta: timedelta = None):\n    to_encode = data.copy()\n    expire = datetime.utcnow() + (expires_delta or timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES))\n    to_encode.update({\"exp\": expire})",
-        "detail": "app.service.security",
-        "documentation": {}
-    },
-    {
-        "label": "verify_password",
-        "kind": 2,
-        "importPath": "app.service.security",
-        "description": "app.service.security",
-        "peekOfCode": "def verify_password(plain_password, hashed_password):\n    return pwd_context.verify(plain_password, hashed_password)\ndef get_password_hash(password):\n    return pwd_context.hash(password)\ndef create_access_token(data: dict, expires_delta: timedelta = None):\n    to_encode = data.copy()\n    expire = datetime.utcnow() + (expires_delta or timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES))\n    to_encode.update({\"exp\": expire})\n    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)\n    return encoded_jwt",
+        "peekOfCode": "def verify_password(plain_password: str, hashed_password: str) -> bool:\n    return pwd_context.verify(plain_password, hashed_password)\ndef get_password_hash(password: str) -> str:\n    return pwd_context.hash(password)\ndef create_access_token(data: dict, expires_delta: timedelta = None) -> str:\n    to_encode = data.copy()\n    expire = datetime.utcnow() + (expires_delta or timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES))\n    to_encode.update({\"exp\": expire})\n    return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)\ndef get_current_user(token: str = Depends(oauth2_scheme), db: Session = Depends(get_db)) -> User:",
         "detail": "app.service.security",
         "documentation": {}
     },
@@ -1786,7 +2131,7 @@
         "kind": 2,
         "importPath": "app.service.security",
         "description": "app.service.security",
-        "peekOfCode": "def get_password_hash(password):\n    return pwd_context.hash(password)\ndef create_access_token(data: dict, expires_delta: timedelta = None):\n    to_encode = data.copy()\n    expire = datetime.utcnow() + (expires_delta or timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES))\n    to_encode.update({\"exp\": expire})\n    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)\n    return encoded_jwt",
+        "peekOfCode": "def get_password_hash(password: str) -> str:\n    return pwd_context.hash(password)\ndef create_access_token(data: dict, expires_delta: timedelta = None) -> str:\n    to_encode = data.copy()\n    expire = datetime.utcnow() + (expires_delta or timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES))\n    to_encode.update({\"exp\": expire})\n    return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)\ndef get_current_user(token: str = Depends(oauth2_scheme), db: Session = Depends(get_db)) -> User:\n    credentials_exception = HTTPException(\n        status_code=status.HTTP_401_UNAUTHORIZED,",
         "detail": "app.service.security",
         "documentation": {}
     },
@@ -1795,7 +2140,16 @@
         "kind": 2,
         "importPath": "app.service.security",
         "description": "app.service.security",
-        "peekOfCode": "def create_access_token(data: dict, expires_delta: timedelta = None):\n    to_encode = data.copy()\n    expire = datetime.utcnow() + (expires_delta or timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES))\n    to_encode.update({\"exp\": expire})\n    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)\n    return encoded_jwt",
+        "peekOfCode": "def create_access_token(data: dict, expires_delta: timedelta = None) -> str:\n    to_encode = data.copy()\n    expire = datetime.utcnow() + (expires_delta or timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES))\n    to_encode.update({\"exp\": expire})\n    return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)\ndef get_current_user(token: str = Depends(oauth2_scheme), db: Session = Depends(get_db)) -> User:\n    credentials_exception = HTTPException(\n        status_code=status.HTTP_401_UNAUTHORIZED,\n        detail=\"Could not validate credentials\",\n        headers={\"WWW-Authenticate\": \"Bearer\"},",
+        "detail": "app.service.security",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
+        "kind": 2,
+        "importPath": "app.service.security",
+        "description": "app.service.security",
+        "peekOfCode": "def get_current_user(token: str = Depends(oauth2_scheme), db: Session = Depends(get_db)) -> User:\n    credentials_exception = HTTPException(\n        status_code=status.HTTP_401_UNAUTHORIZED,\n        detail=\"Could not validate credentials\",\n        headers={\"WWW-Authenticate\": \"Bearer\"},\n    )\n    try:\n        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])\n        email: str = payload.get(\"sub\")\n        if email is None:",
         "detail": "app.service.security",
         "documentation": {}
     },
@@ -1804,7 +2158,7 @@
         "kind": 5,
         "importPath": "app.service.security",
         "description": "app.service.security",
-        "peekOfCode": "SECRET_KEY = os.getenv(\"SECRET_KEY\", \"default_secret_key\")\nALGORITHM = os.getenv(\"JWT_ALGORITHM\", \"HS256\")\nACCESS_TOKEN_EXPIRE_MINUTES = 30\npwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\ndef hash_password(password: str) -> str:\n    return pwd_context.hash(password)\ndef verify_password(plain_password: str, hashed_password: str) -> bool:\n    return pwd_context.verify(plain_password, hashed_password)\ndef verify_password(plain_password, hashed_password):\n    return pwd_context.verify(plain_password, hashed_password)",
+        "peekOfCode": "SECRET_KEY = os.getenv(\"SECRET_KEY\", \"default_secret_key\")\nALGORITHM = os.getenv(\"JWT_ALGORITHM\", \"HS256\")\nACCESS_TOKEN_EXPIRE_MINUTES = 30\n# Контекст для хэширования паролей\npwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\noauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"/auth/login\")\ndef hash_password(password: str) -> str:\n    return pwd_context.hash(password)\ndef verify_password(plain_password: str, hashed_password: str) -> bool:\n    return pwd_context.verify(plain_password, hashed_password)",
         "detail": "app.service.security",
         "documentation": {}
     },
@@ -1813,7 +2167,7 @@
         "kind": 5,
         "importPath": "app.service.security",
         "description": "app.service.security",
-        "peekOfCode": "ALGORITHM = os.getenv(\"JWT_ALGORITHM\", \"HS256\")\nACCESS_TOKEN_EXPIRE_MINUTES = 30\npwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\ndef hash_password(password: str) -> str:\n    return pwd_context.hash(password)\ndef verify_password(plain_password: str, hashed_password: str) -> bool:\n    return pwd_context.verify(plain_password, hashed_password)\ndef verify_password(plain_password, hashed_password):\n    return pwd_context.verify(plain_password, hashed_password)\ndef get_password_hash(password):",
+        "peekOfCode": "ALGORITHM = os.getenv(\"JWT_ALGORITHM\", \"HS256\")\nACCESS_TOKEN_EXPIRE_MINUTES = 30\n# Контекст для хэширования паролей\npwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\noauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"/auth/login\")\ndef hash_password(password: str) -> str:\n    return pwd_context.hash(password)\ndef verify_password(plain_password: str, hashed_password: str) -> bool:\n    return pwd_context.verify(plain_password, hashed_password)\ndef get_password_hash(password: str) -> str:",
         "detail": "app.service.security",
         "documentation": {}
     },
@@ -1822,7 +2176,7 @@
         "kind": 5,
         "importPath": "app.service.security",
         "description": "app.service.security",
-        "peekOfCode": "ACCESS_TOKEN_EXPIRE_MINUTES = 30\npwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\ndef hash_password(password: str) -> str:\n    return pwd_context.hash(password)\ndef verify_password(plain_password: str, hashed_password: str) -> bool:\n    return pwd_context.verify(plain_password, hashed_password)\ndef verify_password(plain_password, hashed_password):\n    return pwd_context.verify(plain_password, hashed_password)\ndef get_password_hash(password):\n    return pwd_context.hash(password)",
+        "peekOfCode": "ACCESS_TOKEN_EXPIRE_MINUTES = 30\n# Контекст для хэширования паролей\npwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\noauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"/auth/login\")\ndef hash_password(password: str) -> str:\n    return pwd_context.hash(password)\ndef verify_password(plain_password: str, hashed_password: str) -> bool:\n    return pwd_context.verify(plain_password, hashed_password)\ndef get_password_hash(password: str) -> str:\n    return pwd_context.hash(password)",
         "detail": "app.service.security",
         "documentation": {}
     },
@@ -1831,7 +2185,16 @@
         "kind": 5,
         "importPath": "app.service.security",
         "description": "app.service.security",
-        "peekOfCode": "pwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\ndef hash_password(password: str) -> str:\n    return pwd_context.hash(password)\ndef verify_password(plain_password: str, hashed_password: str) -> bool:\n    return pwd_context.verify(plain_password, hashed_password)\ndef verify_password(plain_password, hashed_password):\n    return pwd_context.verify(plain_password, hashed_password)\ndef get_password_hash(password):\n    return pwd_context.hash(password)\ndef create_access_token(data: dict, expires_delta: timedelta = None):",
+        "peekOfCode": "pwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\noauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"/auth/login\")\ndef hash_password(password: str) -> str:\n    return pwd_context.hash(password)\ndef verify_password(plain_password: str, hashed_password: str) -> bool:\n    return pwd_context.verify(plain_password, hashed_password)\ndef get_password_hash(password: str) -> str:\n    return pwd_context.hash(password)\ndef create_access_token(data: dict, expires_delta: timedelta = None) -> str:\n    to_encode = data.copy()",
+        "detail": "app.service.security",
+        "documentation": {}
+    },
+    {
+        "label": "oauth2_scheme",
+        "kind": 5,
+        "importPath": "app.service.security",
+        "description": "app.service.security",
+        "peekOfCode": "oauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"/auth/login\")\ndef hash_password(password: str) -> str:\n    return pwd_context.hash(password)\ndef verify_password(plain_password: str, hashed_password: str) -> bool:\n    return pwd_context.verify(plain_password, hashed_password)\ndef get_password_hash(password: str) -> str:\n    return pwd_context.hash(password)\ndef create_access_token(data: dict, expires_delta: timedelta = None) -> str:\n    to_encode = data.copy()\n    expire = datetime.utcnow() + (expires_delta or timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES))",
         "detail": "app.service.security",
         "documentation": {}
     },

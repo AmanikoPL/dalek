@@ -14,7 +14,7 @@ class DNSScraper:
     }
 
     def __init__(self, driver=None):
-        self.driver = driver if driver else webdriver.Chrome()
+        self.driver = driver or webdriver.Chrome()
         self.driver.maximize_window()
 
     def parse(self) -> List[Dict[str, Any]]:
@@ -40,35 +40,44 @@ class DNSScraper:
                 for product in product_elements:
                     try:
                         title = product.find_element(By.CLASS_NAME, "catalog-product__name").text.strip()
-                        try:
-                            price_text = product.find_element(By.CLASS_NAME, "product-buy__price").text
-                            price = int("".join(filter(str.isdigit, price_text)))
-                        except Exception:
-                            price = None
-                        try:
-                            availability_text = product.find_element(By.CLASS_NAME, "button-ui").text.strip()
-                            is_available = "В корзину" in availability_text
-                        except Exception:
-                            is_available = True
-                        try:
-                            img_element = product.find_element(By.CSS_SELECTOR, "img")
-                            img_url = img_element.get_attribute("src") or img_element.get_attribute("data-src")
-                        except Exception:
-                            img_url = None
-
-                        game_data = {
-                            "title": title,
-                            "platform": platform,
-                            "price": price,
-                            "availability": is_available,
-                            "image_url": img_url
-                        }
-                        
-                        games.append(game_data)
                     except Exception:
                         continue
 
+                    try:
+                        price_text = product.find_element(By.CLASS_NAME, "product-buy__price").text
+                        price = int("".join(filter(str.isdigit, price_text)))
+                    except Exception:
+                        price = None
+
+                    # availability всегда True
+                    is_available = True
+
+                    try:
+                        img_element = product.find_element(By.CSS_SELECTOR, "img")
+                        img_url = img_element.get_attribute("src") or img_element.get_attribute("data-src")
+                    except Exception:
+                        img_url = None
+                        
+                    try:
+                        link_element = product.find_element(By.XPATH, ".//a[@class='catalog-product__name ui-link ui-link_black']")
+                        url = link_element.get_attribute("href")
+                    except Exception:
+                        url = None
+
+
+                    game_data = {
+                        "title": title,
+                        "platform": platform,
+                        "price": price,
+                        "availability": is_available,
+                        "image_url": img_url,
+                        "url": url
+                    }
+
+                    games.append(game_data)
+
                 page += 1
+
         save_games_to_db(games)
         return games
 
@@ -77,9 +86,7 @@ class DNSScraper:
 
 if __name__ == "__main__":
     scraper = DNSScraper()
-    print('Name vizvalsya')
     try:
-        games = scraper.parse()
-        save_games_to_db(games)
+        scraper.parse()
     finally:
         scraper.close()

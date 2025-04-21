@@ -49,3 +49,4 @@ def update_account(email: str, user_update: UserUpdate, db: Session = Depends(ge
 
     db.commit()
     return {"message": "User updated successfully"}
+

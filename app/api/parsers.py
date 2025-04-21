@@ -1,9 +1,9 @@
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
 from app.database import get_db
 from app.parsers.models import Game, Platform
 from selenium import webdriver
-from typing import Dict, List
+from typing import Dict, List, Any
 from fastapi.responses import JSONResponse
 from app.parsers.technodom_parser import TechnodomParser
 from app.parsers.dns_parser import DNSScraper
@@ -11,18 +11,19 @@ from app.parsers.marwin_parser import MarwinParser
 from app.parsers.parsers_orm.marwin_parser_orm import save_games_to_db
 from app.tasks.celery import app
 from sqlalchemy import func
+from app.service.security import get_current_user
+from typing import Optional
+from app.parsers.models import User
 
 router = APIRouter()
 
-@router.get("/technodom")
-def parse_technodom() -> Dict[str, List]:
-    driver = webdriver.Chrome()
+@router.get("/technodom", response_model=List[Dict[str, Any]])
+def parse_technodom():
+    scraper = TechnodomParser()
     try:
-        parser = TechnodomParser(driver)
-        data = parser.parse()
-        return {"data": data} 
+        return scraper.parse()
     finally:
-        driver.quit()
+        scraper.close()
 
 @router.get("/dns")
 def parse_dns() -> List[str]:
@@ -86,6 +87,29 @@ def get_games_by_platform(platform_name: str, db: Session = Depends(get_db)):
             "availability": game.availability,
             "store": game.store.name if game.store else None,
             "image_url": game.image_url,
+        }
+        for game in games
+    ]
+
+@router.get("/search")
+def search_games(
+    q: str = Query(..., min_length=1),
+    db: Session = Depends(get_db),
+    current_user: Optional[User] = Depends(get_current_user)
+):
+    games = db.query(Game).filter(Game.title.ilike(f"%{q}%")).all()
+
+    return [
+        {
+            "id": game.id,
+            "title": game.title,
+            "price": game.price,
+            "platform": game.platform.name,
+            "store": game.store.name if game.store else "Unknown",
+            "image_url": game.image_url,
+            "availability": game.availability,
+            "url": game.url,
+            "is_booked_by_me": current_user is not None and game.reserved_by_id == current_user.id
         }
         for game in games
     ]
